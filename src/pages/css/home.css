@@ -1,0 +1,62 @@
+.main{
+    color: #fcfdfe;
+    margin: 70px auto;
+    max-width: 700px;
+}
+
+.main .details .greeting{
+    font-size: 24px;
+    font-style: normal;
+}
+
+.main .details p{
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main .link-heading{
+    font-size: 26px;
+    color: rgba(0, 255, 255, 0.662);
+    text-decoration: overline;
+}
+
+.main .links{
+    margin-top: 60px;
+}
+
+.main .links .link{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fcfdfe;
+}
+
+.main .links .link:hover{
+    transition: 1s;
+    color: aqua;
+    font-size: 23px;
+}
+
+.main .links p{
+    margin-top: 20px;
+}
+
+.main .links p .dbutton{
+    border-color: aqua;
+    text-decoration: none;
+    padding: 20px;
+    border-style: groove;
+    border-radius: 5px;
+    background-color: #1f1f24;
+}
+
+.main .links .dbutton:hover{
+    box-shadow: 0 0 5px 2px  aqua;
+}
+
+@media (width< 700px) {
+    .main{
+        margin: 5%;
+        margin-top: 50px;
+    }
+}
