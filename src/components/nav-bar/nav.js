@@ -3,6 +3,7 @@ import "./nav.css";
 import {NavLink } from "react-router-dom";function NavBar() {
   return (
     <>
+    {/* TODO Increase size for larger width devices and scale it up for smaller ones */}
       <div className="nav">
         <p className="logo">Akash Chowdary Kodali</p>
         <ul className="nav-links">

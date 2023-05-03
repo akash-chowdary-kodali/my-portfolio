@@ -6,19 +6,19 @@
 
 .mainp .headingp{
     color: aqua;
-    font-size: 34px;
+    font-size: 40px;
     text-align: center;
     text-decoration: overline;
 }
 
 .mainp .project{
     margin-top: 50px;
-    font-size: 22px;
+    font-size: 24px;
     display: flex;
 }
 
 .mainp .project .title{
-    font-size: 24px;
+    font-size: 30px;
     color: aqua;
     /* text-align: center; */
 }
@@ -57,5 +57,19 @@
 
     .mainp .project .whatsapp-img{
         width: 70%;
+    }
+
+    @media (width < 600px){
+        .mainp .headingp{
+            font-size: 30px;
+        }
+
+        .mainp .project{
+            font-size: 20px;
+        }
+        
+        .mainp .project .title{
+            font-size: 26px;
+        }
     }
 }

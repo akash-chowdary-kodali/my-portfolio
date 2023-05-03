@@ -34,7 +34,7 @@ export const Projects = () => {
           <div className="desc">
             <p>
               This App is a Front-end clone of the major social platfrom Built Using Flutter Framework.
-            An Open-Source frameWork Used to build Cross-platform Apps maintained by Google. It has greater library support</p>
+            An Open-Source frameWork Used to build Cross-platform Apps maintained by Google. It has greater library support.</p>
           </div>
         </div>
         <a href="https://github.com/akodali9/whatsappclone" target="_blank" rel="noreferrer">
