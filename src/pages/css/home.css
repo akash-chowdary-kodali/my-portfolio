@@ -1,6 +1,6 @@
 .main{
     color: #fcfdfe;
-    margin: 90px auto;
+    margin: 150px auto;
     max-width: 700px;
 }
 
@@ -17,7 +17,7 @@
 
 .main .link-heading{
     font-size: 26px;
-    color: rgba(0, 255, 255, 0.662);
+    color: aqua;
     text-decoration: overline;
 }
 
@@ -51,12 +51,12 @@
 }
 
 .main .links .dbutton:hover{
-    box-shadow: 0 0 5px 2px  aqua;
+    box-shadow: 0 0 10px 5px  aqua;
 }
 
 @media (width< 700px) {
     .main{
         margin: 5%;
-        margin-top: 50px;
+        padding-top: 40%;
     }
 }

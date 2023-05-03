@@ -9,9 +9,9 @@
     justify-content: space-around; 
     font-weight: 500;
     width: 100%;
-    margin-top: 20px;
+    padding: 10px;
     top: 0; 
-    /* position: fixed;     */
+    position: fixed;    
 }
 
 .nav .logo{
@@ -47,7 +47,7 @@
 
 @media (width < 700px ){
     .nav{
-        height: 100px;
+        height: 11%;
         display: block;
     }
 
@@ -55,6 +55,12 @@
         width: 280px;
         margin: auto;
     }
-
     
+}
+
+@media (width < 300px) {
+    .nav .nav-links .sub-link{
+        padding: 5px;
+        font-size: 16px;
+    }
 }
