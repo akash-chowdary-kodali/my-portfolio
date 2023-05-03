@@ -15,6 +15,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 
   ::-webkit-scrollbar-thumb{
-    background-color: aqua;
+    background-color: #abcff0;
     border-radius: 5px;
   }
