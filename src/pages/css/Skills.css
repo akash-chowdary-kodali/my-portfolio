@@ -1,0 +1,50 @@
+.mainS{
+    color: #fcfdfe;
+    margin: 160px auto;
+    max-width: 800px;
+}
+
+.mainS .headingS{
+    color: aqua;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 3.1px solid;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.mainS .detailsS{
+    font-size: 30px;
+}
+
+.mainS .detailsS ul{
+    padding: 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: disc;
+}
+
+.mainS .detailsS ul li{
+    margin: 20px 60px;
+}
+
+@media (width < 800px){
+
+    .mainS{
+        max-width: 400px;
+        margin: 160px auto;
+    }
+
+    .mainS .detailsS ul{
+        display: block;
+    }
+
+    .mainS .headingS{
+        font-size: 30px;
+    }
+
+    .mainS .detailsS{
+        font-size: 26px;
+    }
+}
