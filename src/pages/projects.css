@@ -1,6 +1,13 @@
+/* .projectbody{
+    background-image: url("./imgs/jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: round;
+} */
+
 .mainp{
     color: #fcfdfe;
-    margin: 150px auto;
+    margin: auto;
+    padding: 150px 0px 100px 0px;
     max-width: 1100px;
 }
 

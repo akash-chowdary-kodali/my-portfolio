@@ -1,10 +1,17 @@
+/* .homebody{
+    background-image: url("./imgs/jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
 .main{
     color: #fcfdfe;
-    margin: 160px auto;
+    margin: auto;
+    padding: 150px 0px 100px 0px;
     max-width: 1000px;
 }
 .main .details .greeting{
-    font-size: 350%;
+    font-size: 45px;
     font-style: normal;
     margin-bottom: 50px;
 }
@@ -57,7 +64,7 @@
     padding: 20px;
     border-style: groove;
     border-radius: 5px;
-    background-color: #1f1f24;
+    background-color: transparent ;
 }
 
 .main .links .dbutton:hover{
@@ -70,10 +77,6 @@
     .main{
         margin: 5%;
         padding-top: 15vh;
-    }
-
-    .main .details .greeting{
-        font-size:  50px;
     }
 
     .main .details .top-block{
