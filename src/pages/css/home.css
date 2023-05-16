@@ -1,9 +1,3 @@
-.homebody{
-    /* background-image: url("../imgs/jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
-}
-
 .main{
     color: #fcfdfe;
     margin: auto;
@@ -39,7 +33,7 @@
 
 .main .link-heading{
     font-size: 40px;
-    color: aqua;
+    color: #ddac58;
     text-decoration: overline;
 }
 
@@ -51,7 +45,7 @@
 
 .main .links .link:hover{
     transition: 1s;
-    color: aqua;
+    color: #d8cfc0;
     font-size: 35px;
 }
 
@@ -60,7 +54,7 @@
 }
 
 .main .links p .dbutton{
-    border-color: aqua;
+    border-color: #d8cfc0;
     text-decoration: none;
     padding: 20px;
     border-style: groove;
@@ -69,7 +63,7 @@
 }
 
 .main .links .dbutton:hover{
-    box-shadow: 0 0 10px 5px  aqua;
+    box-shadow: 0 0 10px 5px  #d8cfc0;
 }
 
 

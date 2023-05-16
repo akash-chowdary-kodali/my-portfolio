@@ -12,8 +12,8 @@
 }
 
 .mainS .headingS{
-    color: aqua;
-    font-size: 35px;
+    color: #ddac58;
+    font-size: 30px;
     text-transform: uppercase;
     padding-bottom: 15px;
     border-bottom: 3.1px solid;
@@ -23,7 +23,7 @@
 }
 
 .mainS .detailsS{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .mainS .detailsS ul{

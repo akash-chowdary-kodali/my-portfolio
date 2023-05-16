@@ -12,7 +12,7 @@
 }
 
 .mainp .headingp{
-    color: aqua;
+    color: #ddac58;
     font-size: 40px;
     text-align: center;
     text-decoration: overline;
@@ -26,7 +26,7 @@
 
 .mainp .project .title{
     font-size: 30px;
-    color: aqua;
+    color: #d8cfc0;
     /* text-align: center; */
 }
 
@@ -36,7 +36,7 @@
 
 .mainp .project .project-details .desc{
     margin-top: 20px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .mainp .project .project-img{
@@ -72,11 +72,11 @@
         }
 
         .mainp .project{
-            font-size: 20px;
+            font-size: 22px;
         }
         
         .mainp .project .title{
-            font-size: 26px;
+            font-size: 28px;
         }
     }
 }
