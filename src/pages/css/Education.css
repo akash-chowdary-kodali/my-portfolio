@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,700;1,400;1,700&display=swap');
+
+.edubody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: auto;
+}
+
+.timeline-section{
+    min-height: 50vh;
+    padding: 100px 15px;
+}
+
+.timeline-items{
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: ' ';
+    position: absolute;
+    width: 5px;
+    border-radius: 5px;
+    height: 100%;
+    background-color: #bfd2e5;
+    left:calc(50% - 1px);
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item{
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color: #eaa023;
+    position: absolute;
+    left: calc(50% - 6px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 30px;
+    color: #d8cfc0;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: #1f1f24;
+    padding: 30px;
+    border-radius: 6px;
+    
+}
+
+.timeline-content h3{
+    font-size: 30px;
+    color: #fcfdfe;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.timeline-content p{
+    color: #c8c8c8;
+    font-size: 26px;
+    font-weight: 300;
+    /* line-height: 22px; */
+
+}
+
+@media (width < 800px) {
+    .timeline-items::before{
+        left: 7px
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+
+    .timeline-dot{
+        left: 0;
+    }
+}
+
+@media (width < 300px){
+
+    .timeline-item{
+        width: 90%;
+    }
+    .timeline-date{
+        font-size: 26px;
+    }
+
+    .timeline-content h3{
+        font-size: 22px;
+    }
+
+    .timeline-content p{
+        font-size: 18px;
+    }
+}

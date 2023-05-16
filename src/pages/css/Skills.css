@@ -1,5 +1,5 @@
 /* .skillsbody{
-    background-image: url("./imgs/anas-alshanti-feXpdV001o4-unsplash.jpg");
+    background-image: url("../imgs/anas-alshanti-feXpdV001o4-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 } */
@@ -19,6 +19,7 @@
     border-bottom: 3.1px solid;
     width: -moz-fit-content;
     width: fit-content;
+    margin-left: 5%;
 }
 
 .mainS .detailsS{
@@ -43,11 +44,11 @@
     margin-left: -1em;
 } */
 
-@media (width < 800px){
+@media (width < 600px){
 
     .mainS{
         max-width: 400px;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .mainS .detailsS ul{

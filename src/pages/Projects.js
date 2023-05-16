@@ -1,5 +1,5 @@
 import React from "react";
-import "./projects.css";
+import "../pages/css/projects.css";
 import Weatherimg from "./imgs/WeatherApp.png";
 import WhatsappImg from "./imgs/WhatsappClone.png";
 

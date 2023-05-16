@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "../pages/css/home.css";
 import Resume from "./Resume.pdf";
 import myImg from "./imgs/myImage.png";
 

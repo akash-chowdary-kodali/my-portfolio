@@ -1,6 +1,10 @@
+
+
 body{
-  background-color: #1f1f24;
-  /* background-color: #1f1e1e; */
+  background-color: #171717;
+  /* background-color: #1f1f24;   */
+  /* background-color: #1d1c1c;   */
+  /* background-color: #1d1d1d;   */
 }
 
   ::-webkit-scrollbar{
@@ -10,10 +14,19 @@ body{
   }
 
   ::-webkit-scrollbar-track{
-    background-color: #1f1f1f;
+    background-color: transparent;
   }
 
   ::-webkit-scrollbar-thumb{
-    background-color: #abcff0;
+    background-color: #ddac58;
     border-radius: 5px;
   }
+
+@media (width < 600px){
+  body{
+    background: repeating-linear-gradient(135deg, #272558 0, #272558 10%, transparent 0, transparent 100%);
+        background-size: 5em 5em;
+        background-color: #171717;
+        opacity: 1;
+  }
+}
