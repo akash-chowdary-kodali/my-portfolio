@@ -1,7 +1,7 @@
 import React from "react";
 import "../pages/css/projects.css";
-import Weatherimg from "./imgs/WeatherApp.png";
-import WhatsappImg from "./imgs/WhatsappClone.png";
+import Weatherimg from "./assests/imgs/WeatherApp.png";
+import WhatsappImg from "./assests/imgs/WhatsappClone.png";
 
 export const Projects = () => {
   return (

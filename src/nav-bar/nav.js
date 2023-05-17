@@ -7,6 +7,7 @@ function NavBar() {
   return (
     <>
       {/* TODO Increase size for larger width devices and scale it up for smaller ones */}
+      {/* TODO Add dropdown button and menu for easier access */}
       <div className="nav">
         <p className="logo">Akash Chowdary Kodali</p>
 

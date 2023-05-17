@@ -1,7 +1,7 @@
 import React from "react";
 import "../pages/css/home.css";
-import Resume from "./Resume.pdf";
-import myImg from "./imgs/myImage.png";
+import Resume from "./assests/Resume.pdf";
+import myImg from "./assests/imgs/myImage.png";
 
 export const Home = () => {
   return (
