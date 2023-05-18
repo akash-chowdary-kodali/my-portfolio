@@ -11,7 +11,7 @@ function NavBar() {
       <div className="nav">
         <p className="logo">Akash Chowdary Kodali</p>
 
-        <ul className="nav-links">
+        <div className="nav-links">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -44,7 +44,7 @@ function NavBar() {
           >
             Education
           </NavLink>
-        </ul>
+        </div>
       </div>
     </>
   );
