@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-around; 
     font-weight: 500;
-    width: 100%;
+    width: 99%;
     padding: 10px;
     top: 0; 
     position: fixed;
@@ -44,8 +44,6 @@
     color: #d8cfc0;
 }   
 
-
-
 @media (width < 800px ){
     .nav{
         height: max-content;
@@ -77,14 +75,22 @@
 }
 
 @media (width < 450px){
+    
     .nav .nav-links .sub-link{
         font-size: 18px;
         padding: 10px;
     } 
-    
+
+    .nav{
+        width: 95.5%;
+    }
 }
 
 @media (width < 350px) {
+
+    .nav{
+        width: 94%;
+    }
 
     .nav .logo{
         font-size: 21px;

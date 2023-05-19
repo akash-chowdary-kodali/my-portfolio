@@ -2,7 +2,6 @@ import React from "react";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
 
-
 function NavBar() {
   return (
     <>
@@ -11,7 +10,7 @@ function NavBar() {
       <div className="nav">
         <p className="logo">Akash Chowdary Kodali</p>
 
-        <div className="nav-links">
+        <ul className="nav-links">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -44,7 +43,7 @@ function NavBar() {
           >
             Education
           </NavLink>
-        </div>
+        </ul>
       </div>
     </>
   );
