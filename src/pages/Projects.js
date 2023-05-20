@@ -59,7 +59,7 @@ export const Projects = () => {
               src={WhatsappImg}
               width={450}
               className="project-img whatsapp-img"
-              alt="Weather Application"
+              alt="WhatsApp Clone"
             />
           </a>
         </div>
