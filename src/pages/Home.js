@@ -53,7 +53,7 @@ export const Home = () => {
             <p>
               <a
                 href={Resume}
-                className="dbutton link"
+                className="dbutton"
                 target="_blank"
                 rel="noreferrer"
               >

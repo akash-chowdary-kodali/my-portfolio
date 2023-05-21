@@ -26,7 +26,7 @@ export const Projects = () => {
             </div>
           </div>
           <a
-            href="https://github.com/akodali9/weather_application"
+            href="https://akodali9.github.io/weather_application/"
             target="_blank"
             rel="noreferrer"
           >

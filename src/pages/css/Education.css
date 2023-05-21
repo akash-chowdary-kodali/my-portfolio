@@ -105,6 +105,24 @@
     }
 }
 
+@media (width < 500px){
+
+    .timeline-item{
+        width: 90%;
+    }
+    .timeline-date{
+        font-size: 26px;
+    }
+
+    .timeline-content h3{
+        font-size: 28px;
+    }
+
+    .timeline-content p{
+        font-size: 23px;
+    }
+}
+
 @media (width < 300px){
 
     .timeline-item{

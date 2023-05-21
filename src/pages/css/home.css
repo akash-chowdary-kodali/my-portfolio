@@ -63,6 +63,8 @@
     transition: 1s;
     color: #d8cfc0;
     font-size: 35px;
+    padding-bottom: 4px;
+    border-bottom-style: solid;
 }
 
 .main .links p{
@@ -70,6 +72,9 @@
 }
 
 .main .links p .dbutton{
+    font-size: 28px;
+    text-decoration: none;
+    color: #fcfdfe;
     border-color: #d8cfc0;
     text-decoration: none;
     padding: 20px;
@@ -79,6 +84,9 @@
 }
 
 .main .links .dbutton:hover{
+    transition: 1s;
+    color: #d8cfc0;
+    font-size: 35px;
     box-shadow: 0 0 10px 5px  #d8cfc0;
 }
 
