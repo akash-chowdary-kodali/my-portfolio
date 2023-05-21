@@ -55,7 +55,7 @@
 
 .main .links .link{
     font-size: 30px;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #fcfdfe;
 }
 
@@ -63,8 +63,7 @@
     transition: 1s;
     color: #d8cfc0;
     font-size: 35px;
-    padding-bottom: 4px;
-    border-bottom-style: solid;
+    
 }
 
 .main .links p{
@@ -136,6 +135,7 @@
         font-size: 24px;
     }
 
+
     .main .details .top-block .profile-img{
         padding: 20px;
         width: 80%;
@@ -161,6 +161,14 @@
         }
     }
 
-    
+    @media (width < 300px) {
+        .main .details .link{
+            font-size: 18px;
+        }
+
+        .main .details .link:hover{
+            font-size: 21px;
+        }
+    }
 
 }
