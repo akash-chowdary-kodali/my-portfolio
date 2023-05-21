@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./nav-bar/nav";
-import { BrowserRouter, Routes,Route } from "react-router-dom";
+import { Routes,Route, HashRouter as Router } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 import { Skills } from "./pages/Skills";
@@ -9,15 +9,16 @@ import { Edu } from "./pages/Education";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route exact path = "/" element = {<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
           <Route path="/Projects" element={<Projects/>}/>
           <Route path="/Skills" element={<Skills/>}/>
           <Route path="/Education" element={<Edu/>}/>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

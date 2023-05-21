@@ -77,7 +77,19 @@
 @media (width < 450px){
     
     .nav .nav-links .sub-link{
-        font-size: 18px;
+        font-size: 21px;
+        padding: 10px;
+    } 
+
+    .nav{
+        width: 95.5%;
+    }
+}
+
+@media (width < 390px){
+    
+    .nav .nav-links .sub-link{
+        font-size: 19px;
         padding: 10px;
     } 
 
