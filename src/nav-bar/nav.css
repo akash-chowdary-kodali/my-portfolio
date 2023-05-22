@@ -4,7 +4,7 @@
 }
 
 .nav{
-    background-color: #171717;
+    background-color: #1b1c1e;
     display: flex;
     justify-content: space-around; 
     font-weight: 500;
@@ -12,7 +12,6 @@
     padding: 10px;
     top: 0; 
     position: fixed;
-    box-shadow: 0 0 10px 5px #b1afe1;
     z-index: 100;
 }
 
@@ -35,13 +34,14 @@
 }
 
 .nav .nav-links .sub-linkactive{
+    transition: 1s;
     color: #ddac58;
+    text-decoration: overline;
 }
 
 .nav .nav-links .sub-link:hover{
     transition: 1s;
     font-size: 25px;
-    color: #d8cfc0;
 }   
 
 @media (width < 800px ){
