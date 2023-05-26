@@ -1,20 +1,10 @@
 import EmailLink from "../pages/assests/imgs/email.png";
 import Githublink from "../pages/assests/imgs/github.png";
 import LinkedInlink from "../pages/assests/imgs/linkedin.png";
-import { Home } from "../pages/Home";
-import { Projects } from "../pages/Projects";
-import { Skills } from "../pages/Skills";
-import { Edu } from "../pages/Education";
+
 // import {Link} from "react-scroll";
 import "./left-nav.css";
 
-const handleClickScroll = (idname) => {
-    const element = document.getElementById(idname);
-    if (element) {
-      // 👇 Will scroll smoothly href the hrefp of the next section
-      element.scrollIntoView({behavior: 'smooth'});
-    }
-  };
 
 
 export function Leftnav() {
@@ -22,17 +12,17 @@ export function Leftnav() {
     <>
       <div className="left-navbar">
         <div className="Links">
-          <a href={handleClickScroll("home")}>
-            01
+          <a href={"#home"}>
+            0.1
           </a>
-          <a href={handleClickScroll("projects")}>
-            02
+          <a href={"#projects"}>
+            0.2
           </a>
-          <a href={handleClickScroll("skills")}>
-            03
+          <a href={"#skills"}>
+            0.3
           </a>
-          <a href={handleClickScroll("edu")}>
-            04
+          <a href={"#edu"}>
+            0.4
           </a>
         </div>
         <div className="social-Links">
@@ -59,18 +49,7 @@ export function Leftnav() {
           </a>
         </div>
       </div>
-      <section id="home">
-        <Home />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-      <section id="edu">
-        <Edu />
-      </section>
+      
     </>
   );
 }
