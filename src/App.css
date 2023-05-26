@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,700;1,400;1,700&display=swap');
 
+html{
+  scroll-behavior: smooth;  
+}
 
 body{
   background-color: #0f0f0f;
@@ -22,6 +25,6 @@ body{
   }
 
   ::-webkit-scrollbar-thumb{
-    background-color: #ddac58;
+    background-color: #9fadff;
     border-radius: 5px;
   }

@@ -2,10 +2,12 @@
 .left-navbar{
     background-color: #191919;
     left: 0;
+    bottom: 0;
     width: 80px;
     height: 100%;
     position: fixed;
     text-align: center;
+    z-index: 100;
 }
 
 .left-navbar .Links{

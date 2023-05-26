@@ -1,8 +1,12 @@
 import EmailLink from "../pages/assests/imgs/email.png";
 import Githublink from "../pages/assests/imgs/github.png";
 import LinkedInlink from "../pages/assests/imgs/linkedin.png";
+import { Home } from "../pages/Home";
+import { Projects } from "../pages/Projects";
+import { Skills } from "../pages/Skills";
+import { Edu } from "../pages/Education";
 
-// import {Link} from "react-scroll";
+// import {Link as LinkScroll} from "react-scroll/modules";
 import "./left-nav.css";
 
 
@@ -13,16 +17,16 @@ export function Leftnav() {
       <div className="left-navbar">
         <div className="Links">
           <a href={"#home"}>
-            0.1
+            01
           </a>
           <a href={"#projects"}>
-            0.2
+            02
           </a>
           <a href={"#skills"}>
-            0.3
+            03
           </a>
           <a href={"#edu"}>
-            0.4
+            04
           </a>
         </div>
         <div className="social-Links">
@@ -49,7 +53,18 @@ export function Leftnav() {
           </a>
         </div>
       </div>
-      
+      <section id="home">
+        <Home />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="edu">
+        <Edu />
+      </section>
     </>
   );
 }

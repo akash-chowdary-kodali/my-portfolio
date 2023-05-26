@@ -1,8 +1,20 @@
 import React from "react";
 import "./nav.css";
-import { NavLink } from "react-router-dom";
+import { NavLink as LinkNav } from "react-router-dom";
+import { Home } from "../pages/Home";
+import { Projects } from "../pages/Projects";
+import { Skills } from "../pages/Skills";
+import { Edu } from "../pages/Education";
 
 function NavBar() {
+  // const Homepage = () => {
+  //   const element = document.getElementById('edu');
+  //   if (element) {
+  //     // 👇 Will scroll smoothly to the top of the next section
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
+
   return (
     <>
       {/* TODO Increase size for larger width devices and scale it up for smaller ones */}
@@ -11,38 +23,56 @@ function NavBar() {
         <p className="logo">Akash Chowdary Kodali</p>
 
         <ul className="nav-links">
-          <NavLink
+          <LinkNav
             to="/"
+            onDurationChange={100}
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
             Home
-          </NavLink>
-          <NavLink
-            to="/Projects"
+          </LinkNav>
+          <LinkNav
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "sub-linkactive sub-link" : "sub-link"
+            }
+          >
+            Contact
+          </LinkNav>
+          
+          {/* <LinkNav
+            to= "/" onDurationChange={100}
+            className={({ isActive }) =>
+              isActive ? "sub-linkactive sub-link" : "sub-link"
+            }
+          >
+            Home
+          </LinkNav>
+          <LinkNav
+            to="/projects"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
             Projects
-          </NavLink>
-          <NavLink
+          </LinkNav>
+          <LinkNav
             to="/skills"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
             Skills
-          </NavLink>
-          <NavLink
-            to="/Education"
+          </LinkNav>
+          <LinkNav
+            to="/edu"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
             Education
-          </NavLink>
+          </LinkNav> */}
         </ul>
       </div>
     </>
