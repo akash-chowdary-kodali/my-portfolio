@@ -2,8 +2,8 @@ import React from "react";
 import "../pages/css/About.css";
 import Resume from "./assests/Resume.pdf";
 import myImg from "./assests/imgs/myImage.png";
-import github_icon from "./assests/icons/github.png";
-import LinkedIn_icon from "./assests/icons/linkedin.png";
+// import github_icon from "./assests/icons/github.png";
+// import LinkedIn_icon from "./assests/icons/linkedin.png";
 
 export const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Background.css";
 
-export const Skills = () => {
+export const Background = () => {
   return (
     <>
       <div className="skillsbody">

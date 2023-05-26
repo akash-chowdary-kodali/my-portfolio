@@ -20,7 +20,7 @@ function NavBar() {
             About
           </NavLink>
           <NavLink
-            to="/Projects"
+            to="/expertise"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }

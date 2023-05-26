@@ -4,7 +4,7 @@ import Weatherimg from "./assests/imgs/WeatherApp.png";
 import WhatsappImg from "./assests/imgs/WhatsappClone.png";
 import SalesforceinternImg from "./assests/imgs/salesforce-developer-intern-certificate.png";
 
-export const Projects = () => {
+export const Expertise = () => {
   return (
     <div className="projectbody">
       <div className="mainp">
