@@ -7,12 +7,13 @@
 
 .main{
     color: #fcfdfe;
-    margin: 100px auto;
+    margin: 0px auto;
     /* margin-top: 20%; */
     /* padding: 0px 0px 100px 0px; */
     max-width: 1000px;
     
 }
+
 
 .main .details{
     min-height: 50vh;
@@ -49,7 +50,8 @@
 
 .main .link-heading{
     font-size: 40px;
-    color: #ddac58;
+    /* color: #ddac58; */
+    color: #8693dd;
     text-decoration: overline;
 }
 
@@ -88,7 +90,6 @@
     font-size: 35px;
     box-shadow: 0 0 10px 5px  #d8cfc0;
 }
-
 
 @media (width < 1000px){
 

@@ -23,7 +23,7 @@ export const Home = () => {
             />
           </div>
           <div className="links">
-            <p className="link-heading">Connect</p>
+            {/* <p className="link-heading">Connect</p>
             <p>
               <a href="mailto:akashkodali6@gmail.com" className="link">
                 Email: akashkodali6@gmail.com
@@ -49,7 +49,7 @@ export const Home = () => {
                 Github
               </a>
             </p>
-            <br />
+            <br /> */}
             <p>
               <a
                 href={Resume}
