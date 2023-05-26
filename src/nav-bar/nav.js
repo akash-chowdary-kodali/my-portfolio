@@ -17,7 +17,7 @@ function NavBar() {
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
-            Home
+            About
           </NavLink>
           <NavLink
             to="/Projects"
@@ -25,7 +25,7 @@ function NavBar() {
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
-            Projects
+            Expertise
           </NavLink>
           <NavLink
             to="/skills"
@@ -33,16 +33,16 @@ function NavBar() {
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
-            Skills
+            Background
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/Education"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
             }
           >
             Education
-          </NavLink>
+          </NavLink> */}
         </ul>
       </div>
     </>

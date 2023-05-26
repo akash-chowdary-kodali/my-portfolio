@@ -1,13 +1,44 @@
 import React from "react";
-import "../pages/css/projects.css";
+import "../pages/css/Expertise.css";
 import Weatherimg from "./assests/imgs/WeatherApp.png";
 import WhatsappImg from "./assests/imgs/WhatsappClone.png";
+import SalesforceinternImg from "./assests/imgs/salesforce-developer-intern-certificate.png";
 
 export const Projects = () => {
   return (
     <div className="projectbody">
       <div className="mainp">
-        <p className="headingp">RECENT</p>
+        <p className="headingp">Work Experience</p>
+        <div className="Work-Exeperince">
+          <div className="project">
+            <div className="project-details">
+              <p className="title">Salesforce Developer Intern</p>
+              <div className="desc">
+                <p>
+                  During my internship, I had the opportunity of Learning,
+                  Developing and maintaining Salesforce applications.
+                    Staying up-to-date on the latest Salesforce features and
+                    trends present in the market.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://smartinternz.com/internships/salesforce_certificates/45c7a284efa7d07f7bb5c9afb3080ffd"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={SalesforceinternImg}
+                width={750}
+                className="expertise-img"
+                alt="Weather Application"
+              />
+            </a>
+          </div>
+          <br />
+          <br />
+        </div>
+        <p className="headingp">Projects</p>
         <div className="project">
           <div className="project-details">
             <p className="title">Weather Application</p>
@@ -33,7 +64,7 @@ export const Projects = () => {
             <img
               src={Weatherimg}
               width={750}
-              className="project-img"
+              className="expertise-img"
               alt="Weather Application"
             />
           </a>
@@ -58,7 +89,7 @@ export const Projects = () => {
             <img
               src={WhatsappImg}
               width={450}
-              className="project-img whatsapp-img"
+              className="expertise-img whatsapp-img"
               alt="WhatsApp Clone"
             />
           </a>

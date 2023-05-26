@@ -29,6 +29,7 @@
 
 .nav .nav-links .sub-link{
     text-decoration: none;
+    /* text-transform: uppercase; */
     color: #fdfcfe;
     padding:15px 15px;
 }
@@ -36,7 +37,7 @@
 .nav .nav-links .sub-linkactive{
     transition: 1s;
     color: #ddac58;
-    text-decoration: overline;
+    /* text-decoration: overline; */
 }
 
 .nav .nav-links .sub-link:hover{

@@ -1,7 +1,9 @@
 import React from "react";
-import "../pages/css/home.css";
+import "../pages/css/About.css";
 import Resume from "./assests/Resume.pdf";
 import myImg from "./assests/imgs/myImage.png";
+import github_icon from "./assests/icons/github.png";
+import LinkedIn_icon from "./assests/icons/linkedin.png";
 
 export const Home = () => {
   return (
@@ -26,7 +28,8 @@ export const Home = () => {
             <p className="link-heading">Connect</p>
             <p>
               <a href="mailto:akashkodali6@gmail.com" className="link">
-                Email: akashkodali6@gmail.com
+                {/* <img src={email_icon} width={50} alt="LinkedIn Link"/>   */}
+                akashkodali6@gmail.com
               </a>
             </p>
             <p>
@@ -36,7 +39,8 @@ export const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Linkedin
+                {/* <img src={LinkedIn_icon} width={25} alt="LinkedIn Link"/> */}
+                LinkedIn
               </a>
             </p>
             <p>
@@ -46,6 +50,7 @@ export const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+                {/* <img src={github_icon} width={60} alt="Github Link"/> */}
                 Github
               </a>
             </p>

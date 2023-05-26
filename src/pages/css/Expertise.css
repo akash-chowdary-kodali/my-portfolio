@@ -28,6 +28,11 @@
     display: flex;
 }
 
+.mainp .Work-Exeperince{
+    margin: 50px 0px 100px 0px;
+    font-size: 24px;
+}
+
 .mainp .project .title{
     font-size: 30px;
     font-weight: 500;
@@ -41,17 +46,18 @@
 
 .mainp .project .project-details .desc{
     margin-top: 20px;
+    font-size: 24px;
     /* font-style: italic; */
 }
 
-.mainp .project .project-img{
+.mainp .project .expertise-img{
     padding: 1px;
     border-radius: 10px;
     background-color: #adaaaa;
     box-shadow: 0 0 5px 1px #d8d8d8;
 }
 
-.mainp .project .project-img:hover{
+.mainp .project .expertise-img:hover{
     transition: 1s;
     box-shadow: 0px 0px 20px 5px #abcff0;
 }
@@ -61,7 +67,7 @@
         display: block;
     }
 
-    .mainp .project .project-img{
+    .mainp .project .expertise-img{
         padding: 0.5px;
         width: 90%;
         height: auto;
