@@ -18,6 +18,8 @@ export const Background = () => {
             <p>HTML</p>
             <p>CSS</p>
             <p>JavaScript</p>
+            <p>Oracle SQL</p>
+            <p>Firebase</p>
             <p> Git </p>
             <p> GitHub </p>
             <p> Visual Studio Code </p>
