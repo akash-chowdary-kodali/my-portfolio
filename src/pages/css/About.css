@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow: auto;
+    
 }
 
 .main{
@@ -157,7 +158,7 @@
         }
 
         .main .link-heading{
-            font-size: 25px;
+            /* font-size: 25px; */
         }
     }
 

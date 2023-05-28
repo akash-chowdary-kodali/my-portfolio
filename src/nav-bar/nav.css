@@ -23,7 +23,7 @@
 
 .nav-links{
     display: flex;
-    font-size: 20px;
+    font-size: 23px;
     /* margin-left: 10px; */
 }
 
@@ -42,7 +42,7 @@
 
 .nav .nav-links .sub-link:hover{
     transition: 1s;
-    font-size: 25px;
+    font-size: 26px;
 }   
 
 @media (width < 800px ){
