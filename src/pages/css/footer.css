@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+.footer{
+    border-top:3px solid;
+    padding: 10px;
+    color: #5c6bc0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .name{
+    font-size: 24px;
+}
+
+.footer .footer-links a{
+    margin-right: 2vh;
+}
+
+.footer .footer-links a img:hover{
+    transition: 1s;
+    transform:scale(1.5);
+}
+
+@media (width < 500px){
+    .footer{
+        display: block;
+        text-align: center;
+    }
+
+    .name{
+        padding-bottom: 5px;
+    }
+}

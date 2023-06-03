@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/Background.css";
+import { Footer } from "./footer";
 
 export const Background = () => {
   return (
@@ -70,6 +71,7 @@ export const Background = () => {
           </div>
         </section>
       </div>
+      <Footer/>
     </>
   );
 };
