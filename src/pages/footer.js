@@ -1,35 +1,38 @@
 import React from "react";
 import "./css/footer.css";
 import githubIcon from "./assests/icons/github.png";
-import mailIcon from "./assests/icons/envelope.png";
+import mailIcon from "./assests/icons/email.png";
 import linkedinIcon from "./assests/icons/linkedin.png";
 
 export const Footer = () => {
   return (
     <>
     <div className="footer">
-      <p className="name">Akash Chowdary Kodali</p>
+      <p className="name">Connect here {";)"}</p>
       <div className="footer-links">
         <a
           href="mailto:akashkodali6@gmail.com"
           rel="noreferrer"
           target="_blank"
+          className="footer-link"
         >
-          <img src={mailIcon} height={30} alt="mail icon" />
+          <img src={mailIcon} height={30} alt="mail icon" className="footericon" />
         </a>
         <a
           href="https://www.github.com/akodali9"
           rel="noreferrer"
           target="_blank"
+          className="footer-link"
         >
-          <img src={githubIcon} height={30} alt="github icon" />
+          <img src={githubIcon} height={30} alt="github icon" className="footericon" />
         </a>
         <a
-          href="https://www.linkedin.com/in/akash-chowdary-kodali-885aa5240/"
+          href="https://www.linkedin.com/in/akash-chowdary-kodali-885aa5230/"
           rel="noreferrer"
           target="_blank"
+          className="footer-link"
         >
-          <img src={linkedinIcon} height={30} alt="Linkedin icon" />
+          <img src={linkedinIcon} height={30} alt="Linkedin icon" className="footericon" />
         </a>
       </div>
     </div>

@@ -29,12 +29,12 @@
 }
 
 .main .details .profile-img{
-    width: 40%;
+    width: 35%;
     height: auto;
     display: block;
     /* padding: 20px; */
     margin: auto;
-    border-radius: 800px;
+    border-radius: 10px;
 }
 
 .main .details .top-block{
@@ -157,9 +157,9 @@
             font-size: 26px;
         }
 
-        .main .link-heading{
+        /* .main .link-heading{ */
             /* font-size: 25px; */
-        }
+        /* } */
     }
 
     @media (width < 300px) {
@@ -168,7 +168,7 @@
         }
 
         .main .details .link:hover{
-            font-size: 2    1px;
+            font-size: 21px;
         }
     }
 
