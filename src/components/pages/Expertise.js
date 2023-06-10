@@ -1,8 +1,8 @@
 import React from "react";
 import "../pages/css/Expertise.css";
-import Weatherimg from "./assests/imgs/WeatherApp.png";
-import WhatsappImg from "./assests/imgs/WhatsappClone.png";
-import SalesforceinternImg from "./assests/imgs/salesforce-developer-intern-certificate.png";
+import Weatherimg from "../../assets/imgs/WeatherApp.png";
+import WhatsappImg from "../../assets/imgs/WhatsappClone.png";
+import SalesforceinternImg from "../../assets/imgs/salesforce-developer-intern-certificate.png";
 import { Footer } from "./footer";
 
 export const Expertise = () => {

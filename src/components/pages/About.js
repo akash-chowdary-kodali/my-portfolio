@@ -1,12 +1,12 @@
 import React from "react";
 import "../pages/css/About.css";
-import Resume from "./assests/AkashKodali-Resume.pdf";
-import myImg from "./assests/imgs/myImage.jpg";
+import Resume from "../../assets/AkashKodali-Resume.pdf";
+import myImg from "../../assets/imgs/myImage.jpg";
 // import { Footer } from "./footer";
 // import github_icon from "./assests/icons/github.png";
 // import LinkedIn_icon from "./assests/icons/linkedin.png";
 
-export const Home = () => {
+export const About = () => {
   return (
     <div className="homebody">
       <div className="main">

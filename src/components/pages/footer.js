@@ -1,8 +1,8 @@
 import React from "react";
 import "./css/footer.css";
-import githubIcon from "./assests/icons/github.png";
-import mailIcon from "./assests/icons/email.png";
-import linkedinIcon from "./assests/icons/linkedin.png";
+import githubIcon from "../../assets/icons/github.png";
+import mailIcon from "../../assets/icons/email.png";
+import linkedinIcon from "../../assets/icons/linkedin.png";
 
 export const Footer = () => {
   return (
