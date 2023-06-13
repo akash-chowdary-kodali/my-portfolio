@@ -7,19 +7,44 @@ body{
   /* background-color: #1f1f24;   */
   /* background-color: #1d1c1c;   */
   /* background-color: #1d1d1d;   */
+  /* z-index: 1;
+  background:  linear-gradient(-45deg, #533b3b, #141223,#0c372d);
+  background-size: 400% 400%;
+  width: 100%;
+  animation: animate 10s ease infinite; */
+  
 }
 
-  ::-webkit-scrollbar{
+  /* ::-webkit-scrollbar{
     width: 8px;
     height: 10px;
     
-  }
+    
+  } */
 
-  ::-webkit-scrollbar-track{
-    background-color: transparent;
-  }
+  /* ::-webkit-scrollbar-track{ */
+    /* background-color: transparent; */
+    /* color-scheme: dark; */
+  /* } */
 
-  ::-webkit-scrollbar-thumb{
-    background-color: #847e75;
-    border-radius: 5px;
+  /* ::-webkit-scrollbar-thumb{ */
+    /* background-color: #847e75/ */
+    /* border-radius: 5px; */
+    
+  /* } */
+
+  :root {
+  color-scheme: dark;
+}
+
+/* @keyframes animate {
+  0%{
+    background-position: 0 50%;
+  } 
+  50%{
+    background-position: 100% 50%;
+  } 
+  100%{
+    background-position: 0 50%;
   }
+} */

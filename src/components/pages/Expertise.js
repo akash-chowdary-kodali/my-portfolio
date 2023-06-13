@@ -4,10 +4,16 @@ import Weatherimg from "../../assets/imgs/WeatherApp.png";
 import WhatsappImg from "../../assets/imgs/WhatsappClone.png";
 import SalesforceinternImg from "../../assets/imgs/salesforce-developer-intern-certificate.png";
 import { Footer } from "./footer";
+import {motion} from "framer-motion";
 
 export const Expertise = () => {
   return (
-    <div className="projectbody">
+    <motion.div initial={{ y: 25, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{
+      delay: 0.2,
+      duration: 0.75,
+    }}>
       <div className="mainp">
         <p className="headingp">Work Experience</p>
         <div className="Work-Exeperince">
@@ -97,6 +103,6 @@ export const Expertise = () => {
         </div>
       </div>
       <Footer/>
-    </div>
+    </motion.div>
   );
 };

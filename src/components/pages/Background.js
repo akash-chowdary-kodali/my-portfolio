@@ -1,10 +1,18 @@
 import React from "react";
 import "./css/Background.css";
 import { Footer } from "./footer";
+import { motion } from "framer-motion";
 
 export const Background = () => {
   return (
-    <>
+    <motion.div
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        duration: 0.75,
+      }}
+    >
       <div className="skillsbody">
         <div className="mainS">
           <p className="headingS">Skills</p>
@@ -32,7 +40,7 @@ export const Background = () => {
         </div>
       </div>
       <div className="edubody">
-      <p className="headingS">Education</p>
+        <p className="headingS">Education</p>
         <section className="timeline-section">
           <div className="timeline-items">
             <div className="timeline-item">
@@ -71,7 +79,7 @@ export const Background = () => {
           </div>
         </section>
       </div>
-      <Footer/>
-    </>
+      <Footer />
+    </motion.div>
   );
 };

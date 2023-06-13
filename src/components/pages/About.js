@@ -5,10 +5,18 @@ import myImg from "../../assets/imgs/myImage.jpg";
 // import { Footer } from "./footer";
 // import github_icon from "./assests/icons/github.png";
 // import LinkedIn_icon from "./assests/icons/linkedin.png";
+import { motion } from "framer-motion";
 
 export const About = () => {
   return (
-    <div className="homebody">
+    <motion.div
+    initial={{ y: 25, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{
+      delay: 0.2,
+      duration: 0.75,
+    }}
+    >
       <div className="main">
         <div className="details">
           <p className="greeting">Hello, I am Akash👋</p>
@@ -70,7 +78,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    
-    </div>
+    </motion.div>
   );
 };
