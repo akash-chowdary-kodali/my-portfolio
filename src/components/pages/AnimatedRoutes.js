@@ -9,7 +9,7 @@ export const AnimatedRoutes = () => {
   // eslint-disable-next-line
   // const pagelocation = useLocation();
   return (
-    <div>
+    <div id = "sectionscroll">
     <AnimatePresence mode="wait">
       <Routes  location={useLocation()} key={useLocation().pathname}>
         <Route exact path="/" element={<About />} />

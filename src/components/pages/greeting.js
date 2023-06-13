@@ -15,7 +15,7 @@ export const Greeting = () => {
       <div className="greeting-msg">
         <article>Namaste</article>
       </div>
-        <div onClick={ScrollSectionDown}class="down-arrow"></div>
+        <div onClick={ScrollSectionDown}className="down-arrow"></div>
     </div>
   );
 };

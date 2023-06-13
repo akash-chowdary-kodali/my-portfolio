@@ -1,29 +1,39 @@
 import React from "react";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
+import { ScrollSectionDown } from "../pages/greeting";
+import { useEffect } from "react";
 
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//     document.getElementById("navbar").style.padding = "10px";
-//     // document.getElementById("logo").style.fontSize = "25px";
-//   } else {
-//     document.getElementById("navbar").style.padding = "30px 10px";
-//     // document.getElementById("logo").style.fontSize = "35px";
-//   }
-// }
 
 function NavBar() {
+  const [scrolled,setScrolled]=React.useState(false);
+const handleScroll=() => {
+    const offset=window.scrollY;
+    if(offset > 200 ){
+      setScrolled(true);
+    }
+    else{
+      setScrolled(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll',handleScroll)
+  })
+let navbarClasses=['nav'];
+  if(scrolled){
+    navbarClasses.push('scrolled');
+  }
   return (
     <>
       {/* TODO Increase size for larger width devices and scale it up for smaller ones */}
       {/* TODO Add dropdown button and menu for easier access */}
-      <div className="nav" id = "navbar">
+      <div className="nav" id = "navigator">
         <p className="logo">Akash Chowdary Kodali</p>
 
         <div className="nav-links">
           <NavLink
+          onClick={ScrollSectionDown}
             to="/"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
@@ -32,6 +42,7 @@ function NavBar() {
             About
           </NavLink>
           <NavLink
+          onClick={ScrollSectionDown}
             to="/expertise"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"
@@ -40,6 +51,7 @@ function NavBar() {
             Expertise
           </NavLink>
           <NavLink
+          onClick={ScrollSectionDown}
             to="/skills"
             className={({ isActive }) =>
               isActive ? "sub-linkactive sub-link" : "sub-link"

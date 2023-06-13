@@ -1,23 +1,16 @@
-.mainbody{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: auto;
-    
-}
-
 .main{
     color: #fcfdfe;
-    margin: 100px auto;
+    margin: 50px auto;
+    /* margin-top: 200px; */
     /* margin-top: 20%; */
-    /* padding: 0px 0px 100px 0px; */
+    /* padding: 0px 0px 100px 0px;  */
     max-width: 1000px;
+    padding: 150px 5px;
     
 }
 
 .main .details{
     min-height: 50vh;
-    padding: 50px 5px;
 }
 
 
@@ -95,7 +88,7 @@
 
     .main{
         margin: 5%;
-        padding-top: 12vh;
+        /* padding-top: 12vh; */
     }
 
     .main .details .top-block{

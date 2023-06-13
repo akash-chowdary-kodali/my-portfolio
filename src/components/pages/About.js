@@ -7,7 +7,12 @@ import myImg from "../../assets/imgs/myImage.jpg";
 // import LinkedIn_icon from "./assests/icons/linkedin.png";
 import { motion } from "framer-motion";
 
+// const myDiv = document.getElementById('main');
+// // myDiv.innerHTML = variableLongText;
+// myDiv.scrollTop = 0;
+
 export const About = () => {
+  
   return (
     <motion.div
     initial={{ y: 25, opacity: 0 }}
@@ -17,7 +22,7 @@ export const About = () => {
       duration: 0.75,
     }}
     >
-      <div className="main">
+      <div className="main" id="main">
         <div className="details">
           <p className="greeting">Hello, I am Akash👋</p>
           <div className="top-block">

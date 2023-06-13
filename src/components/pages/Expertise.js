@@ -14,7 +14,7 @@ export const Expertise = () => {
       delay: 0.2,
       duration: 0.75,
     }}>
-      <div className="mainp">
+      <div className="mainp" id= "mainp">
         <p className="headingp">Work Experience</p>
         <div className="Work-Exeperince">
           <div className="project">

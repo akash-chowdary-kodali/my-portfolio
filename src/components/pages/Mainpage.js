@@ -1,7 +1,7 @@
 import NavBar from "../navbar/nav";
 import { AnimatedRoutes } from "./AnimatedRoutes";
 import { Greeting} from "./greeting";
-import {ScrollToTop} from "./scrolltoTop";
+import {ScrollToTop} from './scrolltoTop';
 
 export const MainPage = () => {
     return (
@@ -11,7 +11,7 @@ export const MainPage = () => {
             </section>
             <NavBar/>
             <section id = "afternav">
-            <ScrollToTop/>
+                <ScrollToTop/>
                 <AnimatedRoutes/>
             </section>
 

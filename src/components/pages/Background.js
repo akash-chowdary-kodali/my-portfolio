@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const Background = () => {
   return (
-    <motion.div
+    <motion.div 
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
@@ -13,7 +13,7 @@ export const Background = () => {
         duration: 0.75,
       }}
     >
-      <div className="skillsbody">
+      <div className="skillsbody" id="skillsbody">
         <div className="mainS">
           <p className="headingS">Skills</p>
           <div className="detailsS">
