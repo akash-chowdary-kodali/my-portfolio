@@ -13,7 +13,7 @@ export const Greeting = () => {
   return (
     <div className="center-greeting">
       <div className="greeting-msg">
-        <article>Namaste</article>
+        <article>Hello</article>
       </div>
         <div onClick={ScrollSectionDown}className="down-arrow"></div>
     </div>

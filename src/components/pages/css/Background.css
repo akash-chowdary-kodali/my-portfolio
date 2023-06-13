@@ -4,7 +4,8 @@
     margin: 50px auto;
     /* margin-top: 150px; */
     max-width: 1000px;
-    padding: 150px 15px;
+    padding: 0px 15px;
+    padding-top: 150px;
 }
 
 .mainS .headingS{
