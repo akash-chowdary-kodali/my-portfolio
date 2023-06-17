@@ -1,4 +1,4 @@
-import "./css/greeting.css";
+import "./greeting.css";
 
 export function ScrollSectionDown() {
   const scrollSection = document.getElementById("afternav");

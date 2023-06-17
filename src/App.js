@@ -1,7 +1,7 @@
 import "./App.css";
 import {React} from "react";
 // import NavBar from "./components/navbar/nav";
-import { AnimatedRoutes } from "./components/functions/AnimatedRoutes";
+import { AnimatedRoutes } from "./functions/AnimatedRoutes";
 import { HashRouter as Router} from "react-router-dom";
 function App() {
   

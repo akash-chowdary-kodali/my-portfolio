@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
-import { ScrollSectionDown } from "../pages/greeting";
+import { ScrollSectionDown } from "../greeting/greeting";
 // import $ from "jquery";
 
 

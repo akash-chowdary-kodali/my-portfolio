@@ -1,15 +1,8 @@
 import React from "react";
 import "../pages/css/About.css";
-import Resume from "../../assets/AkashKodali-Resume.pdf";
-import myImg from "../../assets/imgs/myImage.jpg";
-// import { Footer } from "./footer";
-// import github_icon from "./assests/icons/github.png";
-// import LinkedIn_icon from "./assests/icons/linkedin.png";
+import Resume from "../assets/AkashKodali-Resume.pdf";
+import myImg from "../assets/imgs/myImage.jpg";
 import { motion } from "framer-motion";
-
-// const myDiv = document.getElementById('main');
-// // myDiv.innerHTML = variableLongText;
-// myDiv.scrollTop = 0;
 
 export const About = () => {
   

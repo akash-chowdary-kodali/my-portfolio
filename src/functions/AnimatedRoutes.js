@@ -4,8 +4,8 @@ import { About } from "../pages/About";
 import { Expertise } from "../pages/Expertise";
 import { Background } from "../pages/Background";
 import { AnimatePresence } from "framer-motion";
-import NavBar from "../navbar/nav";
-import { Greeting} from "../pages/greeting";
+import NavBar from "../components/navbar/nav";
+import { Greeting} from "../components/greeting/greeting";
 // import {ScrollToTop} from './scrolltoTop';
 
 export const AnimatedRoutes = () => {

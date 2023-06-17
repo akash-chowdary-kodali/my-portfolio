@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/footer.css";
+import "./footer.css";
 import githubIcon from "../../assets/icons/github.png";
 import mailIcon from "../../assets/icons/email.png";
 import linkedinIcon from "../../assets/icons/linkedin.png";
