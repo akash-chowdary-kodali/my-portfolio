@@ -1,85 +1,49 @@
 import React from "react";
 import "./css/Background.css";
-import { Footer } from "../components/footer/footer";
+// import { Footer } from "../components/footer/footer";
 import { motion } from "framer-motion";
 
-export const Background = () => {
+export const Skills = () => {
   return (
-    <motion.div 
-      initial={{ y: 25, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        delay: 0.2,
-        duration: 0.75,
-      }}
-    >
+    // motion.
+    // <div
+    // initial={{ y: 25, opacity: 0 }}
+    // animate={{ y: 0, opacity: 1 }}
+    // transition={{
+    //   delay: 0.2,
+    //   duration: 0.75,
+    // }}
+    // >
       <div className="skillsbody" id="skillsbody">
         <div className="mainS">
-          <p className="headingS">Skills</p>
+          <p className="headingS">
+            I like to code things from scratch, and enjoy bringing ideas to life
+            in your devices.
+          </p>
           <div className="detailsS">
-            <p>Flutter</p>
-            <p>React JS</p>
-            <p>C</p>
-            <p> Python</p>
-            <p>Java</p>
-            <p>Dart</p>
-            <p>R</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>Oracle SQL</p>
-            <p>Firebase</p>
-            <p> Git </p>
-            <p> GitHub </p>
-            <p> Visual Studio Code </p>
-            <p> Eclipse </p>
-            <p>PyCharm </p>
-            <p>Figma</p>
-            <p>Word</p>
+            <ul className="sub-detailsS">
+              <article>Languages i speak</article>
+              <li>Flutter</li> <li>React JS</li> <li>C</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>R</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <br />
+            <ul className="sub-detailsS">
+              <article>Dev Tools</article>
+              <li>Oracle SQL</li>
+              <li>Firebase</li>
+              <li> Git </li>
+              <li> GitHub </li>
+              <li> Visual Studio Code </li>
+              <li>Figma</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div className="edubody">
-        <p className="headingS">Education</p>
-        <section className="timeline-section">
-          <div className="timeline-items">
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-date">2020 - 2024</div>
-              <div className="timeline-content">
-                <h3>
-                  GITAM Deemed to be university
-                  <br />
-                  <sub>Visakhapatnam, India</sub>
-                </h3>
-                <p>Computer Science and Engineering</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-date">2018 - 2020</div>
-              <div className="timeline-content">
-                <h3>
-                  Narayana Junior college <sub>Vijayawada, India</sub>
-                </h3>
-                <p>+1 & +2</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-date">2018</div>
-              <div className="timeline-content">
-                <h3>
-                  veeramachaneni siddhartha public school{" "}
-                  <sub>Vijayawada, India</sub>
-                </h3>
-                <p>10th Standard</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <Footer />
-    </motion.div>
+    // </div>
   );
 };

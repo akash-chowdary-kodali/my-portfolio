@@ -1,58 +1,54 @@
 import React from "react";
 import "./nav.css";
-import { NavLink } from "react-router-dom";
-import { ScrollSectionDown } from "../greeting/greeting";
-// import $ from "jquery";
+import favicon from '../../assets/icons/favicon.png'
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
+// import $ from "jquery";
 
 function NavBar() {
   return (
-    <>
-      {/* TODO Increase size for larger width devices and scale it up for smaller ones */}
-      {/* TODO Add dropdown button and menu for easier access */}
+    <div>
       <div className="nav" id="navigator">
-        <p className="logo">Akash Chowdary Kodali</p>
+        {/* <a href="https://akodali9.github.io/my-portfolio/"><img src={favicon} height={} alt = "logo" className="logo"/></a> */}
 
         <div className="nav-links">
-          <NavLink
-            onClick={ScrollSectionDown}
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "sub-linkactive sub-link" : "sub-link"
-            }
+          <Link
+            smooth
+            spy
+            to="about"
+            className="sub-link"
+            activeClass="sub-linkactive"
+            offset={-70}
+            duration={1000}
           >
             About
-          </NavLink>
-          <NavLink
-            onClick={ScrollSectionDown}
-            to="/expertise"
-            className={({ isActive }) =>
-              isActive ? "sub-linkactive sub-link" : "sub-link"
-            }
+          </Link>
+          <Link
+            smooth
+            spy
+            to="expertise"
+            className="sub-link"
+            activeClass="sub-linkactive"
+            offset={-70}
+            duration={1000}
           >
             Expertise
-          </NavLink>
-          <NavLink
-            onClick={ScrollSectionDown}
-            to="/skills"
-            className={({ isActive }) =>
-              isActive ? "sub-linkactive sub-link" : "sub-link"
-            }
+          </Link>
+          <Link
+            smooth
+            spy
+            to="skills"
+            activeClass="sub-linkactive"
+            className="sub-link"
+            offset={-70}
+            duration={1000}
           >
             Background
-          </NavLink>
-          {/* <NavLink
-            to="/Education"
-            className={({ isActive }) =>
-              isActive ? "sub-linkactive sub-link" : "sub-link"
-            }
-          >
-            Education
-          </NavLink> */}
+          </Link>
         </div>
-        
       </div>
-    </>
+    </div>
   );
 }
 

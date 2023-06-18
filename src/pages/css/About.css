@@ -1,11 +1,7 @@
 .main{
-    color: #fcfdfe;
-    margin: 50px auto;
-    /* margin-top: 200px; */
-    /* margin-top: 20%; */
-    /* padding: 0px 0px 100px 0px;  */
+    margin: auto;
+    padding-top: 100px;
     max-width: 1000px;
-    padding: 150px 5px 50px;
 }
 
 .main .details{
@@ -13,27 +9,38 @@
 }
 
 
-.main .details .greeting{
-    font-size: 45px;
-    font-style: normal;
-    margin-bottom: 50px;
-    font-weight: 500;
+.main .details .profile-img{
+    width: 30%;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    margin: 20px auto;
 }
 
-.main .details .profile-img{
-    width: 35%;
-    height: auto;
-    display: block;
-    /* padding: 20px; */
-    margin: auto;
-    border-radius: 10px;
-}
 
 .main .details .top-block{
-    font-size: 30px;
-    font-weight: 400;
-    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main .details .top-block .title{
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0px 0;
+    color: #d0cdf8;
+}
+
+.main .details .intro-block{
+    margin: 50px auto;
+    font-size: 26px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .details .intro-block .name{
+    font-size: 27px;
+    font-weight: 600;
 }
 
 .main .links{
@@ -42,14 +49,17 @@
 
 .main .link-heading{
     font-size: 40px;
-    color: #ddac58;
+    color: #958dff;
     text-decoration: overline;
 }
 
 .main .links .link{
     font-size: 30px;
-    /* text-decoration: none; */
-    color: #fcfdfe;
+    text-decoration: none;
+    color: #fafafa;
+    /* border: 2px solid; */
+    /* border-radius: 20px; */
+    /* padding: 10px; */
 }
 
 .main .links .link:hover{
@@ -66,7 +76,7 @@
 .main .links p .dbutton{
     font-size: 28px;
     text-decoration: none;
-    color: #fcfdfe;
+    color: #fafafa;
     border-color: #d8cfc0;
     text-decoration: none;
     padding: 20px;
@@ -90,9 +100,12 @@
         /* padding-top: 12vh; */
     }
 
+    .main .details .intro-block .profile-img{
+        max-width: 80%;
+    }
     .main .details .top-block{
-        display: block;
-        font-size: 30px;
+        width: 100%;
+        /* font-size: 30px; */
     }
 
     .main .details .link{
@@ -107,24 +120,34 @@
         font-size: 28px;
     }
 
-    .main .details .top-block .profile-img{
+    .main .details .intro-block .profile-img{
         padding: 20px 0px;
         width: 60%;
     }
 }
 
+@media (width < 800px) {
+    
+    .main .details .intro-block{
+        display: block;
+    }
+
+    .main .details .intro-block .profile-img{
+        width: 80%;
+    }
+}
+
 @media (width < 600px){
 
-
-    .main .details .greeting{
-        font-size: 35px;
+    .main .details.top-block .greeting{
+        font-size: 30px;
     }
 
     /* .main{
         padding-top: 20vh;
     } */
 
-    .main .details .top-block{
+    .main .details .intro-block{
         font-size: 24px;
     }
 
@@ -136,7 +159,7 @@
 
     @media (width < 400px) {
 
-        .main .details .greeting{
+        .main .details .top-block .greeting{
             font-size: 30px;
         }
 
@@ -155,6 +178,10 @@
     }
 
     @media (width < 300px) {
+
+        .greeting{
+            font-size: 20px;
+        }
         .main .details .link{
             font-size: 18px;
         }

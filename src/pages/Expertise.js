@@ -3,7 +3,7 @@ import "../pages/css/Expertise.css";
 import Weatherimg from "../assets/imgs/WeatherApp.png";
 import WhatsappImg from "../assets/imgs/WhatsappClone.png";
 import SalesforceinternImg from "../assets/imgs/salesforce-developer-intern-certificate.png";
-import { Footer } from "../components/footer/footer";
+// import { Footer } from "../components/footer/footer";
 import {motion} from "framer-motion";
 
 export const Expertise = () => {
@@ -102,7 +102,6 @@ export const Expertise = () => {
           </a>
         </div>
       </div>
-      <Footer/>
     </motion.div>
   );
 };
