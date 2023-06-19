@@ -1,6 +1,6 @@
 import React from "react";
 import "../pages/css/About.css";
-import Resume from "../assets/AkashKodali-Resume.pdf";
+// import Resume from "../assets/AkashKodali-Resume.pdf";
 import myImg from "../assets/imgs/_3c33bcaf-3327-4704-bdd2-2c6aed19ec9c.jpeg";
 
 export const About = () => {

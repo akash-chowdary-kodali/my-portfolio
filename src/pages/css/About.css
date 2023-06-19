@@ -5,7 +5,7 @@
 }
 
 .main .details{
-    min-height: 50vh;
+    /* min-height: 50vh; */
 }
 
 
@@ -14,7 +14,7 @@
     height: auto;
     margin: auto;
     border-radius: 50%;
-    margin: 20px auto;
+    padding: 20px auto;
 }
 
 
@@ -26,16 +26,18 @@
 .main .details .top-block .title{
     font-size: 45px;
     font-weight: 600;
-    margin: 0px 0;
     color: #d0cdf8;
 }
 
 .main .details .intro-block{
     margin: 50px auto;
-    font-size: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main .details .intro-block p{
+    font-size: 26px;
 }
 
 .main .details .intro-block .name{
