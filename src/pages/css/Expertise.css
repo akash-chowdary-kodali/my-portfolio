@@ -50,7 +50,9 @@
 }
 
 .mainS .detailsS .sub-detailsS{
-    border: 3px solid;
+    /* border: 3px solid; */
+    background: #fafafa70;
+    border-radius: 10px;
     padding: 20px 10px;
     margin:10px 0px;
     width: 300px;
@@ -59,7 +61,7 @@
 
 .mainS .detailsS .sub-detailsS:hover{
     transition: 0.5s;
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .mainS .detailsS .sub-detailsS .sub-headingSkills{
@@ -76,4 +78,11 @@
     margin: auto;
     text-align: center;
     padding: 5px;
+}
+
+@media (width < 500px) {
+    .mainS .headingS{
+        font-size: 24px;
+    }
+
 }

@@ -3,10 +3,10 @@ import { React } from "react";
 // import { AnimatedRoutes } from "./functions/AnimatedRoutes";
 import { HashRouter as Router } from "react-router-dom";
 import { About } from "./pages/About";
-import { Expertise } from "./pages/Work";
-import { Background, Skills } from "./pages/Expertise";
+import { Skills } from "./pages/Expertise";
 
 import NavBar from "./components/navbar/nav";
+import { Projects } from "./pages/Projects";
 // import { Route } from "react-router-dom";
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Skills />
       </section>
       <section id="expertise">
-        {/* <Expertise /> */}
+        <Projects />
       </section>
     </div>
   );

@@ -1,6 +1,6 @@
 .main{
     margin: auto;
-    padding-top: 100px;
+    padding-top: 10vh;
     max-width: 1000px;
 }
 
@@ -8,9 +8,8 @@
     /* min-height: 50vh; */
 }
 
-
 .main .details .profile-img{
-    width: 30%;
+    width: 300px;
     height: auto;
     margin: auto;
     border-radius: 50%;
@@ -103,7 +102,7 @@
     }
 
     .main .details .intro-block .profile-img{
-        max-width: 80%;
+        width: 80%;
     }
     .main .details .top-block{
         width: 100%;
@@ -135,14 +134,19 @@
     }
 
     .main .details .intro-block .profile-img{
-        width: 80%;
+        display: block;
+        width: 60%;
     }
 }
 
 @media (width < 600px){
 
-    .main .details.top-block .greeting{
-        font-size: 30px;
+    .main .details .top-block .title{
+        font-size: 8.5vw;
+    }
+
+    .main .details .top-block{
+        font-size: 18px;
     }
 
     /* .main{
@@ -153,18 +157,32 @@
         font-size: 24px;
     }
 
+    .main .details .intro-block p{
+        font-size: 22px;
+    }
 
-    .main .details .top-block .profile-img{
+    .main .details .intro-block .name{
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+
+    .main .details .intro-block .profile-img{
         padding: 20px;
         width: 80%;
+        display: block;
     }
 
     @media (width < 400px) {
 
-        .main .details .top-block .greeting{
-            font-size: 30px;
+        .main .details .top-block .title{
+            font-size: 8.5vw;
+            line-height: 1.2;
         }
-
+    
+        .main .details .top-block{
+            font-size: 17px;
+        }
 
         .main .details .link{
             font-size: 24px;
@@ -181,9 +199,23 @@
 
     @media (width < 300px) {
 
-        .greeting{
-            font-size: 20px;
+        .main .details .top-block .title{
+            font-size: 24px;
         }
+    
+        .main .details .top-block{
+            font-size: 14px;
+        }
+
+        .main .details .intro-block p{
+            font-size: 19px;
+        }
+    
+        .main .details .intro-block .name{
+            font-size: 20px;    
+        }
+
+
         .main .details .link{
             font-size: 18px;
         }

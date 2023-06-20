@@ -1,7 +1,7 @@
 import React from "react";
 import "../pages/css/About.css";
 // import Resume from "../assets/AkashKodali-Resume.pdf";
-import myImg from "../assets/imgs/_3c33bcaf-3327-4704-bdd2-2c6aed19ec9c.jpeg";
+import myImg from "../assets/imgs/depositphotos_137014128-stock-illustration-user-profile-icon.jpg";
 
 export const About = () => {
   return (
@@ -18,6 +18,8 @@ export const About = () => {
               Hello👋, I am <span className="name">Akash.</span> Nice to meet you<br/>
               An aspiring Computer Science Engineer currently Working
               towards Web and mobile Application Development.
+
+
             </p>
             <img src={myImg} alt="Myprofile-img" className="profile-img" />
           </div>
