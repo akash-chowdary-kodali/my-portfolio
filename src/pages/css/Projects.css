@@ -1,5 +1,4 @@
 .works-wrapper{
-  background-color: #171d24;
   width: 100%;
   margin: auto;
   padding: 50px 0;
@@ -25,7 +24,7 @@
   background-color: #3d3c4240;
   margin: 10px;
   padding-bottom: 10px;
-  max-width: 500px;
+  max-width: 400px;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 10px;
@@ -39,8 +38,8 @@
 
 .card:hover .card__btn{
   transition: 0.5s;
-    background-color: #d3e5fe;
-    color: #1c184b;
+    background-color: #430d79;
+    /* color: #1c184b; */
   }
 
 .card__image{

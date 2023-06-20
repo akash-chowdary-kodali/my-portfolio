@@ -1,7 +1,7 @@
 import React from "react";
 import "../pages/css/About.css";
 // import Resume from "../assets/AkashKodali-Resume.pdf";
-import myImg from "../assets/imgs/depositphotos_137014128-stock-illustration-user-profile-icon.jpg";
+import myImg from "../assets/imgs/20220402.jpg";
 
 export const About = () => {
   return (
