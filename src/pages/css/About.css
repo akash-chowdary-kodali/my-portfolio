@@ -4,12 +4,12 @@
     max-width: 1000px;
 }
 
-.main .details{
+/* .main .details{
     min-height: 50vh;
-}
+} */
 
 .main .details .profile-img{
-    width: 40%;
+    max-width: 300px;
     height: auto;
     margin: auto;
     border-radius: 50%;
@@ -20,6 +20,11 @@
 .main .details .top-block{
     font-size: 24px;
     text-align: center;
+    font-weight: 500;
+}
+
+.main .details .top-block p{
+    padding-bottom: 5px;
 }
 
 .main .details .top-block .title{
@@ -119,11 +124,16 @@
 
     .main .details .intro-block .profile-img{
         padding: 20px 0px;
-        width: 70%;
+        /* width: 70%; */
     }
 }
 
 @media (width < 800px) {
+
+    .main .details .top-block .title{
+            /* font-size: 8.5vw; */
+            line-height: 1.1;
+        }
     
     .main .details .intro-block{
         display: block;
@@ -131,18 +141,14 @@
 
     .main .details .intro-block .profile-img{
         display: block;
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
 @media (width < 600px){
 
-    .main .details .top-block .title{
-        font-size: 8.5vw;
-    }
-
     .main .details .top-block{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     /* .main{
@@ -158,26 +164,21 @@
     }
 
     .main .details .intro-block .name{
-        font-size: 23px;
+        font-size: 24px;
         font-weight: 600;
     }
 
 
     .main .details .intro-block .profile-img{
-        padding: 20px;
-        width: 70%;
+        /* padding: 20px 0; */
+        /* width: 70%; */
         display: block;
     }
 
     @media (width < 400px) {
-
-        .main .details .top-block .title{
-            font-size: 8.5vw;
-            line-height: 1.2;
-        }
     
         .main .details .top-block{
-            font-size: 17px;
+            font-size: 20px;
         }
 
         .main .details .link{
@@ -188,27 +189,27 @@
             font-size: 26px;
         }
 
-        /* .main .link-heading{ */
-            /* font-size: 25px; */
-        /* } */
+        /* .main .details .intro-block p{
+            font-size: 22px;
+        }
+    
+        .main .details .intro-block .name{
+            font-size: 24px;    
+        } */
     }
 
     @media (width < 300px) {
 
+        .main .details .profile-img{
+            max-width: 250px;
+        }
+
         .main .details .top-block .title{
-            font-size: 24px;
+            font-size: 38px;
         }
     
         .main .details .top-block{
-            font-size: 14px;
-        }
-
-        .main .details .intro-block p{
-            font-size: 19px;
-        }
-    
-        .main .details .intro-block .name{
-            font-size: 20px;    
+            /* font-size: 18px; */
         }
 
 

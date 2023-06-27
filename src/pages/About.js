@@ -9,7 +9,7 @@ export const About = () => {
       <div className="main" id="main">
         <div className="details">
           <div className="top-block">
-            <p><article className="title">Frontend Developer.</article>
+            <p><p className="title">Frontend Developer.</p>
             I like to develop Good Interactive Applications</p>
           </div>
 

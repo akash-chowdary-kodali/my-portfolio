@@ -27,8 +27,8 @@ export const Skills = () => {
         <div className="detailsS">
           <div className="sub-detailsS">
             <div className="sub-headingSkills">
-              <img src={Desktopicon} alt="desktop icon" height={"65px"} />
-              <article>Software Development</article>
+              <img src={Desktopicon} alt="desktop icon"/>
+              <p>Software Development</p>
             </div>
 
             <p>
@@ -38,11 +38,11 @@ export const Skills = () => {
           </div>
           <div className="sub-detailsS">
             <div className="sub-headingSkills">
-              <img src={reacticon} alt="react icon" height={"65px"} />
-              <article>
+              <img src={reacticon} alt="react icon"/>
+              <p>
                 Frontend
                 Web Dev
-              </article>
+              </p>
             </div>
             <p>
               Passionate about UI/UX. Experience in React js, Express js, HTML,
@@ -51,10 +51,10 @@ export const Skills = () => {
           </div>
           <div className="sub-detailsS">
             <div className="sub-headingSkills">
-              <img src={Fluttericon} alt="flutter icon" height={"65px"} />
-              <article>
+              <img src={Fluttericon} alt="flutter icon"/>
+              <p>
                 Flutter Dev Android, iOS
-              </article>
+              </p>
             </div>
             <p>
               Experience in developing Cross-platfrorm applications using

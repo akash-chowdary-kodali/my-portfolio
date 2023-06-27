@@ -39,7 +39,6 @@
 .card:hover .card__btn{
   transition: 0.5s;
     background-color: #430d79;
-    /* color: #1c184b; */
   }
 
 .card__image{
