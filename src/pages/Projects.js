@@ -2,7 +2,6 @@ import React from "react";
 import "../pages/css/Projects.css";
 import Weatherimg from "../assets/imgs/WeatherApp.png";
 import WhatsappImg from "../assets/imgs/WhatsappClone.png";
-import SalesforceinternImg from "../assets/imgs/salesforce-developer-intern-certificate.png";
 // import { useState } from "react";
 // import { Footer } from "../components/footer/footer";
 // import { motion } from "framer-motion";
@@ -201,6 +200,7 @@ import SalesforceinternImg from "../assets/imgs/salesforce-developer-intern-cert
 
 export const Projects = () => {
   return (
+    <div className="proj-body">
     <div className="works-wrapper">
       <p className="works-heading">Recent Works</p>
       <div className="cards-work-container">
@@ -225,6 +225,7 @@ export const Projects = () => {
       </div>
       
     </div>
+    </div>
   );
 };
 
@@ -232,7 +233,7 @@ function Card(props) {
   return (
     <div className="card">
       <div className="card__body">
-        <img src={props.img} alt={"weather img"} className="card__image"/>
+        <img src={props.img} alt={"project img"} className="card__image"/>
         <p className="card__title">{props.title}</p>
         {/* <p className="card__description">{props.type}</p> */}
         <p className="card__description">{props.desc}</p>

@@ -1,3 +1,5 @@
+import "./css/edu.css"
+
 export const Edu= () => {
     return(
         <div className="edubody">

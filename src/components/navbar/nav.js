@@ -1,8 +1,8 @@
 import React from "react";
 import "./nav.css";
-import favicon from '../../assets/icons/favicon.png'
+import favicon from '../../assets/icons/Ak.png'
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 // import $ from "jquery";
 
@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <div>
       <div className="nav" id="navigator">
-        {/* <a href="https://akodali9.github.io/my-portfolio/"><img src={favicon} height={} alt = "logo" className="logo"/></a> */}
+        <a href="https://akodali9.github.io/my-portfolio/"><img src={favicon} alt = "logo" className="logo"/></a>
 
         <div className="nav-links">
           <Link
@@ -24,7 +24,7 @@ function NavBar() {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             smooth
             spy
             to="expertise"
@@ -34,17 +34,50 @@ function NavBar() {
             duration={1000}
           >
             Expertise
-          </Link>
+          </Link> */}
           <Link
             smooth
             spy
-            to="skills"
+            to="works"
             activeClass="sub-linkactive"
             className="sub-link"
             offset={-70}
             duration={1000}
           >
-            Background
+            Work
+          </Link>
+          <Link
+            smooth
+            spy
+            to="Experience"
+            activeClass="sub-linkactive"
+            className="sub-link"
+            offset={-70}
+            duration={1000}
+          >
+            Experience
+          </Link>
+          {/* <Link
+            smooth
+            spy
+            to="edu"
+            activeClass="sub-linkactive"
+            className="sub-link"
+            offset={-70}
+            duration={1000}
+          >
+            Edu
+          </Link> */}
+          <Link
+            smooth
+            spy
+            to="contact"
+            activeClass="sub-linkactive"
+            className="sub-link"
+            offset={-70}
+            duration={1000}
+          >
+            Contact
           </Link>
         </div>
       </div>

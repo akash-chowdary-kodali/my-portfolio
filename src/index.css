@@ -16,3 +16,11 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a8b2d190;
+}

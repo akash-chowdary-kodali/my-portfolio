@@ -1,21 +1,27 @@
+.proj-body{
+  min-height: 90vh;
+
+}
+
 .works-wrapper{
-  width: 100%;
+  max-width: 1400px;
   margin: auto;
-  padding: 50px 0;
+  
 }
 
 .works-wrapper .cards-work-container{
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   justify-content: space-evenly;
 }
 
 .works-wrapper .works-heading{
   text-align: center;
-  font-size: 36px;
+  font-size: clamp(30px, 9vw, 50px);
   font-weight: 500;
   color: #fff;
+  padding: 20px 0;
 }
 
 .card{
@@ -36,10 +42,11 @@
   transform: scale(1.02); 
 }
 
-.card:hover .card__btn{
-  transition: 0.5s;
-    background-color: #430d79;
-  }
+.card__btn:hover{
+  
+  transition: 0.3s ease-in;
+  box-shadow: 5px 5px 10px 2px #6ce0dc;
+  } 
 
 .card__image{
   max-height:100%; 
@@ -63,12 +70,12 @@
 
 .card__btn{
   margin: 10px;
-  color: #fafafa;
+  color: #6ce0dc;
   font-size: 18px;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: transparent;
   padding: 10px;
   text-decoration: none;
-  border: 2px solid #5f5c68;
+  border: 1.5px solid #6ce0dc;
 }

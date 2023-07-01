@@ -51,7 +51,7 @@ export const Skills = () => {
           </div>
           <div className="sub-detailsS">
             <div className="sub-headingSkills">
-              <img src={Fluttericon} alt="flutter icon"/>
+              <img src={Fluttericon} alt="flutter icon"x/>
               <p>
                 Flutter Dev Android, iOS
               </p>
