@@ -17,10 +17,10 @@ function App() {
       <NavBar />
       <section id="about">
         <About />
-        <Skills />
+        
       </section>
       <section id="expertise">
-        
+        <Skills />
       </section>
       <section id="works">
         <Projects />

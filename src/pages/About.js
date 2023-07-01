@@ -17,10 +17,8 @@ export const About = () => {
           <div className="intro-block">
             <div>
               <p className="name-block">
-                Hello, I am
-                <span className="name">
-                  {" "}Akash Kodali.{" "}
-                </span>
+                Hello<span class="wave">👋</span>, I am
+                <span className="name"> Akash. </span>
                 Nice to meet you
               </p>
               <p>
