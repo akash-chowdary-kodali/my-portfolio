@@ -9,15 +9,15 @@ export const About = () => {
         <div className="details">
           <div className="top-block">
             <p>
-              <p className="title">Frontend Developer.</p>I like to develop Good
-              Interactive Applications
+              <span className="title">Frontend Developer.</span>
+              <br />I like to develop Good Interactive Applications
             </p>
           </div>
 
           <div className="intro-block">
             <div>
               <p className="name-block">
-                Hello<span class="wave">👋</span>, I am
+                Hello<span className="wave">👋</span>, I am
                 <span className="name"> Akash. </span>
                 Nice to meet you
               </p>

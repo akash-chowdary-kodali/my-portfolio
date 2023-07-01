@@ -20,7 +20,7 @@
   text-align: center;
   font-size: clamp(30px, 9vw, 50px);
   font-weight: 500;
-  color: #fff;
+  color: #ccd6f6;
   padding: 20px 0;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .card:hover{
-  transition: 0.5s;
+  transition: 0.5s; 
   overflow: hidden;
   transform: scale(1.02); 
 }
@@ -59,7 +59,7 @@
   font-size: 26px;
   text-align: center;
   padding: 5px 0;
-  color: #fff;
+  color: #ccd6f6;
   font-weight: 500;
 }
 
@@ -77,5 +77,5 @@
   background-color: transparent;
   padding: 10px;
   text-decoration: none;
-  border: 1.5px solid #6ce0dc;
+  border: 2px solid #8e8b9a90;
 }

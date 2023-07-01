@@ -55,12 +55,13 @@ const ExpAccordion = ({ items, keepOthersOpen }) => {
       }),
     ]);
   }
+  
   return (
     <div className="accordion-parent">
       {accordionItems?.map((listItem, key) => {
         return (
           <div
-            className={`accordion ${listItem.toggled ? "toggled" : "" || listItem.id === 0? "toggled": ""}`}
+            className={`accordion ${listItem.toggled ? "toggled" : "" || (listItem.id === 0)?"toggled":"" }`}
             key={key}
           >
             <button
@@ -70,8 +71,8 @@ const ExpAccordion = ({ items, keepOthersOpen }) => {
               <p>{listItem.label}</p>
               {/* <p>{listItem.period}</p> */}
               <div className="direction-indicator">
-                {listItem.toggled ? <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>: 
-                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                {listItem.toggled ? <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>: 
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
                 }
               </div>
             </button>

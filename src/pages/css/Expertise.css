@@ -20,6 +20,7 @@
 
 .mainS .expertise{
     font-size: clamp(30px, 9vw, 50px);
+    color: #ccd6f6;
     /* color: #1c184b; */
     /* border-bottom: 5px solid; */
     text-align: center;
@@ -32,6 +33,7 @@
     font-size: 28px; 
     line-height: 1.2;
     color: #dbeaff;
+    color: #ccd6f6;
     font-weight: 600;
     padding-bottom: 20px;
 }
@@ -65,7 +67,7 @@
 
 .mainS .detailsS .sub-detailsS .sub-headingSkills{
     display: flex;
-    border-bottom: 3px solid #dbeaff;
+    border-bottom: 3px solid #ccd6f6;;
 }
 
 .mainS .detailsS .sub-detailsS .sub-headingSkills img{

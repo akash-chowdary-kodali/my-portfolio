@@ -42,6 +42,7 @@
     font-size: clamp(20px, 4vw, 30px);
     text-align: center;
     font-weight: 500;
+    color: #a8b2d1;
 }
 
 .main .details .top-block p{
