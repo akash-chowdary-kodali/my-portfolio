@@ -21,12 +21,16 @@ function NavBar() {
   });
 
   const handletoggle = () => {
-    console.log(toggle)
     settoggle(!toggle);
+    if (toggle===true){
+      document.querySelector(".nav").classList.add("body");
+    }else{
+      document.querySelector(".nav").classList.remove("body");
+    }
   };
   return (
     <div className={toggle ? "nav expanded" : "nav"} id="navigator">
-      <a href="https://akodali9.github.io/my-portfolio/">
+      <a href="www.akashkodali.studio">
         <img src={favicon} alt="logo" className="logo" />
       </a>
 
@@ -97,6 +101,7 @@ function NavBar() {
           <svg
             width="50px"
             height="50px"
+            className="icon"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

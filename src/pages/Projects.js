@@ -2,6 +2,7 @@ import React from "react";
 import "../pages/css/Projects.css";
 import Weatherimg from "../assets/imgs/WeatherApp.png";
 import WhatsappImg from "../assets/imgs/WhatsappClone.png";
+import PortfolioImg from "../assets/imgs/portfolio.jpeg";
 // import { useState } from "react";
 // import { Footer } from "../components/footer/footer";
 // import { motion } from "framer-motion";
@@ -201,30 +202,39 @@ import WhatsappImg from "../assets/imgs/WhatsappClone.png";
 export const Projects = () => {
   return (
     <div className="proj-body">
-    <div className="works-wrapper">
-      <p className="works-heading">Recent Works</p>
-      <div className="cards-work-container">
-      <Card
-        img={Weatherimg}
-        title={"Weather Application"}
-        desc={
-          "A Real-time weather Application. This was made possible by using HTML, CSS, REACT JS."
-        }
-        link = {"https://akodali9.github.io/weather_application/"}
-        type = {"Web Development"}
-      />
-      <Card
-        img={WhatsappImg}
-        title={"Whatsapp Clone"}
-        desc={
-          "This App is a Front-end clone of the major social platfrom Built Using Flutter Framework"
-        }
-        link= "https://github.com/akodali9/whatsappclone/"
-        type = "App Development"
-      />
+      <div className="works-wrapper">
+        <p className="works-heading">Recent Works</p>
+        <div className="cards-work-container">
+          <Card
+            img={PortfolioImg}
+            title={"Portfolio"}
+            desc={
+              "This is a portfolio website project that showcases my skills and experience as a developer built using the latest Technologies."
+            }
+            link={"https://akashkodali.studio"}
+            type={"Web Development"}
+          />
+
+          <Card
+            img={Weatherimg}
+            title={"Weather Application"}
+            desc={
+              "A Real-time weather Application which can be used to obtain real time data for particular locations."
+            }
+            link={"https://akodali9.github.io/weather_application/"}
+            type={"Web Development"}
+          />
+          <Card
+            img={WhatsappImg}
+            title={"Whatsapp Clone"}
+            desc={
+              "This App is a Front-end clone of the major social platfrom Built Using Flutter Framework"
+            }
+            link="https://github.com/akodali9/whatsappclone/"
+            type="App Development"
+          />
+        </div>
       </div>
-      
-    </div>
     </div>
   );
 };
@@ -233,12 +243,21 @@ function Card(props) {
   return (
     <div className="card">
       <div className="card__body">
-        <img src={props.img} alt={"project img"} className="card__image"/>
+        <a href={props.link} target="_blank" rel="noreferrer">
+          <img src={props.img} alt={"project img"} className="card__image" />
+        </a>
         <p className="card__title">{props.title}</p>
         {/* <p className="card__description">{props.type}</p> */}
         <p className="card__description">{props.desc}</p>
       </div>
-      <a target="_blank" rel="noreferrer" href={props.link} className="card__btn">View Project</a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={props.link}
+        className="card__btn"
+      >
+        View Project
+      </a>
     </div>
   );
 }

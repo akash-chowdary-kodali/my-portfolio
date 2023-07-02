@@ -27,7 +27,7 @@
 
 .nav .logo{
     height: 50px;
-    margin-left: 20px;
+    margin-left: 3rem;
 }
 
 .nav .toggle-icon{
@@ -36,21 +36,22 @@
 
 .nav-links{
     display: flex;
-    font-size: 16px;
-    margin-right: 40px;
+    font-size: 18px;
+    margin-right: 3rem;
     align-items: center;
 }
 
 .nav .nav-links .sub-link{
     text-decoration: none;
     font-weight: 600; 
-    margin: 10px;
+    margin: 10px 15px;
     cursor:grab;
     color: #a8b2d1;
 }
 
 .nav .nav-links .sub-link span{
     color: #6ce0dc;
+    display: none;
 }
 
 .nav .nav-links .sub-link:hover{
@@ -73,7 +74,13 @@
     }
 
     .nav .logo{
+        height: 50px;
         margin-left: 10px;
+    }
+
+    .nav .toggle-icon svg{
+        height: 50px;
+        width: 50px;
     }
 
     .nav-links{
@@ -82,11 +89,7 @@
 
     .nav.expanded{
         height: 100vh;
-        transition: 100vh 0.5s linear;    
-    }
-
-    .nav.expanded body{
-        overflow: hidden;
+        transition: 100vh 0.5s linear;
     }
 
     .nav.expanded .nav-links{
@@ -114,6 +117,18 @@
     } 
 
     
+}
+
+@media (width < 500px){
+    .nav .logo{
+        height: 45px;
+        margin-left: 10px;
+    }
+
+    .nav .toggle-icon svg{
+        height: 45px;
+        width: 45px;
+    }
 }
 
 @media (width < 350px) {

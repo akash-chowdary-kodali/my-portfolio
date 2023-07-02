@@ -1,12 +1,10 @@
-// import { useEffect } from "react";
-// import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
-export function ScrollToTop() {
-  // const { pathname } = useLocation();
+export function ScrollToTopEffect() {
 
-  // useEffect(() => {
-  //   window.scrollTo(0 ,0);
-  // }, [pathname]);
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+  });
 
   // const path = document.getElementById("afternav");
   // path.scrollIntoView();
