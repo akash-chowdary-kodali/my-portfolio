@@ -5,24 +5,23 @@ import favicon from "../../assets/icons/Ak.png";
 import { Link } from "react-scroll";
 import { useState } from "react";
 
-let prevScrollPos = window.scrollY;
-
-window.addEventListener("scroll", function () {
-  const currentScrollPos = window.scrollY;
-
-  if (prevScrollPos < currentScrollPos) {
-    document.querySelector(".nav").classList.add("hide");
-  } else {
-    document.querySelector(".nav").classList.remove("hide");
-  }
-
-  // update previous scroll position
-  prevScrollPos = currentScrollPos;
-});
 function NavBar() {
   const [toggle, settoggle] = useState(false);
 
+  let prevScrollPos = window.scrollY;
+
+  window.addEventListener("scroll", function () {
+    const currentScrollPos = window.scrollY;
+      if (prevScrollPos < currentScrollPos) {
+        document.querySelector(".nav").classList.add("hide");
+      } else {
+        document.querySelector(".nav").classList.remove("hide");
+      }
+    prevScrollPos = currentScrollPos;
+  });
+
   const handletoggle = () => {
+    console.log(toggle)
     settoggle(!toggle);
   };
   return (

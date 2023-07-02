@@ -82,7 +82,11 @@
 
     .nav.expanded{
         height: 100vh;
-        transition: 100vh 0.5s linear;
+        transition: 100vh 0.5s linear;    
+    }
+
+    .nav.expanded body{
+        overflow: hidden;
     }
 
     .nav.expanded .nav-links{

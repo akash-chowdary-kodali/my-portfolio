@@ -2,14 +2,14 @@
 
 .contact-main{
     background-color: hsla(0, 0%, 10%, 0.314);
-    min-height: 60vh;
+    /* min-height: 60vh; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .contact{
     max-width: 1200px;
-    margin: auto;
+    margin:50px auto;
 }
 
 .contact .heading{
@@ -92,10 +92,15 @@
     
 } */
 
+@media (width<800px) {
+    .contact{
+        padding:0 10px;
+    }
+}
+
 @media (width < 500px){
     .contact{
         margin: 25% auto;
-        padding:0 10px;
         display: block;
         text-align: center;
     }
