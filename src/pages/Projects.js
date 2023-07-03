@@ -243,9 +243,9 @@ function Card(props) {
   return (
     <div className="card">
       <div className="card__body">
-        <a href={props.link} target="_blank" rel="noreferrer">
+        {/* <a href={props.link} target="_blank" rel="noreferrer"> */}
           <img src={props.img} alt={"project img"} className="card__image" />
-        </a>
+        {/* </a> */}
         <p className="card__title">{props.title}</p>
         {/* <p className="card__description">{props.type}</p> */}
         <p className="card__description">{props.desc}</p>

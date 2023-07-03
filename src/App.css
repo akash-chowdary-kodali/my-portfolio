@@ -22,9 +22,14 @@ body{
 }
 
 
-/* :root {
-  color-scheme: dark;
-} */
+section{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  /* align-items: center; */
+}
 
 @keyframes animate {
   0%{

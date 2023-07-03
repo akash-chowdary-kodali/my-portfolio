@@ -8,29 +8,25 @@ import { useState } from "react";
 function NavBar() {
   const [toggle, settoggle] = useState(false);
 
-  let prevScrollPos = window.scrollY;
+  const handletoggle = () => {
+    settoggle(!toggle);
+  };
 
+  let prevScrollPos = window.scrollY;
   window.addEventListener("scroll", function () {
     const currentScrollPos = window.scrollY;
-      if (prevScrollPos < currentScrollPos) {
-        document.querySelector(".nav").classList.add("hide");
-      } else {
-        document.querySelector(".nav").classList.remove("hide");
-      }
+    if (prevScrollPos < currentScrollPos) {
+      document.querySelector(".nav").classList.add("hide");
+    } else {
+      document.querySelector(".nav").classList.remove("hide");
+    }
+
     prevScrollPos = currentScrollPos;
   });
 
-  const handletoggle = () => {
-    settoggle(!toggle);
-    if (toggle===true){
-      document.querySelector(".nav").classList.add("body");
-    }else{
-      document.querySelector(".nav").classList.remove("body");
-    }
-  };
   return (
     <div className={toggle ? "nav expanded" : "nav"} id="navigator">
-      <a href="www.akashkodali.studio">
+      <a href={"https://www.akashkodali.studio"}>
         <img src={favicon} alt="logo" className="logo" />
       </a>
 

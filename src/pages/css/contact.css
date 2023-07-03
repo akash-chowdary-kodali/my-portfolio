@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 
 .contact-main{
-    background-color: hsla(0, 0%, 10%, 0.314);
-    /* min-height: 60vh; */
+    /* background-color: hsla(0, 0%, 10%, 0.314); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .contact{
     max-width: 1200px;
-    margin:50px auto;
+    margin: auto;
 }
 
 .contact .heading{
@@ -61,7 +60,7 @@
 
 .contact .contact-links .contact-link p:hover{
     box-shadow: 5px 5px 10px 2px #6ce0dc;
-    transition: 0.5s ease-in;
+    transition: 0.2s ease-in;
     
 }
 
@@ -80,13 +79,14 @@
     text-decoration: none;
     border-radius: 10px;
     font-size: clamp(18px, 5vw, 24px);
-    border: 2px solid #8e8b9a90;
+    border: 1px solid #8e8b9a90;
 }
 
 .contact .contact-links .dbutton:hover{
-    transform: scale(1.02);
-    box-shadow: 5px 5px 10px 2px #6ce0dc;
-    transition: 0.5s ease-in;
+    box-shadow: 0.25rem 0.25rem #6ce0dc;
+    transform: translate(-0.25rem,-0.25rem);
+    /* box-shadow: 5px 5px 10px 2px #6ce0dc; */
+    transition: 0.2s ease-in;
 }
 /* .contact .contact-links .dbutton:hover{
     
@@ -100,14 +100,10 @@
 
 @media (width < 500px){
     .contact{
-        margin: 25% auto;
         display: block;
         text-align: center;
     }
 
-    .contact .contact-links .contact-link .contacticon{
-        height: 20;
-    }
 
     .contact .name{
         font-size: 25px;

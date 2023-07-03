@@ -1,6 +1,4 @@
 .exp-body{
-    min-height: 50vh;
-    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,9 +104,10 @@
 }
 
 .accordion .content-parent .content a:hover{
-    transform: scale(1.02);
-    box-shadow: 5px 5px 10px 2px #6ce0dc;
-    transition: 0.3s ease-out;
+    transform: translate(-0.25rem,-0.25rem);
+  background: #0f1928;
+  box-shadow: 0.25rem 0.25rem #6ce0dc;
+  transition: 0.2s ease-in;
 }
 
 .accordion.toggled .content-parent{
@@ -124,7 +123,7 @@
 
 @media (width < 800px) {
     .exp{
-        margin: 3%;
+        margin:auto 3%;
     }
 
     @media (width < 500px) {

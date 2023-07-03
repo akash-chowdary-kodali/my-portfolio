@@ -6,7 +6,6 @@
 .works-wrapper{
   max-width: 1400px;
   margin: auto;
-  margin-bottom: 50px;
   
 }
 
@@ -43,10 +42,7 @@
   transform: scale(1.02); 
 }
 
-.card__btn:hover{
-  transition: 0.3s ease-in;
-  box-shadow: 5px 5px 10px 2px #6ce0dc;
-  } 
+
 
 .card__image{
   max-height:100%; 
@@ -78,5 +74,17 @@
   background-color: transparent;
   padding: 10px;
   text-decoration: none;
-  border: 2px solid #8e8b9a90;
+  border: 1px solid #8e8b9a90;
 }
+
+.card__btn:hover{
+  transform: translate(-0.25rem,-0.25rem);
+  background: #0f1928;
+  box-shadow: 0.25rem 0.25rem #6ce0dc;
+  transition: 0.2s ease-in;
+  } 
+
+  .card__btn:active {
+    transform: translate(0);
+    box-shadow: none;
+  }

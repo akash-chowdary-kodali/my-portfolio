@@ -40,7 +40,7 @@ export const Contact = () => {
           </div>
           <div className="normal-b">
             <a
-              href="https://www.linkedin.com/in/akash-chowdary-kodali-885aa5230/"
+              href="https://www.linkedin.com/in/akashchowdarykodali"
               rel="noreferrer"
               target="_blank"
               className="contact-link"
