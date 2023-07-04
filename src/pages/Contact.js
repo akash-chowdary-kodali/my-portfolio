@@ -16,50 +16,43 @@ export const Contact = () => {
           brainstorming, tech chat, or discussing new ideas.
         </p>
         <div className="contact-links">
-          <div className="normal-b">
-            <a
-              href="mailto:akashkodali6@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-              className="contact-link"
-            >
-              <p className="email">akashkodali6@gmail.com</p>
-              {/* <img src={mailIcon} height={30} alt="mail icon" className="contacticon" /> */}
-            </a>
-          </div>
-          <div className="normal-b">
-            <a
-              href="https://www.github.com/akodali9"
-              rel="noreferrer"
-              target="_blank"
-              className="contact-link"
-            >
-              <p>Github</p>
-              {/* <img src={githubIcon} height={30} alt="github icon" className="contacticon" /> */}
-            </a>
-          </div>
-          <div className="normal-b">
-            <a
-              href="https://www.linkedin.com/in/akashchowdarykodali"
-              rel="noreferrer"
-              target="_blank"
-              className="contact-link"
-            >
-              <p>Linkedin</p>
-              {/* <img src={linkedinIcon} height={30} alt="Linkedin icon" className="contacticon" /> */}
-            </a>
-          </div>
-
-          <div className="normal-b">
-            <a
-              href={Resume}
-              rel="noreferrer"
-              target="_blank"
-              className="dbutton"
-            >
-              Resume
-            </a>
-          </div>
+          <a
+            href="mailto:akashkodali6@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+            className="contact-link"
+          >
+            <span className="email">akashkodali6@gmail.com</span>
+            {/* <img src={mailIcon} height={30} alt="mail icon" className="contacticon" /> */}
+          </a>
+          <a
+            href="https://www.github.com/akodali9"
+            rel="noreferrer"
+            target="_blank"
+            className="contact-link"
+          >
+            Github
+            {/* <img src={githubIcon} height={30} alt="github icon" className="contacticon" /> */}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/akashchowdarykodali"
+            rel="noreferrer"
+            target="_blank"
+            className="contact-link"
+          >
+            Linkedin
+            {/* <img src={linkedinIcon} height={30} alt="Linkedin icon" className="contacticon" /> */}
+          </a>
+          <br />
+          <a
+            type="button"
+            href={Resume}
+            rel="noreferrer"
+            target="_blank"
+            className="dbutton"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@
 
 .nav-links{
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 3rem;
     align-items: center;
 }
@@ -55,7 +55,7 @@
 }
 
 .nav .nav-links .sub-link:hover{
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
     color: #6ce0dc;
 }
 
