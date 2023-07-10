@@ -1,8 +1,4 @@
 
-.skillsbody{
-    /* background-color: #c3d2e7e8;  */
-}
-
 .mainS{
     margin: auto;
     /* margin-top: 100px; */
@@ -47,6 +43,7 @@
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .mainS .detailsS .sub-detailsS{
@@ -57,7 +54,7 @@
     padding: 20px 10px;
     margin:10px 0px;
     width: 300px;
-
+    box-shadow: -1rem 0 3rem #000;
 }
 
 .mainS .detailsS .sub-detailsS:hover{

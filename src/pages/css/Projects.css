@@ -1,8 +1,3 @@
-.proj-body{
-  /* min-height: 90vh; */
-
-}
-
 .works-wrapper{
   max-width: 1400px;
   margin: auto;
@@ -34,9 +29,10 @@
   align-items: center;
   justify-content: space-evenly;
   border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
 }
 
-.card:hover .card__image{
+.card:hover{
   transition: 0.5s; 
   overflow: hidden;
   transform: scale(1.02); 
