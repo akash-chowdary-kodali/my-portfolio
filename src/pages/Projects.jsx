@@ -226,11 +226,12 @@ export const Projects = () => {
           />
           <Card
             img={WhatsappImg}
+            className = "whatsapp"
             title={"Whatsapp Clone"}
             desc={
               "This App is a Front-end clone of the major social platfrom Built Using Flutter Framework"
             }
-            link="https://github.com/akodali9/whatsappclone/"
+            link="https://github.com/akodali9/whatsappui_clone"
             type="App Development"
           />
         </div>

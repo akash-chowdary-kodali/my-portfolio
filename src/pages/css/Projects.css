@@ -84,3 +84,8 @@
     transform: translate(0);
     box-shadow: none;
   }
+
+.proj-body .works-wrapper .whatsapp{
+  height: 1080px;
+  width: 1440px;
+}
