@@ -3,6 +3,7 @@ import "../pages/css/Projects.css";
 import Weatherimg from "../assets/imgs/WeatherApp.png";
 import WhatsappImg from "../assets/imgs/WhatsappClone.png";
 import PortfolioImg from "../assets/imgs/portfolio.jpeg";
+import CalculatorExpoImg from "../assets/imgs/Calculator_expo.jpg";
 // import { useState } from "react";
 // import { Footer } from "../components/footer/footer";
 // import { motion } from "framer-motion";
@@ -206,6 +207,16 @@ export const Projects = () => {
         <p className="works-heading">Recent Works</p>
         <div className="cards-work-container">
           <Card
+            img={WhatsappImg}
+            className="whatsapp"
+            title={"Whatsapp Clone"}
+            desc={
+              "I successfully crafted a dynamic WhatsApp frontend clone utilizing the powerful Flutter framework, seamlessly merging intuitive design with modern user interactions."
+            }
+            link="https://github.com/akodali9/whatsappui_clone"
+            type="App Development"
+          />
+          <Card
             img={PortfolioImg}
             title={"Portfolio"}
             desc={
@@ -224,16 +235,16 @@ export const Projects = () => {
             link={"https://akodali9.github.io/weather_application/"}
             type={"Web Development"}
           />
-          <Card
-            img={WhatsappImg}
-            className = "whatsapp"
-            title={"Whatsapp Clone"}
+          {/* <Card
+            img={CalculatorExpoImg}
+            className="Calculator"
+            title={"Calculator"}
             desc={
-              "This App is a Front-end clone of the major social platfrom Built Using Flutter Framework"
+              "I developed a fully functional Calculator mobile app using React Native and Expo CLI, blending intuitive user interface design with efficient arithmetic capabilities."
             }
-            link="https://github.com/akodali9/whatsappui_clone"
+            link="https://github.com/akodali9/ReactNative_calculator"
             type="App Development"
-          />
+          /> */}
         </div>
       </div>
     </div>
@@ -245,7 +256,7 @@ function Card(props) {
     <div className="card">
       <div className="card__body">
         {/* <a href={props.link} target="_blank" rel="noreferrer"> */}
-          <img src={props.img} alt={"project img"} className="card__image" />
+        <img src={props.img} alt={"project img"} className="card__image" />
         {/* </a> */}
         <p className="card__title">{props.title}</p>
         {/* <p className="card__description">{props.type}</p> */}
