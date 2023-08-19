@@ -33,9 +33,9 @@
 }
 
 .card:hover{
-  transition: 0.5s; 
+  transition: 0.3s ease-in; 
   overflow: hidden;
-  transform: scale(1.02); 
+  transform: translateY(-15px); 
 }
 
 
