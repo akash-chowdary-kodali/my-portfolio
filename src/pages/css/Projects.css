@@ -7,15 +7,18 @@
 .works-wrapper .cards-work-container{
   display: flex;
   flex-wrap: wrap;
-  /* padding: 20px 0; */
+  margin: 20px;
+  padding: 20px 5px;
+  border-radius: 10px;
   justify-content: space-evenly;
+  background-color: #2e2c38;
 }
 
 .works-wrapper .works-heading{
   text-align: center;
   font-size: clamp(30px, 9vw, 50px);
   font-weight: 500;
-  color: #ccd6f6;
+  color: #2e2c38;
   padding: 20px 0;
 }
 
@@ -30,6 +33,7 @@
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
+  
 }
 
 .card:hover{
@@ -53,17 +57,21 @@
   text-align: center;
   padding: 5px 0;
   color: #ccd6f6;
+  color: #f4eee0;
   font-weight: 500;
 }
 
 .card__description{
   font-size: 16px;
   padding: 0px 20px;
+  color: #f4eee0;
 }
 
 .card__btn{
   margin: 10px;
   color: #6ce0dc;
+  color: #f4eee0;
+  color: #f4eee0;
   font-size: 18px;
   border-radius: 5px;
   font-weight: 600;
@@ -76,7 +84,9 @@
 .card__btn:hover{
   transform: translate(-0.25rem,-0.25rem);
   background: #0f1928;
+  background: #201c24;
   box-shadow: 0.25rem 0.25rem #6ce0dc;
+  box-shadow: 0.25rem 0.25rem #4f4557;
   transition: 0.2s ease-in;
   } 
 

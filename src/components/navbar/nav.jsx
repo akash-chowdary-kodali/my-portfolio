@@ -30,6 +30,7 @@ function NavBar() {
     <div className={toggle ? "nav expanded" : "nav"} id="navigator">
       <a href={"https://www.akashkodali.studio"}>
         <img src={favicon} alt="logo" className="logo" />
+        {/* <p className="logo-name">A</p> */}
       </a>
 
       <div className={"nav-links"}>
@@ -113,7 +114,8 @@ function NavBar() {
             <g id="SVGRepo_iconCarrier">
               <path
                 d="M19 5L5 19M5.00001 5L19 19"
-                stroke="#6ce0dc"
+                // stroke="#6ce0dc"
+                stroke="#f4eee0"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -139,7 +141,8 @@ function NavBar() {
                 <path
                   id="Vector"
                   d="M11 17H19M5 12H19M11 7H19"
-                  stroke="#6ce0dc"
+                  // stroke="#6ce0dc"
+                  stroke="#f4eee0"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

@@ -6,7 +6,8 @@
 }
 
 .nav{
-    background-color:rgba(10, 25, 47, 0.85);
+    /* background-color:rgba(10, 25, 47, 0.85); */
+    background-color: #393646;
     display: flex;
     justify-content: space-between; 
     width: 100%;
@@ -28,6 +29,15 @@
 .nav .logo{
     height: 50px;
     margin-left: 3rem;
+    background-color: #393646;
+    background-blend-mode: multiply;
+}
+
+.nav .logo-name{
+    font-size: 30px;
+    margin-left: 3rem;
+    color: #f4eee0;
+    text-decoration: none;
 }
 
 .nav .toggle-icon{
@@ -47,6 +57,7 @@
     margin: 10px 15px;
     cursor:grab;
     color: #a8b2d1;
+    color: #f4eee0;
 }
 
 .nav .nav-links .sub-link span{
@@ -57,6 +68,7 @@
 .nav .nav-links .sub-link:hover{
     transition: 0.3s ease-in;
     color: #6ce0dc;
+    color: rgba(246, 246, 246, 0.573)
 }
 
 

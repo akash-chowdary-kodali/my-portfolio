@@ -15,7 +15,7 @@ function App() {
 
   
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000);
+    setTimeout(() => setLoading(false), 3000);
   }, []);
 
   return (
@@ -40,14 +40,15 @@ function App() {
       </section> */}
           <section
             id="contact"
-            style={{ backgroundColor: "hsla(0, 0%, 10%, 0.314" }}
+            style={{ backgroundColor: "hsla(0, 0%, 15%, 0.314", }}
           >
             <Contact />
           </section>
           <p
             style={{
-              backgroundColor: "hsla(0, 0%, 10%, 0.314)",
+              backgroundColor: "hsla(0, 0%, 15%, 0.314)",
               textAlign: "center",
+              color: "#2a2833",
               padding: "20px",
               fontSize: "14px",
               fontFamily: "monospace",

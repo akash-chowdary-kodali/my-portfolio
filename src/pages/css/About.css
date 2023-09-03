@@ -39,6 +39,7 @@
     text-align: center;
     font-weight: 500;
     color: #a8b2d1;
+    color: #393646;
 }
 
 .main .details .top-block p{
@@ -50,6 +51,7 @@
     font-size: clamp(40px, 8vw, 80px);
     font-weight: 600;
     color: #ccd6f6;
+    color: #393646;
 }
 
 .main .details .intro-block{
@@ -61,6 +63,7 @@
 
 .main .details .intro-block p{
     font-size: 26px;
+    color: #393646;
 }
 
 .main .details .intro-block .name-block .name{
