@@ -29,9 +29,9 @@
     text-align: center;
     font-size: 28px; 
     line-height: 1.2;
-    /* color: #dbeaff; */
     /* color: #ccd6f6; */
     /* color: #4f4557; */
+    color: #fff;
     font-weight: 600;
     padding-bottom: 20px;
 }
@@ -71,7 +71,7 @@
     display: flex;
     border-bottom: 3px solid #ccd6f6;
     border-bottom: 3px solid #f4eee0;
-    /* border-bottom: 3px solid #4f4557; */
+    border-bottom: 3px solid #fff;
 }
 
 .mainS .detailsS .sub-detailsS .sub-headingSkills img{

@@ -7,7 +7,7 @@
 
 .nav{
     /* background-color:rgba(10, 25, 47, 0.85); */
-    background-color: #393646;
+    background-color: rgba(57, 54, 70, 0.90);
     display: flex;
     justify-content: space-between; 
     width: 100%;
@@ -55,20 +55,22 @@
     text-decoration: none;
     font-weight: 600; 
     margin: 10px 15px;
-    cursor:grab;
+    cursor: -webkit-grab;
+    cursor: grab;
     color: #a8b2d1;
     color: #f4eee0;
+    color: #fff;
 }
 
 .nav .nav-links .sub-link span{
     color: #6ce0dc;
-    display: none;
+    display: none; 
 }
 
 .nav .nav-links .sub-link:hover{
     transition: 0.3s ease-in;
     color: #6ce0dc;
-    color: rgba(246, 246, 246, 0.573)
+    color: rgba(246, 246, 246, 0.573);
 }
 
 

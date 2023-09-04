@@ -25,7 +25,7 @@
   
 
 .main .details .profile-img{
-    max-width: 300px;
+    max-width: 320px;
     height: auto;
     margin: auto;
     border-radius: 50%;
@@ -131,6 +131,13 @@
         .main .details .profile-img{
             max-width: 250px;
         }
+    }
+
+    @media (width < 250px) {
+        .main .details .profile-img{
+            max-width: 200px;
+        }
+        
     }
 
 }

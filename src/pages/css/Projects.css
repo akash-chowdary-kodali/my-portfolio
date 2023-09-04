@@ -17,7 +17,7 @@
 .works-wrapper .works-heading{
   text-align: center;
   font-size: clamp(30px, 9vw, 50px);
-  font-weight: 500;
+  font-weight: 600;
   color: #2e2c38;
   padding: 20px 0;
 }
@@ -55,9 +55,10 @@
 .card__title{
   font-size: 26px;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   color: #ccd6f6;
   color: #f4eee0;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -70,7 +71,6 @@
 .card__btn{
   margin: 10px;
   color: #6ce0dc;
-  color: #f4eee0;
   color: #f4eee0;
   font-size: 18px;
   border-radius: 5px;
