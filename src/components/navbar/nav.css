@@ -28,15 +28,15 @@
 
 .nav .logo{
     height: 50px;
-    /* margin-left: 3rem; */
+    margin-left: 2rem;
 }
 
-.nav .logo-name{
+/* .nav .logo-name{
     font-size: clamp(30px, 7vw, 40px);
     margin-left: 2rem;
     color: #f1f0e8;
     text-decoration: none;
-}
+} */
 
 .nav .logo-name p{
     background-color: #393646;
@@ -95,11 +95,7 @@
 
     .nav .logo{
         height: 50px;
-        margin-left: 10px;
-    }
-    .nav .logo-name{
-        /* height: 50px; */
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .nav .toggle-icon svg{
@@ -146,7 +142,6 @@
 @media (width < 500px){
     .nav .logo{
         height: 45px;
-        margin-left: 10px;
     }
 
     .nav .toggle-icon svg{

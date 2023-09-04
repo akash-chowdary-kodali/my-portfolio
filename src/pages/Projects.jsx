@@ -19,7 +19,7 @@ export const Projects = () => {
               "I and our team successfully developed a blood bank website for our university. This platform serves as a crucial resource for students and faculty to donate and request blood donations within the campus community."
             }
             link={"https://www.bloodbankgitam.live"}
-            type={"App Development"}
+            type={"Web Development"}
           /><Card
             img={QRAppImg}
             title={"QR App"}
