@@ -28,18 +28,22 @@
 
 .nav .logo{
     height: 50px;
-    margin-left: 3rem;
-    background-color: #393646;
-    background-blend-mode: multiply;
+    /* margin-left: 3rem; */
 }
 
 .nav .logo-name{
-    font-size: 30px;
-    margin-left: 3rem;
-    color: #f4eee0;
+    font-size: clamp(30px, 7vw, 40px);
+    margin-left: 2rem;
+    color: #f1f0e8;
     text-decoration: none;
 }
 
+.nav .logo-name p{
+    background-color: #393646;
+    font-weight: 500;
+    padding: 0 10px;
+    border-radius: 10px;
+}
 .nav .toggle-icon{
     display: none;
 }
@@ -84,11 +88,17 @@
 
     .nav .toggle-icon{
         display: block;
+        justify-content: center;
+        align-items: center;
         padding-right: 20px;
     }
 
     .nav .logo{
         height: 50px;
+        margin-left: 10px;
+    }
+    .nav .logo-name{
+        /* height: 50px; */
         margin-left: 10px;
     }
 

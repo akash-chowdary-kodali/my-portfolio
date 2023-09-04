@@ -1,6 +1,6 @@
 import React from "react";
 import "./nav.css";
-import favicon from "../../assets/icons/Ak.png";
+// import favicon from "../../assets/icons/Ak.png";
 
 import { Link } from "react-scroll";
 import { useState } from "react";
@@ -12,25 +12,24 @@ function NavBar() {
     settoggle(!toggle);
   };
 
-  let prevScrollPos = window.scrollY;
-  window.addEventListener("scroll", function () {
-    const currentScrollPos = window.scrollY;
-    if (prevScrollPos < currentScrollPos) {
-      if (toggle === false){
-        document.querySelector(".nav").classList.add("hide");
-      }
-    } else {
-      document.querySelector(".nav").classList.remove("hide");
-    }
+  // let prevScrollPos = window.scrollY;
+  // window.addEventListener("scroll", function () {
+  //   const currentScrollPos = window.scrollY;
+  //   if (prevScrollPos < currentScrollPos) {
+  //     if (toggle === false){
+  //       document.querySelector(".nav").classList.add("hide");
+  //     }
+  //   } else {
+  //     document.querySelector(".nav").classList.remove("hide");
+  //   }
 
-    prevScrollPos = currentScrollPos;
-  });
+  //   prevScrollPos = currentScrollPos;
+  // });
 
   return (
     <div className={toggle ? "nav expanded" : "nav"} id="navigator">
-      <a href={"https://www.akashkodali.studio"}>
-        <img src={favicon} alt="logo" className="logo" />
-        {/* <p className="logo-name">A</p> */}
+      <a href={"https://www.akashkodali.studio" }  className="logo-name">
+      <p className="logo-name">AK</p>
       </a>
 
       <div className={"nav-links"}>
