@@ -16,14 +16,24 @@
     position: fixed;
     z-index: 99;
     transition: 0.2s linear;
-    box-shadow: 0 10px 30px -10px #112240;
+    box-shadow: 0 10px 30px -10px #2c2935;
     -webkit-backdrop-filter:  blur(15px) brightness(75%) saturate(70%);
     backdrop-filter: blur(15px) brightness(75%) saturate(70%);
 }
 
 .hide{
-    transform: translateY(-80px);
-    transition: 0.2s linear;
+    transform: translateY(-72px);
+    transition: 0.3s linear;
+}
+
+/* .hide:hover{
+    transform: translateY(0px);
+    transition: 0.3s linear;
+} */
+
+.nav.expanded:hover{
+    transform: translateY(0px);
+    transition: 0.3s linear;
 }
 
 .nav .logo{
@@ -109,7 +119,8 @@
 
     .nav.expanded{
         height: 100vh;
-        transition: 100vh 0.5s linear;
+        transition: height 500ms;
+        overflow-y: hidden;
     }
 
     .nav.expanded .nav-links{

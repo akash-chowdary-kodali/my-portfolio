@@ -50,7 +50,8 @@ export const Projects = () => {
             img={Weatherimg}
             title={"Weather Application"}
             desc={
-              "A Real-time weather Application which can be used to obtain real time weather and 7-week forecast data for specified locations."
+              // A Real-time weather Application which can be used to obtain real time weather and 7-week forecast data for specified locations. 
+              "A real-time weather application which provides current weather information and a comprehensive 7-week forecast for specified location. Users can easily access current conditions, temperature, humidity, wind speed etc."
             }
             link={"https://akodali9.github.io/weather_application/"}
             type={"Web Development"}

@@ -13,23 +13,24 @@ function NavBar() {
   };
 
   let prevScrollPos = window.scrollY;
-  window.addEventListener("scroll", function () {
-    const currentScrollPos = window.scrollY;
-    if (prevScrollPos < currentScrollPos) {
-      if (toggle === false){
-        document.querySelector(".nav").classList.add("hide");
+    window.addEventListener("scroll", function () {
+      const currentScrollPos = window.scrollY;
+      if (prevScrollPos < currentScrollPos) {
+        if (toggle === false) {
+          document.querySelector(".nav").classList.add("hide");
+        }
+      } else {
+        document.querySelector(".nav").classList.remove("hide");
       }
-    } else {
-      document.querySelector(".nav").classList.remove("hide");
-    }
 
-    prevScrollPos = currentScrollPos;
-  });
+      prevScrollPos = currentScrollPos;
+    });
+  
 
   return (
     <div className={toggle ? "nav expanded" : "nav"} id="navigator">
-      <a href={"https://www.akashkodali.studio" }>
-      <img src={favicon} alt="logo" className="logo"/>
+      <a href={"https://www.akashkodali.studio"}>
+        <img src={favicon} alt="logo" className="logo" />
       </a>
 
       <div className={"nav-links"}>

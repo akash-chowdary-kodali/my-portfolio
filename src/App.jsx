@@ -37,7 +37,7 @@ function App() {
           </section>
           {/* <section id="edu">
         <Edu />
-      </section> */}
+      // </section> */}
           <section
             id="contact"
             style={{ backgroundColor: "hsla(0, 0%, 70%, 0.314", }}
