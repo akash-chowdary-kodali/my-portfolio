@@ -1,10 +1,10 @@
 import React from "react";
 import "../pages/css/Projects.css";
-import Weatherimg from "../assets/imgs/WeatherApp.png";
-import WhatsappImg from "../assets/imgs/WhatsappClone.png";
-import PortfolioImg from "../assets/imgs/portfolio.png";
-import QRAppImg from "../assets/imgs/qrApp.png";
-import G_Bloodbank from "../assets/imgs/gitamBloodbank.png";
+import Weatherimg from "../assets/imgs/WeatherApp.webp";
+import WhatsappImg from "../assets/imgs/WhatsappClone.webp";
+import PortfolioImg from "../assets/imgs/portfolio.webp";
+import QRAppImg from "../assets/imgs/qrApp.webp";
+import G_Bloodbank from "../assets/imgs/gitamBloodbank.webp";
 
 export const Projects = () => {
   return (

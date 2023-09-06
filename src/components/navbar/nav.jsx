@@ -1,6 +1,6 @@
 import React from "react";
 import "./nav.css";
-import favicon from "../../assets/icons/Ak.png";
+import favicon from "../../assets/icons/Ak.webp";
 
 import { Link } from "react-scroll";
 import { useState } from "react";
