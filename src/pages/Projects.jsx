@@ -1,10 +1,10 @@
 import React from "react";
 import "../pages/css/Projects.css";
-import Weatherimg from "../assets/imgs/WeatherApp.png";
-import WhatsappImg from "../assets/imgs/WhatsappClone.png";
-import PortfolioImg from "../assets/imgs/portfolio.jpeg";
-import QRAppImg from "../assets/imgs/qrApp.jpg";
-// import CalculatorExpoImg from "../assets/imgs/Calculator_expo.jpg";
+import Weatherimg from "../assets/imgs/WeatherApp.webp";
+import WhatsappImg from "../assets/imgs/WhatsappClone.webp";
+import PortfolioImg from "../assets/imgs/portfolio.webp";
+import QRAppImg from "../assets/imgs/qrApp.webp";
+import G_Bloodbank from "../assets/imgs/gitamBloodbank.webp";
 
 export const Projects = () => {
   return (
@@ -13,6 +13,14 @@ export const Projects = () => {
         <p className="works-heading">Recent Works</p>
         <div className="cards-work-container">
           <Card
+            img={G_Bloodbank}
+            title={"BloodBank"}
+            desc={
+              "I and our team successfully developed a blood bank website for our university. This platform serves as a crucial resource for students and faculty to donate and request blood donations within the campus community."
+            }
+            link={"https://www.bloodbankgitam.live"}
+            type={"Web Development"}
+          /><Card
             img={QRAppImg}
             title={"QR App"}
             desc={
@@ -42,22 +50,12 @@ export const Projects = () => {
             img={Weatherimg}
             title={"Weather Application"}
             desc={
-              "A Real-time weather Application which can be used to obtain real time weather and 7-week forecast data for specified locations."
+              // A Real-time weather Application which can be used to obtain real time weather and 7-week forecast data for specified locations. 
+              "A real-time weather application which provides current weather information and a comprehensive 7-week forecast for specified location. Users can easily access current conditions, temperature, humidity, wind speed etc."
             }
             link={"https://akodali9.github.io/weather_application/"}
             type={"Web Development"}
           />
-
-          {/* <Card
-            img={CalculatorExpoImg}
-            className="Calculator"
-            title={"Calculator"}
-            desc={
-              "I developed a fully functional Calculator mobile app using React Native and Expo CLI, blending intuitive user interface design with efficient arithmetic capabilities."
-            }
-            link="https://github.com/akodali9/ReactNative_calculator"
-            type="App Development"
-          /> */}
         </div>
       </div>
     </div>

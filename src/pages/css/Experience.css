@@ -1,5 +1,6 @@
 .exp-body{
     display: flex;
+    margin: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -16,6 +17,7 @@
     text-align: center;
     margin:auto;
     color: #ccd6f6;
+    color: #393646;
     font-weight: 600;
 }
 
@@ -44,7 +46,7 @@
     transition: 1s ease-out;
     font-weight: 600;
     border: 0;
-    background-color: #233554;
+    background-color: #4f4557;
     cursor: pointer;
 }
 
@@ -63,15 +65,24 @@
 
 .accordion .content-parent {
     max-height: 0;
+    background-color: #2e2c38;
     overflow: hidden;
+    margin-top: 20px;
     transition: 0.5s ease-out;
     font-size: 18px;
     font-weight: 400;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.accordion .content-parent .content:hover{
+    transition: 0.5s;
+    transform: translateY(-0.8rem);
 }
 
 .accordion .content-parent .content{
     margin: 30px 0;
+    box-shadow: -1rem 0 3rem #000;
     padding:20px;
     background-color: #3d3c4250;
     border-radius: 5px;
@@ -86,6 +97,7 @@
 .accordion .content-parent .content .top-content-details{
     display: flex;
     flex-wrap: wrap;
+    color: #fff;
     font-weight: 600;
     justify-content: space-between;
 }
@@ -97,6 +109,7 @@
 
 .accordion .content-parent .content a{
     color: #6ce0dc;
+    color: #f4eee0;
     font-weight: 600;
     padding: 10px;
     border-radius: 5px;
@@ -107,7 +120,9 @@
 .accordion .content-parent .content a:hover{
     transform: translate(-0.25rem,-0.25rem);
   background: #0f1928;
+  background: #201c24;
   box-shadow: 0.25rem 0.25rem #6ce0dc;
+  box-shadow: 0.25rem 0.25rem #4f4557;
   transition: 0.2s ease-in;
 }
 

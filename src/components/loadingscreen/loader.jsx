@@ -6,8 +6,8 @@ export const Loader = () => {
       <svg className="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#6ce0dc"></stop>
-            <stop offset="100%" stopColor="hsl(223,90%,55%)"></stop>
+            <stop offset="0%" stopColor="#393646"></stop>
+            <stop offset="100%" stopColor="#B9B4C7"></stop>
         </linearGradient>
     </defs>
     <circle className="pl__ring" r="56" cx="64" cy="64" fill="none" stroke="hsla(0,10%,10%,0.1)" strokeWidth="16" strokeLinecap="round"></circle>

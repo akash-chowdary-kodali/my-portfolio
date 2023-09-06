@@ -1,6 +1,6 @@
 import React from "react";
 import "./nav.css";
-import favicon from "../../assets/icons/Ak.png";
+import favicon from "../../assets/icons/Ak.webp";
 
 import { Link } from "react-scroll";
 import { useState } from "react";
@@ -12,19 +12,20 @@ function NavBar() {
     settoggle(!toggle);
   };
 
-  // let prevScrollPos = window.scrollY;
-  // window.addEventListener("scroll", function () {
-  //   const currentScrollPos = window.scrollY;
-  //   if (prevScrollPos < currentScrollPos) {
-  //     if (toggle === false){
-  //       document.querySelector(".nav").classList.add("hide");
-  //     }
-  //   } else {
-  //     document.querySelector(".nav").classList.remove("hide");
-  //   }
+  let prevScrollPos = window.scrollY;
+    window.addEventListener("scroll", function () {
+      const currentScrollPos = window.scrollY;
+      if (prevScrollPos < currentScrollPos) {
+        if (toggle === false) {
+          document.querySelector(".nav").classList.add("hide");
+        }
+      } else {
+        document.querySelector(".nav").classList.remove("hide");
+      }
 
-  //   prevScrollPos = currentScrollPos;
-  // });
+      prevScrollPos = currentScrollPos;
+    });
+  
 
   return (
     <div className={toggle ? "nav expanded" : "nav"} id="navigator">
@@ -113,7 +114,8 @@ function NavBar() {
             <g id="SVGRepo_iconCarrier">
               <path
                 d="M19 5L5 19M5.00001 5L19 19"
-                stroke="#6ce0dc"
+                // stroke="#6ce0dc"
+                stroke="#f4eee0"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -139,7 +141,8 @@ function NavBar() {
                 <path
                   id="Vector"
                   d="M11 17H19M5 12H19M11 7H19"
-                  stroke="#6ce0dc"
+                  // stroke="#6ce0dc"
+                  stroke="#f4eee0"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

@@ -17,10 +17,11 @@ code {
 }
 
 ::-webkit-scrollbar {
-  background: transparent;
-  width: 4px;
+  background: rgba(57, 54, 70, 0.60);
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a8b2d190;
+  background: #2c2a36 ;
+  border-radius: 20px;
 }

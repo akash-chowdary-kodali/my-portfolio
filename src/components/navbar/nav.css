@@ -6,7 +6,8 @@
 }
 
 .nav{
-    background-color:rgba(10, 25, 47, 0.85);
+    /* background-color:rgba(10, 25, 47, 0.85); */
+    background-color: rgba(57, 54, 70, 0.90);
     display: flex;
     justify-content: space-between; 
     width: 100%;
@@ -15,21 +16,44 @@
     position: fixed;
     z-index: 99;
     transition: 0.2s linear;
-    box-shadow: 0 10px 30px -10px #112240;
+    box-shadow: 0 10px 30px -10px #2c2935;
     -webkit-backdrop-filter:  blur(15px) brightness(75%) saturate(70%);
     backdrop-filter: blur(15px) brightness(75%) saturate(70%);
 }
 
 .hide{
-    transform: translateY(-80px);
-    transition: 0.2s linear;
+    transform: translateY(-72px);
+    transition: 0.3s linear;
+}
+
+/* .hide:hover{
+    transform: translateY(0px);
+    transition: 0.3s linear;
+} */
+
+.nav.expanded:hover{
+    transform: translateY(0px);
+    transition: 0.3s linear;
 }
 
 .nav .logo{
     height: 50px;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
+/* .nav .logo-name{
+    font-size: clamp(30px, 7vw, 40px);
+    margin-left: 2rem;
+    color: #f1f0e8;
+    text-decoration: none;
+} */
+
+.nav .logo-name p{
+    background-color: #393646;
+    font-weight: 500;
+    padding: 0 10px;
+    border-radius: 10px;
+}
 .nav .toggle-icon{
     display: none;
 }
@@ -45,18 +69,22 @@
     text-decoration: none;
     font-weight: 600; 
     margin: 10px 15px;
-    cursor:grab;
+    cursor: -webkit-grab;
+    cursor: grab;
     color: #a8b2d1;
+    color: #f4eee0;
+    color: #fff;
 }
 
 .nav .nav-links .sub-link span{
     color: #6ce0dc;
-    display: none;
+    display: none; 
 }
 
 .nav .nav-links .sub-link:hover{
     transition: 0.3s ease-in;
     color: #6ce0dc;
+    color: rgba(246, 246, 246, 0.573);
 }
 
 
@@ -70,12 +98,14 @@
 
     .nav .toggle-icon{
         display: block;
+        justify-content: center;
+        align-items: center;
         padding-right: 20px;
     }
 
     .nav .logo{
         height: 50px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .nav .toggle-icon svg{
@@ -89,7 +119,8 @@
 
     .nav.expanded{
         height: 100vh;
-        transition: 100vh 0.5s linear;
+        transition: height 500ms;
+        overflow-y: hidden;
     }
 
     .nav.expanded .nav-links{
@@ -122,7 +153,6 @@
 @media (width < 500px){
     .nav .logo{
         height: 45px;
-        margin-left: 10px;
     }
 
     .nav .toggle-icon svg{

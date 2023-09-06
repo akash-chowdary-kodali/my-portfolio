@@ -65,7 +65,7 @@ const ExpAccordion = ({ items, keepOthersOpen }) => {
             key={key}
           >
             <button
-              className="toggle"
+              className="toggle" style={{backgroundColor:'#282731'}}
               onClick={() => handleAccordionToggle(listItem)}
             >
               <p>{listItem.label}</p>

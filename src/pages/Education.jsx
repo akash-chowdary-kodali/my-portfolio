@@ -1,6 +1,6 @@
 import "./css/edu.css"
 
-export const Edu= () => {
+export const Edu = () => {
     return(
         <div className="edubody">
         <p className="headingS">Education</p>

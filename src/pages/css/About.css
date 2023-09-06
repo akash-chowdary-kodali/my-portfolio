@@ -25,7 +25,7 @@
   
 
 .main .details .profile-img{
-    max-width: 300px;
+    max-width: 320px;
     height: auto;
     margin: auto;
     border-radius: 50%;
@@ -39,6 +39,7 @@
     text-align: center;
     font-weight: 500;
     color: #a8b2d1;
+    color: #393646;
 }
 
 .main .details .top-block p{
@@ -47,9 +48,10 @@
 
 .main .details .top-block .title{
     /* font-size: 45px; */
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8.5vw, 80px);
     font-weight: 600;
     color: #ccd6f6;
+    color: #393646;
 }
 
 .main .details .intro-block{
@@ -61,6 +63,7 @@
 
 .main .details .intro-block p{
     font-size: 26px;
+    color: #393646;
 }
 
 .main .details .intro-block .name-block .name{
@@ -128,6 +131,13 @@
         .main .details .profile-img{
             max-width: 250px;
         }
+    }
+
+    @media (width < 250px) {
+        .main .details .profile-img{
+            max-width: 200px;
+        }
+        
     }
 
 }
