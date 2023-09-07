@@ -42,7 +42,10 @@
   transform: translateY(-15px); 
 }
 
-
+.card:hover .card__image{
+  transform: scale(1.01);
+  transition: 0.3s ease-in;
+}
 
 .card__image{
   max-height:100%; 
