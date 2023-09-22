@@ -17,17 +17,23 @@ export const Skills = () => {
     //   duration: 0.75,
     // }}
     // >
-    <div className="skillsbody" id="skillsbody">
+    <div className="skillsbody" id="skillsbody" data-aos="side-up">
       <div className="mainS">
         <p className="headingS">
           I like to code things from scratch, and enjoy bringing ideas to life
         </p>
         <br />
-        <p className="expertise">My Expertise</p>
+        <div data-aos="zoom-in" data-aos-duration="1000">
+          <p className="expertise">My Expertise</p>
+        </div>
         <div className="detailsS">
-          <div className="sub-detailsS">
+          <div
+            className="sub-detailsS"
+            data-aos="fade-right"
+            data-aos-duration="1400"
+          >
             <div className="sub-headingSkills">
-              <img src={Desktopicon} alt="desktop icon"/>
+              <img src={Desktopicon} alt="desktop icon" />
               <p>Software Development</p>
             </div>
 
@@ -36,25 +42,28 @@ export const Skills = () => {
               JavaScript, Dart.
             </p>
           </div>
-          <div className="sub-detailsS">
+          <div
+            className="sub-detailsS"
+            data-aos="fade-right"
+            data-aos-duration="1400"
+          >
             <div className="sub-headingSkills">
-              <img src={reacticon} alt="react icon"/>
-              <p>
-                Frontend
-                Web Dev
-              </p>
+              <img src={reacticon} alt="react icon" />
+              <p>Frontend Web Dev</p>
             </div>
             <p>
               Passionate about UI/UX. Experience in React js, Express js, HTML,
               CSS.
             </p>
           </div>
-          <div className="sub-detailsS">
+          <div
+            className="sub-detailsS"
+            data-aos="fade-right"
+            data-aos-duration="1400"
+          >
             <div className="sub-headingSkills">
-              <img src={Fluttericon} alt="flutter icon"/>
-              <p>
-                Flutter Dev Android, iOS
-              </p>
+              <img src={Fluttericon} alt="flutter icon" />
+              <p>Flutter Dev Android, iOS</p>
             </div>
             <p>
               Experience in developing Cross-platfrorm applications using

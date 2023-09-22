@@ -115,6 +115,7 @@
     border-radius: 5px;
     text-decoration: none;
     border: 2px solid #8e8b9a90;
+    box-shadow: 0 3px 5px 0px #0f0f0f;
 }
 
 .accordion .content-parent .content a:hover{

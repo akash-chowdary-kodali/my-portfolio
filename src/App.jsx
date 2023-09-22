@@ -13,9 +13,8 @@ import { Loader } from "./components/loadingscreen/loader";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 0);
   }, []);
 
   return (
@@ -40,7 +39,7 @@ function App() {
       // </section> */}
           <section
             id="contact"
-            style={{ backgroundColor: "hsla(0, 0%, 70%, 0.314", }}
+            style={{ backgroundColor: "hsla(0, 0%, 70%, 0.314" }}
           >
             <Contact />
           </section>

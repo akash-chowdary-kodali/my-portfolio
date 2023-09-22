@@ -8,14 +8,14 @@ export const About = () => {
       <div className="main" id="main">
         <div className="details">
           <div className="top-block">
-            <p>
+            <p data-aos = "zoom-in-up" data-aos-duration="1000">
               <span className="title">Frontend Developer.</span>
               <br />I like to develop Good Interactive Applications
             </p>
           </div>
 
           <div className="intro-block">
-            <div>
+            <div data-aos = "fade-right" data-aos-duration="1600">
               <p className="name-block">
                 Hello<span className="wave">👋</span>, I am
                 <span className="name"> Akash. </span>
@@ -27,7 +27,7 @@ export const About = () => {
               </p>
             </div>
 
-            <img src={myImg} alt="Myprofile-img" className="profile-img" />
+            <img src={myImg} alt="Myprofile-img" className="profile-img" data-aos = "fade-up-left" data-aos-duration="1600" />
           </div>
         </div>
       </div>

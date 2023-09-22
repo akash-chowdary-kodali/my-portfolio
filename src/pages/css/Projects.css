@@ -81,7 +81,8 @@
   background-color: transparent;
   padding: 10px;
   text-decoration: none;
-  border: 1px solid #8e8b9a90;
+  border: 0.5px solid #8e8b9a90;
+  box-shadow: 0 5px 10px 0px #0f0f0f;
 }
 
 .card__btn:hover{
@@ -97,7 +98,11 @@
     transform: translate(0);
     box-shadow: none;
   }
-
+.card__project_type{
+  text-align: center;
+  margin: 5px 0;
+  font-weight: 500;
+}
 .proj-body .works-wrapper .whatsapp{
   height: 1080px;
   width: 1440px;
