@@ -15,7 +15,7 @@ export const About = () => {
           </div>
 
           <div className="intro-block">
-            <div data-aos = "fade-right" data-aos-duration="1600">
+            <div data-aos = "fade-right" data-aos-duration="1400">
               <p className="name-block">
                 Hello<span className="wave">👋</span>, I am
                 <span className="name"> Akash. </span>
@@ -27,7 +27,7 @@ export const About = () => {
               </p>
             </div>
 
-            <img src={myImg} alt="Myprofile-img" className="profile-img" data-aos = "fade-up-left" data-aos-duration="1600" />
+            <img src={myImg} alt="Myprofile-img" className="profile-img" data-aos = "fade-up-right" data-aos-duration="1400" />
           </div>
         </div>
       </div>

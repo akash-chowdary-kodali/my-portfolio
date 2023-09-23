@@ -39,7 +39,7 @@ export const Projects = () => {
             className="whatsapp"
             title={"Whatsapp Clone"}
             desc={
-              "I successfully crafted a dynamic WhatsApp frontend clone utilizing the powerful Flutter framework, seamlessly merging intuitive design with modern user interactions."
+              "I successfully crafted a static WhatsApp frontend clone utilizing the powerful Flutter framework, seamlessly merging intuitive design with modern user interactions."
             }
             link="https://github.com/akodali9/whatsappui_clone"
             type="App Development"

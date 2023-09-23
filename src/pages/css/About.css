@@ -29,6 +29,7 @@
     height: auto;
     margin: auto;
     border-radius: 50%;
+    /* border-radius: 34% 65% 38% 62% / 51% 41% 59% 49%; */
     padding: 20px auto;
 }
 
@@ -83,7 +84,7 @@
     }   
 
     .main .details .intro-block .profile-img{
-        padding: 20px 0px;
+        padding: 10px 0px;
         /* width: 70%; */
     }
 }

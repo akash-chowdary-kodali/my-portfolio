@@ -27,52 +27,45 @@ export const Skills = () => {
           <p className="expertise">My Expertise</p>
         </div>
         <div className="detailsS">
-          <div
-            className="sub-detailsS"
-            data-aos="fade-right"
-            data-aos-duration="1400"
-          >
-            <div className="sub-headingSkills">
-              <img src={Desktopicon} alt="desktop icon" />
-              <p>Software Development</p>
-            </div>
+          <div data-aos="fade-right" data-aos-duration="1400">
+            <div className="sub-detailsS">
+              <div className="sub-headingSkills">
+                <img src={Desktopicon} alt="desktop icon" />
+                <p>Software Development</p>
+              </div>
 
-            <p>
-              Experienced in both functional and OOP: Python, C, Java,
-              JavaScript, Dart.
-            </p>
-          </div>
-          <div
-            className="sub-detailsS"
-            data-aos="fade-right"
-            data-aos-duration="1400"
-          >
-            <div className="sub-headingSkills">
-              <img src={reacticon} alt="react icon" />
-              <p>Frontend Web Dev</p>
+              <p>
+                Experienced in both functional and OOP: Python, C, Java,
+                JavaScript, Dart.
+              </p>
             </div>
-            <p>
-              Passionate about UI/UX. Experience in React js, Express js, HTML,
-              CSS.
-            </p>
           </div>
-          <div
-            className="sub-detailsS"
-            data-aos="fade-right"
-            data-aos-duration="1400"
-          >
-            <div className="sub-headingSkills">
-              <img src={Fluttericon} alt="flutter icon" />
-              <p>Flutter Dev Android, iOS</p>
+          <div data-aos="fade-right" data-aos-duration="1400">
+            <div className="sub-detailsS">
+              <div className="sub-headingSkills">
+                <img src={reacticon} alt="react icon" />
+                <p>Frontend Web Dev</p>
+              </div>
+              <p>
+                Passionate about UI/UX. Experience in React js, Express js,
+                HTML, CSS.
+              </p>
             </div>
-            <p>
-              Experience in developing Cross-platfrorm applications using
-              Flutter framework.
-            </p>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1400">
+            <div className="sub-detailsS">
+              <div className="sub-headingSkills">
+                <img src={Fluttericon} alt="flutter icon" />
+                <p>Flutter Dev Android, iOS</p>
+              </div>
+              <p>
+                Experience in developing Cross-platfrorm applications using
+                Flutter framework.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    // </div>
   );
 };

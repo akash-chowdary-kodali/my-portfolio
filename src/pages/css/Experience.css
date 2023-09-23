@@ -140,7 +140,7 @@
 
 @media (width < 800px) {
     .exp{
-        margin:auto 3%;
+        margin: auto;
     }
 
     @media (width < 500px) {

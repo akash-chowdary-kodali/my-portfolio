@@ -1,10 +1,10 @@
-.works-wrapper{
+.works-wrapper {
   max-width: 1600px;
   margin: auto;
-  
+
 }
 
-.works-wrapper .cards-work-container{
+.works-wrapper .cards-work-container {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
@@ -14,7 +14,7 @@
   background-color: #2e2c38;
 }
 
-.works-wrapper .works-heading{
+.works-wrapper .works-heading {
   text-align: center;
   font-size: clamp(30px, 9vw, 50px);
   font-weight: 600;
@@ -22,40 +22,41 @@
   padding: 20px 0;
 }
 
-.card{
+.card {
   display: inline-flex;
   flex-direction: column;
   background-color: #3d3c4240;
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
   max-width: 450px;
+  min-height: 600px;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
-  
+
 }
 
-.card:hover{
-  transition: 0.3s ease-in; 
+.card:hover {
+  transition: 0.3s ease-in;
   overflow: hidden;
-  transform: translateY(-15px); 
+  transform: translateY(-15px);
 }
 
-.card:hover .card__image{
+.card:hover .card__image {
   transform: scale(1.01);
   transition: 0.3s ease-in;
 }
 
-.card__image{
-  max-height:100%; 
-  max-width:100%;
+.card__image {
+  max-height: 100%;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
 
-.card__title{
+.card__title {
   font-size: 26px;
   text-align: center;
   padding: 10px 0;
@@ -65,13 +66,13 @@
   font-weight: 500;
 }
 
-.card__description{
+.card__description {
   font-size: 16px;
   padding: 0px 20px;
   color: #f4eee0;
 }
 
-.card__btn{
+.card__btn {
   margin: 10px;
   color: #6ce0dc;
   color: #f4eee0;
@@ -85,25 +86,27 @@
   box-shadow: 0 5px 10px 0px #0f0f0f;
 }
 
-.card__btn:hover{
-  transform: translate(-0.25rem,-0.25rem);
+.card__btn:hover {
+  transform: translate(-0.25rem, -0.25rem);
   background: #0f1928;
   background: #201c24;
   box-shadow: 0.25rem 0.25rem #6ce0dc;
   box-shadow: 0.25rem 0.25rem #4f4557;
   transition: 0.2s ease-in;
-  } 
+}
 
-  .card__btn:active {
-    transform: translate(0);
-    box-shadow: none;
-  }
-.card__project_type{
+.card__btn:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.card__project_type {
   text-align: center;
   margin: 5px 0;
   font-weight: 500;
 }
-.proj-body .works-wrapper .whatsapp{
+
+.proj-body .works-wrapper .whatsapp {
   height: 1080px;
   width: 1440px;
 }
