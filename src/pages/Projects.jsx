@@ -12,7 +12,7 @@ export const Projects = () => {
       <div
         className="works-wrapper"
         data-aos="fade-up"
-        data-aos-duration="1600"
+        data-aos-duration="1000"
       >
         <p className="works-heading">Recent Works</p>
         <div className="cards-work-container">

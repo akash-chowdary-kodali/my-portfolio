@@ -4,18 +4,18 @@ import myImg from "../assets/imgs/20220402.webp";
 
 export const About = () => {
   return (
-    <div>
+    <div className="mainbody">
       <div className="main" id="main">
-        <div className="details">
+        <div className="details" data-aos = "zoom-out-down" data-aos-duration="1000">
           <div className="top-block">
-            <p data-aos = "zoom-in-up" data-aos-duration="1000">
-              <span className="title">Frontend Developer.</span>
+            <p >
+              <span className="title">Software Developer.</span>
               <br />I like to develop Good Interactive Applications
             </p>
           </div>
 
           <div className="intro-block">
-            <div data-aos = "fade-right" data-aos-duration="1400">
+            <div >
               <p className="name-block">
                 Hello<span className="wave">👋</span>, I am
                 <span className="name"> Akash. </span>

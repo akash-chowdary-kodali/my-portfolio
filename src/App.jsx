@@ -14,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 0);
   }, []);
 
   return (
@@ -39,22 +39,11 @@ function App() {
       // </section> */}
           <section
             id="contact"
-            style={{ backgroundColor: "hsla(0, 0%, 70%, 0.314" }}
+            style={{ backgroundColor: "hsla(0, 0%, 70%, 0.314", padding: 0 }}
           >
             <Contact />
           </section>
-          <p
-            style={{
-              backgroundColor: "hsla(0, 0%, 70%, 0.314)",
-              textAlign: "center",
-              color: "#2a2833",
-              padding: "20px",
-              fontSize: "14px",
-              fontFamily: "monospace",
-            }}
-          >
-            Designed & built by Akash Chowdary kodali <br /> {":}"}
-          </p>
+          
         </div>
       ) : (
         <Loader />

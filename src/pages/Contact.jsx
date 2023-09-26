@@ -7,7 +7,7 @@ import Resume from "../assets/AkashKodali-Resume.pdf";
 
 export const Contact = () => {
   return (
-    <div data-aos="zoom-in-up" data-aos-duration="800">
+    <div data-aos="fade-up" data-aos-duration="1600">
       <div className="contact-main">
         <div className="contact">
           <p className="heading">Connect Here{" ;}"}</p>
@@ -57,6 +57,17 @@ export const Contact = () => {
           </div>
         </div>
       </div>
+      <p
+        style={{
+          textAlign: "center",
+          color: "#2a2833",
+          padding: "20px",
+          fontSize: "14px",
+          fontFamily: "monospace",
+        }}
+      >
+        Designed & built by Akash Chowdary kodali <br /> {":}"}
+      </p>
     </div>
   );
 };

@@ -34,7 +34,7 @@
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
-
+  margin-bottom: 20px;
 }
 
 .card:hover {
