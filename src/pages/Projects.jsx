@@ -78,9 +78,10 @@ function Card(props) {
           <img src={props.img} alt={"project img"} className="card__image" />
           {/* </a> */}
           <p className="card__title">{props.title}</p>
-          {/* <p className="card__project_type">{props.type}</p> */}
-          <p className="card__description">{props.desc}</p>
+          <p className="card__project_type">{props.type}</p>
         </div>
+        
+        <p className="card__description">{props.desc}</p>
         <a
           target="_blank"
           rel="noreferrer"

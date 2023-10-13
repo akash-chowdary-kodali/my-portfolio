@@ -29,7 +29,6 @@
   margin: 5px;
   padding: 10px;
   max-width: 450px;
-  min-height: 600px;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 10px;
@@ -57,7 +56,7 @@
 
 
 .card__title {
-  font-size: 26px;
+  font-size: clamp(20px, 24px, 3vw);
   text-align: center;
   padding: 10px 0;
   color: #ccd6f6;
@@ -66,17 +65,40 @@
   font-weight: 500;
 }
 
-.card__description {
-  font-size: 16px;
-  padding: 0px 20px;
-  color: #f4eee0;
+.card:hover .card__description {
+  display: block;
+  /* transform: translate(-15%, -15%); */
 }
 
-.card__btn {
+.card:hover .card__image{
+  filter: blur(3px);
+  transition: 0.3s ease-in-out;
+  opacity: 0.3;
+  /* filter: contrast(200%); */
+  -webkit-backdrop-filter:  blur(15px) brightness(75%) saturate(70%);
+  backdrop-filter: blur(15px) brightness(75%) saturate(70%);
+}
+
+.card__description{
+  display: none;
+  font-size: clamp(12px, 20px, 4.3vw);
+  padding: 0px 1.2rem;
+  border-radius: 10px;
+  color: #efeee6;
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.card__btn{
+  display: none;
   margin: 10px;
   color: #6ce0dc;
   color: #f4eee0;
-  font-size: 18px;
+  font-size: clamp(16px, 20px, 3vw);
   border-radius: 5px;
   font-weight: 600;
   background-color: transparent;
@@ -84,6 +106,17 @@
   text-decoration: none;
   border: 0.5px solid #8e8b9a90;
   box-shadow: 0 5px 10px 0px #0f0f0f;
+}
+
+.card:hover .card__project_type{
+  display: none;
+  transition: 1s ease-in;
+}
+
+.card:hover 
+.card__btn {
+  display: block;
+  transition: 1s ease-in;
 }
 
 .card__btn:hover {
@@ -101,7 +134,9 @@
 }
 
 .card__project_type {
+  display: block;
   text-align: center;
+  font-size: 18px;
   margin: 5px 0;
   font-weight: 500;
 }
@@ -110,3 +145,48 @@
   height: 1080px;
   width: 1440px;
 }
+@media (pointer:none), (pointer:coarse) {
+  .card__btn{
+    display: block;
+  }
+
+  
+
+  .card .card__project_type{
+    display: none;
+  }
+}
+
+@media (width < 400px) {
+  .card .card__description{
+    top: 35%;
+  }
+}
+@media (width < 300px) {
+  .card .card__description{
+    top: 30%;
+  }
+}
+
+
+/* @media (pointer:none), (pointer:coarse) {
+  .card .card__image{
+    filter: contrast(100%) blur(1px);
+    opacity: 0.4;
+    -webkit-backdrop-filter:  blur(15px) brightness(75%) saturate(70%);
+    backdrop-filter: blur(15px) brightness(75%) saturate(70%);
+  }
+
+  .card .card__description {
+    font-size: clamp(15px, 20px, 3.5vw);
+    padding: 0px 1.5rem;
+    color: #efeee6;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+} */
