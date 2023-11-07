@@ -22,7 +22,7 @@ export const Skills = () => {
         <p className="headingS">
           I like to code things from scratch, and enjoy bringing ideas to life
         </p>
-        <br />
+        <br/>
         <div data-aos="zoom-in" data-aos-duration="1000">
           <p className="expertise">My Expertise</p>
         </div>
