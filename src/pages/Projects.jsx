@@ -5,6 +5,7 @@ import WhatsappImg from "../assets/imgs/WhatsappClone.webp";
 import PortfolioImg from "../assets/imgs/portfolio.webp";
 import QRAppImg from "../assets/imgs/qrApp.webp";
 import G_Bloodbank from "../assets/imgs/gitamBloodbank.webp";
+import TODOLIST from "../assets/imgs/ToDo_list.webp";
 
 export const Projects = () => {
   return (
@@ -17,6 +18,14 @@ export const Projects = () => {
         <p className="works-heading">Recent Works</p>
         <div className="cards-work-container">
           <Card
+            img={TODOLIST}
+            title={"Todo List"}
+            desc={
+              "A streamlined todo app developed with Flutter for a responsive and intuitive front-end, seamlessly integrated with an Express.js back-end for efficient task management and real-time updates."
+            }
+            link={"https://github.com/akodali9/todo_list"}
+            type={"App Development"}
+          /><Card
             img={G_Bloodbank}
             title={"BloodBank"}
             desc={

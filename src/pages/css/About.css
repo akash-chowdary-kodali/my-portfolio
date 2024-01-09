@@ -2,7 +2,6 @@
     margin: auto;
     padding-top: 100px;
     max-width: 1000px;
-    min-height: 60vh;
 }
 
 .wave {
@@ -64,6 +63,7 @@
 }
 
 .main .details .intro-block p{
+  padding: 5px;
     font-size: 26px;
     color: #393646;
 }

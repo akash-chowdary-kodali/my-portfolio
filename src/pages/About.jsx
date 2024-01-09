@@ -22,8 +22,9 @@ export const About = () => {
                 Nice to meet you
               </p>
               <p>
-                An aspiring Computer Science Engineer currently Working towards
-                Web and mobile Application Development.
+                {/* An aspiring Computer Science Engineer currently Working towards
+                Web and mobile Application Development. */}
+                An aspiring Computer Science Engineer, fueled by a passion for tech innovation, I am determined to create a meaningful impact in a dynamic role.
               </p>
             </div>
 
