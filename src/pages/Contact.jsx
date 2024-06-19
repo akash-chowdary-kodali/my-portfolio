@@ -13,7 +13,7 @@ export const Contact = () => {
           <p className="heading">Connect Here{" ;}"}</p>
           <p className="heading-desc">
             I’m always looking for new opportunities to learn and develop
-            Applications. My inbox is always open for collaboration,
+            software endeavors. My inbox is always open for collaboration,
             brainstorming, tech chat, or discussing new ideas.
           </p>
           <div className="contact-links">

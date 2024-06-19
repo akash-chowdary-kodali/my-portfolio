@@ -10,7 +10,7 @@ export const About = () => {
           <div className="top-block">
             <p >
               <span className="title">Software Developer.</span>
-              <br />I like to develop Good Interactive Applications
+              <br />I like to develop innovative software applications
             </p>
           </div>
 
