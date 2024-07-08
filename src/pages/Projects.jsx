@@ -6,6 +6,7 @@ import PortfolioImg from "../assets/imgs/portfolio.webp";
 import QRAppImg from "../assets/imgs/qrApp.webp";
 import G_Bloodbank from "../assets/imgs/gitamBloodbank.webp";
 import TODOLIST from "../assets/imgs/ToDo_list.webp";
+import FAARentalApp from "../assets/imgs/FAARental_App.webp"
 
 export const Projects = () => {
   return (
@@ -18,6 +19,14 @@ export const Projects = () => {
         <p className="works-heading">Recent Works</p>
         <div className="cards-work-container">
           <Card
+            img={FAARentalApp}
+            title={"Furniture & Appliances Rental App"}
+            desc={
+              "Introducing my culminating project: a Flutter-based furniture and appliances rental app powered by Express.js and MongoDB, offering a user-friendly interface and budget-friendly home furnishing solutions."
+            }
+            link={"https://github.com/akodali9/rental_app"}
+            type={"App Development"}
+          /><Card
             img={TODOLIST}
             title={"Todo List"}
             desc={
@@ -31,7 +40,7 @@ export const Projects = () => {
             desc={
               "I and our team successfully developed a blood bank website for our university. This platform serves as a crucial resource for students and faculty to donate and request blood donations within the campus community."
             }
-            link={"https://www.bloodbankgitam.live"}
+            link={"https://bloodbankgitam.github.io/Bloodbank_react/"}
             type={"Web Development"}
           />
           <Card

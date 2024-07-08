@@ -3,7 +3,7 @@ import "./css/contact.css";
 // import githubIcon from "../assets/icons/github.png";
 // import mailIcon from "../assets/icons/email.png";
 // import linkedinIcon from "../assets/icons/linkedin.png";
-import Resume from "../assets/AkashKodali-Resume.pdf";
+import Resume from "../assets/AKASH_CHOWDARY_KODALI_Resume.pdf";
 
 export const Contact = () => {
   return (
