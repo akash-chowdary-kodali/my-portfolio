@@ -1,5 +1,7 @@
 # Portfolio Website
 
+Website URL: <a href="https://www.akashkodali.dev">akashkodali.dev</a>
+
 This is the README file for my portfolio website built using React. The website showcases my skills, projects, and experience. Below are the sections available on the website:
 
 ## About

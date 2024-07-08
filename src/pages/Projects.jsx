@@ -40,7 +40,7 @@ export const Projects = () => {
             desc={
               "I and our team successfully developed a blood bank website for our university. This platform serves as a crucial resource for students and faculty to donate and request blood donations within the campus community."
             }
-            link={"https://bloodbankgitam.github.io/Bloodbank_react/"}
+            link={"https://github.com/bloodbankgitam/Bloodbank_react"}
             type={"Web Development"}
           />
           <Card
@@ -68,7 +68,7 @@ export const Projects = () => {
             desc={
               "This portfolio website project elegantly presents my proficiency and development experience, employing cutting-edge technologies to create a dynamic showcase of my capabilities."
             }
-            link={"https://akashkodali.studio"}
+            link={"https://github.com/akodali9/my-portfolio"}
             type={"Web Development"}
           />
           <Card
@@ -78,7 +78,7 @@ export const Projects = () => {
               // A Real-time weather Application which can be used to obtain real time weather and 7-week forecast data for specified locations.
               "A real-time weather application which provides current weather information and a comprehensive 7-week forecast for specified location. Users can easily access current conditions, temperature, humidity, wind speed etc."
             }
-            link={"https://akodali9.github.io/weather_application/"}
+            link={"https://github.com/akodali9/weather_application"}
             type={"Web Development"}
           />
         </div>
