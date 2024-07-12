@@ -29,7 +29,7 @@ function NavBar() {
 
   return (
     <div className={toggle ? "nav expanded" : "nav"} id="navigator">
-      <a href={"https://www.akashkodali.studio"}>
+      <a href={"/"}>
         <img src={favicon} alt="logo" className="logo" />
       </a>
 
