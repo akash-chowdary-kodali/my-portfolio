@@ -13,7 +13,6 @@ export const About = () => {
               <br />I like to develop innovative software applications
             </p>
           </div>
-
           <div className="intro-block">
             <div >
               <p className="name-block">

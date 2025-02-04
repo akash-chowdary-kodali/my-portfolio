@@ -18,12 +18,12 @@ export const Contact = () => {
           </p>
           <div className="contact-links">
             <a
-              href="mailto:akashkodali6@gmail.com"
+              href="mailto:akodali.dev@gmail.com"
               rel="noreferrer"
               target="_blank"
               className="contact-link"
             >
-              <span className="email">akashkodali6@gmail.com</span>
+              <span className="email">akodali.dev@gmail.com</span>
               {/* <img src={mailIcon} height={30} alt="mail icon" className="contacticon" /> */}
             </a>
             <a
@@ -36,7 +36,7 @@ export const Contact = () => {
               {/* <img src={githubIcon} height={30} alt="github icon" className="contacticon" /> */}
             </a>
             <a
-              href="https://www.linkedin.com/in/akashchowdarykodali"
+              href="https://www.linkedin.com/in/akashkodali"
               rel="noreferrer"
               target="_blank"
               className="contact-link"
