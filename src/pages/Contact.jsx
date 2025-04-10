@@ -3,7 +3,7 @@ import "./css/contact.css";
 // import githubIcon from "../assets/icons/github.png";
 // import mailIcon from "../assets/icons/email.png";
 // import linkedinIcon from "../assets/icons/linkedin.png";
-import Resume from "../assets/AKASH_CHOWDARY_KODALI_Resume.pdf";
+// import Resume from "../assets/Akash_s_Resume.pdf";
 
 export const Contact = () => {
   return (
@@ -47,7 +47,8 @@ export const Contact = () => {
             <br />
             <a
               type="button"
-              href={Resume}
+              // href={Resume}
+              href={"https://drive.google.com/file/d/1hBOsNkfOPhvWonWKh4DHIDKj5G1S-unP/view?usp=sharing"}
               rel="noreferrer"
               target="_blank"
               className="dbutton"
