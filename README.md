@@ -37,6 +37,6 @@ If you wish to run this portfolio website locally, follow the steps below:
 
 ## Credits
 
-This portfolio website was created by Akash Chowdary kodali (@akodali9). It is built using React, HTML, CSS, and other web technologies. Feel free to use this project as a reference or template for creating your own portfolio website.
+This portfolio website was created by Akash Chowdary kodali (@akash-chowdary-kodali). It is built using React, HTML, CSS, and other web technologies. Feel free to use this project as a reference or template for creating your own portfolio website.
 
 Thank you for visiting my portfolio! If you have any feedback or questions, don't hesitate to get in touch via the provided contact information. Happy browsing!
