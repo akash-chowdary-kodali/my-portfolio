@@ -27,7 +27,7 @@ export const About = () => {
             Full Stack Developer
           </span>
           <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm border border-blue-200 dark:border-blue-700">
-            LLM Fine-tuning
+            LLM Verification
           </span>
         </div>
       </div>
@@ -57,22 +57,14 @@ export const About = () => {
           </h2>
 
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            I'm currently pursuing my Master's in Computer Science at California
-            State University, Long Beach, where I work as a Graduate Research
-            Assistant specializing in multi-agent systems and Large Language
-            Model fine-tuning. My research focuses on developing risk analysis
-            frameworks to quantify the impact of teammate substitution on
-            coordination in AI agent teams.
-          </p>
-
-          <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            With a strong foundation from my Bachelor's degree in Computer
-            Science from GITAM University and hands-on experience in both
-            research and industry, I combine theoretical knowledge with
-            practical skills in AI, machine learning, and full-stack
-            development. I'm passionate about creating innovative solutions that
-            bridge the gap between cutting-edge research and real-world
-            applications.
+            I am Akash, a Computer Science graduate student with proficiency
+            across the software development lifecycle — from full-stack web and
+            mobile development (React, Flutter & Node.js) and Distributed Big
+            Data systems to enterprise CRMs (Salesforce, Ellucian). I am working
+            on deepening my expertise in AI, focusing on LLM verification and
+            multi-agent systems as a Graduate Research Assistant, while
+            developing enterprise CRM solutions and automating workflows for
+            DoIT at CSULB.
           </p>
 
           {/* Key Highlights */}
@@ -96,7 +88,8 @@ export const About = () => {
                   🔬 Current Role:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
-                  Graduate Research Assistant at CSULB
+                  Graduate Research Assistant & DoIT Student Assistant at
+                  CSULB
                 </span>
               </div>
             </div>
@@ -108,7 +101,7 @@ export const About = () => {
                   🎯 Research Focus:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
-                  Multi-agent Systems & LLM Fine-tuning
+                  LLM Verification & Multi-agent Systems
                 </span>
               </div>
             </div>
@@ -120,7 +113,9 @@ export const About = () => {
                   📚 Background:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
-                  B.Tech CSE from GITAM University (2020-2024)
+                  B.Tech CSE from Gandhi Institute of Technology and Management
+                  (2020-2024). Served as a Research & Instructional Student
+                  Assistant in Big Data.
                 </span>
               </div>
             </div>
@@ -138,84 +133,96 @@ export const About = () => {
         </div>
       </div>
 
-      {/* Academic Journey */}
+      {/* Education */}
       <div className="mt-20">
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-          Academic{" "}
-          <span className="text-blue-600 dark:text-blue-400">Journey</span>
+          <span className="text-blue-600 dark:text-blue-400">Education</span>
         </h3>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-            <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Master's Degree
-            </h4>
-            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2">
+          {/* Master's */}
+          <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-colors duration-300">
+            <div className="flex items-center justify-between mb-3">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                Master of Science (MS)
+              </h4>
+              <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs rounded-full border border-blue-200 dark:border-blue-700">
+                Aug. 2024 – Dec. 2026
+              </span>
+            </div>
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">
               California State University, Long Beach
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-3">
-              Computer Science (2024-2026)
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-1">
+              Computer Science
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              Currently focusing on AI research, multi-agent systems, and Large
-              Language Model fine-tuning. Working as Graduate Research Assistant
-              on cutting-edge projects.
+            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
+              Long Beach, CA
             </p>
+            <h5 className="text-gray-900 dark:text-white font-semibold text-sm mb-2">
+              Key Courses:
+            </h5>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Advanced Machine Learning",
+                "Multi-Agent Systems",
+                "Natural Language Processing",
+                "Reinforcement Learning",
+                "Advanced Algorithms",
+                "Research Methods in CS",
+              ].map((course, i) => (
+                <span
+                  key={i}
+                  className="px-2 py-1 bg-gray-100 dark:bg-gray-700/50 text-blue-600 dark:text-blue-400 text-xs rounded border border-gray-300 dark:border-gray-600"
+                >
+                  {course}
+                </span>
+              ))}
+            </div>
           </div>
 
-          <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-            <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Bachelor's Degree
-            </h4>
-            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2">
-              GITAM University
+          {/* Bachelor's */}
+          <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-colors duration-300">
+            <div className="flex items-center justify-between mb-3">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                Bachelor of Technology (B.Tech)
+              </h4>
+              <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs rounded-full border border-blue-200 dark:border-blue-700">
+                Aug. 2020 – May 2024
+              </span>
+            </div>
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">
+              Gandhi Institute of Technology and Management
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-3">
-              Computer Science & Engineering (2020-2024)
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-1">
+              Computer Science and Engineering
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              Built strong foundation in software engineering, data structures,
-              algorithms, and full-stack development. Completed multiple
-              projects and internships.
+            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
+              Visakhapatnam, India
             </p>
+            <h5 className="text-gray-900 dark:text-white font-semibold text-sm mb-2">
+              Key Courses:
+            </h5>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Data Structures and Algorithms",
+                "Database Management Systems",
+                "Web Technologies",
+                "Software Engineering",
+                "Mobile Application Development",
+                "Computer Networks",
+              ].map((course, i) => (
+                <span
+                  key={i}
+                  className="px-2 py-1 bg-gray-100 dark:bg-gray-700/50 text-blue-600 dark:text-blue-400 text-xs rounded border border-gray-300 dark:border-gray-600"
+                >
+                  {course}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Stats or Quick Facts */}
-      <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div className="text-center p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-            MS
-          </div>
-          <div className="text-sm text-gray-600 dark:text-gray-300">
-            Computer Science
-          </div>
-        </div>
-        <div className="text-center p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-            AI
-          </div>
-          <div className="text-sm text-gray-600 dark:text-gray-300">
-            Research Focus
-          </div>
-        </div>
-        <div className="text-center p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-            2025
-          </div>
-          <div className="text-sm text-gray-600 dark:text-gray-300">
-            Research Started
-          </div>
-        </div>
-        <div className="text-center p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-            CSULB
-          </div>
-          <div className="text-sm text-gray-600 dark:text-gray-300">
-            Current University
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
