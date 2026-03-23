@@ -1,12 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import { useTheme } from "../../contexts/ThemeContext";
+import { RESUME_URL } from "../../constants/links";
 
 function NavBar() {
   const [toggle, settoggle] = useState(false);
   const menuButtonRef = useRef(null);
   const { isDark, toggleTheme } = useTheme();
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   const handletoggle = () => {
     settoggle(!toggle);
@@ -65,31 +69,31 @@ function NavBar() {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 to="/about"
-                className="text-text-light dark:text-text-dark hover:opacity-70 px-3 py-2 text-sm font-medium transition-opacity duration-200"
+                className={`px-3 py-2 text-sm font-medium transition-all duration-200 border-b-2 ${isActive("/about") ? "border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400" : "border-transparent text-text-light dark:text-text-dark hover:opacity-70"}`}
               >
                 About
               </Link>
               <Link
                 to="/expertise"
-                className="text-text-light dark:text-text-dark hover:opacity-70 px-3 py-2 text-sm font-medium transition-opacity duration-200"
+                className={`px-3 py-2 text-sm font-medium transition-all duration-200 border-b-2 ${isActive("/expertise") ? "border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400" : "border-transparent text-text-light dark:text-text-dark hover:opacity-70"}`}
               >
                 Expertise
               </Link>
               <Link
                 to="/experience"
-                className="text-text-light dark:text-text-dark hover:opacity-70 px-3 py-2 text-sm font-medium transition-opacity duration-200"
+                className={`px-3 py-2 text-sm font-medium transition-all duration-200 border-b-2 ${isActive("/experience") ? "border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400" : "border-transparent text-text-light dark:text-text-dark hover:opacity-70"}`}
               >
                 Experience
               </Link>
               <Link
                 to="/projects"
-                className="text-text-light dark:text-text-dark hover:opacity-70 px-3 py-2 text-sm font-medium transition-opacity duration-200"
+                className={`px-3 py-2 text-sm font-medium transition-all duration-200 border-b-2 ${isActive("/projects") ? "border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400" : "border-transparent text-text-light dark:text-text-dark hover:opacity-70"}`}
               >
                 Projects
               </Link>
               <Link
                 to="/contact"
-                className="text-text-light dark:text-text-dark hover:opacity-70 px-3 py-2 text-sm font-medium transition-opacity duration-200"
+                className={`px-3 py-2 text-sm font-medium transition-all duration-200 border-b-2 ${isActive("/contact") ? "border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400" : "border-transparent text-text-light dark:text-text-dark hover:opacity-70"}`}
               >
                 Contact
               </Link>
@@ -136,7 +140,7 @@ function NavBar() {
 
               {/* Resume Button */}
               <a
-                href="https://drive.google.com/file/d/1hBOsNkfOPhvWonWKh4DHIDKj5G1S-unP/view"
+                href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center px-4 py-2 border border-text-light dark:border-text-dark text-text-light dark:text-text-dark hover:bg-text-light hover:text-background-light dark:hover:bg-text-dark dark:hover:text-background-dark text-sm font-medium rounded transition-all duration-200"
@@ -224,41 +228,41 @@ function NavBar() {
             <Link
               to="/about"
               onClick={() => settoggle(false)}
-              className="text-text-light dark:text-text-dark hover:opacity-70 block px-3 py-2 rounded text-base font-medium transition-opacity duration-200"
+              className={`block px-3 py-2 rounded text-base font-medium transition-all duration-200 ${isActive("/about") ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20" : "text-text-light dark:text-text-dark hover:opacity-70"}`}
             >
               About
             </Link>
             <Link
               to="/expertise"
               onClick={() => settoggle(false)}
-              className="text-text-light dark:text-text-dark hover:opacity-70 block px-3 py-2 rounded text-base font-medium transition-opacity duration-200"
+              className={`block px-3 py-2 rounded text-base font-medium transition-all duration-200 ${isActive("/expertise") ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20" : "text-text-light dark:text-text-dark hover:opacity-70"}`}
             >
               Expertise
             </Link>
             <Link
               to="/experience"
               onClick={() => settoggle(false)}
-              className="text-text-light dark:text-text-dark hover:opacity-70 block px-3 py-2 rounded text-base font-medium transition-opacity duration-200"
+              className={`block px-3 py-2 rounded text-base font-medium transition-all duration-200 ${isActive("/experience") ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20" : "text-text-light dark:text-text-dark hover:opacity-70"}`}
             >
               Experience
             </Link>
             <Link
               to="/projects"
               onClick={() => settoggle(false)}
-              className="text-text-light dark:text-text-dark hover:opacity-70 block px-3 py-2 rounded text-base font-medium transition-opacity duration-200"
+              className={`block px-3 py-2 rounded text-base font-medium transition-all duration-200 ${isActive("/projects") ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20" : "text-text-light dark:text-text-dark hover:opacity-70"}`}
             >
               Projects
             </Link>
             <Link
               to="/contact"
               onClick={() => settoggle(false)}
-              className="text-text-light dark:text-text-dark hover:opacity-70 block px-3 py-2 rounded text-base font-medium transition-opacity duration-200"
+              className={`block px-3 py-2 rounded text-base font-medium transition-all duration-200 ${isActive("/contact") ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20" : "text-text-light dark:text-text-dark hover:opacity-70"}`}
             >
               Contact
             </Link>
             <div className="border-t border-border-light dark:border-border-dark pt-4">
               <a
-                href="https://drive.google.com/file/d/1hBOsNkfOPhvWonWKh4DHIDKj5G1S-unP/view"
+                href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-light dark:text-text-dark hover:opacity-70 block px-3 py-2 rounded text-base font-medium transition-opacity duration-200 flex items-center"

@@ -14,6 +14,16 @@ export const Skills = () => {
         { name: "Reinforcement Learning", level: 85, category: "AI Technique" },
         { name: "LLM Fine-tuning", level: 80, category: "AI Technique" },
         { name: "Multi-agent Systems", level: 85, category: "Research Area" },
+        {
+          name: "LLM Verification (GPT-4)",
+          level: 85,
+          category: "AI Technique",
+        },
+        { name: "RLHF", level: 80, category: "AI Technique" },
+        { name: "Pandas", level: 90, category: "Data Analysis" },
+        { name: "NumPy", level: 90, category: "Scientific Computing" },
+        { name: "Matplotlib", level: 85, category: "Visualization" },
+        { name: "PySpark", level: 75, category: "Big Data Processing" },
       ],
     },
     {
@@ -69,6 +79,8 @@ export const Skills = () => {
         { name: "SQL", level: 75, category: "Database" },
         { name: "R", level: 70, category: "Statistics" },
         { name: "Go", level: 65, category: "Systems" },
+        { name: "C", level: 70, category: "Systems" },
+        { name: "HTML/CSS", level: 90, category: "Web" },
       ],
     },
     {
@@ -83,6 +95,10 @@ export const Skills = () => {
         { name: "VS Code", level: 95, category: "IDE" },
         { name: "WSL", level: 85, category: "Development Environment" },
         { name: "Postman", level: 80, category: "API Testing" },
+        { name: "Ellucian", level: 70, category: "Enterprise Systems" },
+        { name: "Salesforce (Apex, Process Builder)", level: 75, category: "Enterprise Systems" },
+        { name: "Power Automate", level: 75, category: "Workflow Automation" },
+        { name: "Azure (PaaS)", level: 75, category: "Cloud Platform" },
       ],
     },
     {
@@ -98,6 +114,8 @@ export const Skills = () => {
         { name: "NumPy", level: 85, category: "Scientific Computing" },
         { name: "Matplotlib", level: 80, category: "Visualization" },
         { name: "PySpark", level: 70, category: "Big Data Processing" },
+        { name: "MapReduce", level: 75, category: "Big Data" },
+        { name: "Data Processing Pipelines", level: 80, category: "Big Data" },
       ],
     },
   ];

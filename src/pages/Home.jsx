@@ -16,8 +16,9 @@ export const Home = () => {
             Akash Chowdary Kodali
           </h1>
           <p className="mt-6 text-xl md:text-2xl font-light text-gray-200">
-            Master's Student in Computer Science & Graduate Research Assistant
-            at California State University, Long Beach
+            Master's Student in Computer Science, Graduate Research Assistant
+            & DoIT Student Assistant at California State University, Long
+            Beach
           </p>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl">
             Specializing in AI research, multi-agent systems, and full-stack
@@ -59,7 +60,7 @@ export const Home = () => {
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               Master's student at CSULB with a passion for AI research and
               software development. Currently working as a Graduate Research
-              Assistant on multi-agent systems and LLM fine-tuning.
+              Assistant and DoIT Student Assistant.
             </p>
             <div className="mt-4 text-blue-600 dark:text-blue-400 text-sm font-semibold">
               Learn more →
@@ -80,8 +81,8 @@ export const Home = () => {
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               Active research in multi-agent systems, risk analysis frameworks,
-              and Large Language Model fine-tuning. Published work on team
-              coordination and partner transitions in AI agents.
+              and Large Language Model fine-tuning. Former Research &
+              Instructional Student Assistant for Big Data at GITAM.
             </p>
             <div className="mt-4 text-blue-600 dark:text-blue-400 text-sm font-semibold">
               View research →

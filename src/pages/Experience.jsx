@@ -1,9 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Experience = () => {
   const experiences = [
     {
       id: 1,
+      title: "DoIT-InnovationTeam Student Assistant",
+      company: "California State University, Long Beach",
+      location: "Long Beach, CA",
+      period: "Dec. 2025 – Present",
+      type: "Part-time",
+      description:
+        "Developing and enhancing CRM solutions using Microsoft Azure Platform as a Service (PaaS) to support academic and administrative workflows. Automating CRM workflows and business processes using Microsoft Power Automate.",
+      achievements: [
+        "Developing and enhancing CRM solutions using Microsoft Azure Platform as a Service (PaaS)",
+        "Automating CRM workflows and business processes using Microsoft Power Automate, improving data consistency, notifications, and operational efficiency",
+        "Designing and integrating RESTful APIs and backend services for secure data exchange",
+        "Collaborating with faculty and stakeholders to customize CRM features and troubleshoot issues, and apply software engineering best practices including CI/CD and version control",
+      ],
+      technologies: [
+        "Microsoft Azure PaaS",
+        "Microsoft Power Automate",
+        "RESTful APIs",
+        "CRM Systems",
+        "CI/CD",
+        "Version Control",
+      ],
+      link: null,
+    },
+    {
+      id: 2,
       title: "Graduate Research Assistant",
       company: "California State University, Long Beach",
       location: "Long Beach, CA",
@@ -12,11 +38,10 @@ export const Experience = () => {
       description:
         "Developing risk analysis frameworks to quantify the impact of teammate substitution on coordination in multi-agent systems using the Overcooked-AI benchmark. Leading research on team dynamics and agent collaboration patterns.",
       achievements: [
-        "Developed a risk analysis framework using spatial coordination and reward efficiency metrics",
-        "Analyzed team dynamics by measuring shifts after systematically substituting agents trained with different methods",
-        "Demonstrated that human-aware agents maintained significantly better team performance during partner transitions",
-        "Fine-tuned Large Language Models (LLMs) for domain-specific applications using RLHF techniques",
-        "Applied reinforcement learning techniques to align LLMs with target behaviors",
+        "Developed a risk analysis framework using the Overcooked-AI benchmark to quantify the impact of teammate substitution on coordination and efficiency in multi-agent systems.",
+        "In collaboration with Dr. Xin Qin, created a methodology to analyze team dynamics by measuring metrics (spatial coordination, reward efficiency) and demonstrating that human-aware agents maintained significantly better team performance during partner transitions.",
+        "Worked on fine-tuned LLMs for domain-specific applications, applying reinforcement learning techniques (RLHF) to align models with target behaviors and analyzing outputs with quantitative/qualitative methods.",
+        "Pioneered the 'Atlas' GPT pipeline research, collaborating with Dr. Xin Qin, Dr. Hailu Xu, and Dr. Wenlu Xu on analysis covering Field Completeness, Metadata Accuracy, retrieval coverage, and cross-method agreement by analyzing unique DOI entries.",
       ],
       technologies: [
         "Python",
@@ -29,19 +54,34 @@ export const Experience = () => {
       link: null,
     },
     {
-      id: 2,
+      id: 3,
+      title: "Research & Instructional Student Assistant",
+      company: "Gandhi Institute of Technology and Management",
+      location: "Visakhapatnam, India",
+      period: "Spring 2024",
+      type: "Part-time",
+      description:
+        "Guided peers in the Introduction to Big Data course, providing technical guidance on the Hadoop ecosystem, including MapReduce, Hive, and PySpark within a Linux environment.",
+      achievements: [
+        "Guided peers in the Introduction to Big Data course, providing technical guidance on the Hadoop ecosystem",
+        "Collaborated with a peer under the guidance of Dr. Srikanth Thota to design and prototype a distributed collaborative filtering system",
+        "Benchmarked Pearson Correlation and Cosine Similarity via MSE/RMSE metrics",
+      ],
+      technologies: ["Hadoop", "MapReduce", "Hive", "PySpark", "Linux"],
+      link: null,
+    },
+    {
+      id: 4,
       title: "Salesforce Developer Intern",
       company: "SmartInternz",
       location: "Remote",
-      period: "April 2023 - May 2023",
+      period: "Summer 2023",
       type: "Internship",
       description:
         "Developed and optimized Apex code to enhance Salesforce functionality and automate business processes. Learned workflow automation and delivered high-quality Salesforce solutions.",
       achievements: [
-        "Developed and optimized Apex code to enhance Salesforce functionality",
-        "Automated complex workflows using Salesforce Process Builder and Flow, improving operational efficiency by 30%",
-        "Customized Salesforce solutions to meet specific business requirements, increasing productivity",
-        "Conducted thorough testing and debugging to deliver high-quality solutions",
+        "Automated complex business processes using Apex, Process Builder, and Flow, enhancing functionality and improving operational efficiency by 30%.",
+        "Delivered high-quality, customized Salesforce solutions by gathering business requirements, increasing productivity, and conducting thorough testing and debugging.",
       ],
       technologies: [
         "Salesforce Lightning",
@@ -55,48 +95,7 @@ export const Experience = () => {
     },
   ];
 
-  const education = [
-    {
-      id: 1,
-      degree: "Master of Science (MS)",
-      field: "Computer Science",
-      institution: "California State University, Long Beach",
-      location: "Long Beach, CA",
-      period: "Aug 2024 - Dec 2026",
-      type: "education",
-      description:
-        "Pursuing advanced studies in computer science with specialization in artificial intelligence, machine learning, and research methodologies. Currently working as Graduate Research Assistant.",
-      courses: [
-        "Advanced Machine Learning",
-        "Multi-Agent Systems",
-        "Natural Language Processing",
-        "Reinforcement Learning",
-        "Advanced Algorithms",
-        "Research Methods in Computer Science",
-      ],
-    },
-    {
-      id: 2,
-      degree: "Bachelor of Technology (B.Tech)",
-      field: "Computer Science and Engineering",
-      institution: "GITAM University",
-      location: "Visakhapatnam, India",
-      period: "Aug 2020 - May 2024",
-      type: "education",
-      description:
-        "Completed comprehensive computer science education with strong foundation in software development, data structures, algorithms, and modern web technologies.",
-      courses: [
-        "Data Structures and Algorithms",
-        "Database Management Systems",
-        "Web Technologies",
-        "Software Engineering",
-        "Mobile Application Development",
-        "Computer Networks",
-      ],
-    },
-  ];
-
-  const ExperienceCard = ({ item, isEducation = false }) => (
+  const ExperienceCard = ({ item }) => (
     <div className="relative pl-8 pb-12">
       {/* Timeline dot */}
       <div className="absolute left-0 top-0 w-4 h-4 bg-blue-600 dark:bg-blue-400 rounded-full border-4 border-white dark:border-gray-900"></div>
@@ -109,28 +108,23 @@ export const Experience = () => {
         <div className="flex flex-wrap items-start justify-between mb-4">
           <div className="flex-1">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-              {isEducation ? item.degree : item.title}
+              {item.title}
             </h3>
             <div className="text-blue-600 dark:text-blue-400 font-semibold mb-2">
-              {isEducation ? item.institution : item.company}
+              {item.company}
               {item.location && (
                 <span className="text-gray-600 dark:text-gray-300 font-normal ml-2">
                   • {item.location}
                 </span>
               )}
             </div>
-            {isEducation && item.field && (
-              <div className="text-gray-600 dark:text-gray-300 mb-2">
-                {item.field}
-              </div>
-            )}
           </div>
           <div className="flex flex-col items-end">
             <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm rounded-full border border-blue-200 dark:border-blue-700 mb-2">
               {item.period}
             </span>
             <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700/50 text-gray-600 dark:text-gray-300 text-xs rounded-full">
-              {isEducation ? "Education" : item.type}
+              {item.type}
             </span>
           </div>
         </div>
@@ -139,14 +133,14 @@ export const Experience = () => {
           {item.description}
         </p>
 
-        {/* Achievements or Courses */}
-        {(item.achievements || item.courses) && (
+        {/* Achievements */}
+        {item.achievements && (
           <div className="mb-4">
             <h4 className="text-gray-900 dark:text-white font-semibold mb-3">
-              {isEducation ? "Key Courses:" : "Key Achievements:"}
+              Key Achievements:
             </h4>
             <ul className="space-y-2">
-              {(item.achievements || item.courses).map((achievement, index) => (
+              {item.achievements.map((achievement, index) => (
                 <li key={index} className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                   <span className="text-gray-600 dark:text-gray-300 text-sm">
@@ -208,11 +202,11 @@ export const Experience = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Experience & Education
+            Experience
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            My professional journey, academic background, and the skills I've
-            developed along the way.
+            My professional journey and the skills I've developed along the
+            way.
           </p>
         </div>
 
@@ -233,21 +227,6 @@ export const Experience = () => {
             </div>
           </div>
 
-          {/* Education */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-              <span className="w-8 h-8 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mr-3">
-                🎓
-              </span>
-              Education
-            </h3>
-
-            <div className="space-y-0">
-              {education.map((edu) => (
-                <ExperienceCard key={edu.id} item={edu} isEducation={true} />
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Call to Action */}
@@ -259,9 +238,12 @@ export const Experience = () => {
             I'm always open to discussing new opportunities and innovative
             projects.
           </p>
-          <button className="bg-blue-600 dark:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors duration-200">
+          <Link
+            to="/contact"
+            className="inline-block bg-blue-600 dark:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors duration-200"
+          >
             Get In Touch
-          </button>
+          </Link>
         </div>
       </div>
     </div>
