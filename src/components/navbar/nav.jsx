@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import { useTheme } from "../../contexts/ThemeContext";
+import { RESUME_URL } from "../../constants/links";
 
 function NavBar() {
   const [toggle, settoggle] = useState(false);
@@ -139,7 +140,7 @@ function NavBar() {
 
               {/* Resume Button */}
               <a
-                href={"https://akash-chowdary-kodali.onrender.com/resume"}
+                href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center px-4 py-2 border border-text-light dark:border-text-dark text-text-light dark:text-text-dark hover:bg-text-light hover:text-background-light dark:hover:bg-text-dark dark:hover:text-background-dark text-sm font-medium rounded transition-all duration-200"
@@ -261,7 +262,7 @@ function NavBar() {
             </Link>
             <div className="border-t border-border-light dark:border-border-dark pt-4">
               <a
-                href={"https://akash-chowdary-kodali.onrender.com/resume"}
+                href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-light dark:text-text-dark hover:opacity-70 block px-3 py-2 rounded text-base font-medium transition-opacity duration-200 flex items-center"
