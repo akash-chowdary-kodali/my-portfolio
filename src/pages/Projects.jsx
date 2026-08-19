@@ -7,6 +7,25 @@ import WhatsappImg from "../assets/imgs/WhatsappClone.webp";
 export const Projects = () => {
   const projects = [
     {
+      id: 0,
+      title: "AI Voice Agent - CSULB Student Financial Services",
+      description:
+        "A real-time voice agent (speech recognition, LLM, and text-to-speech) with WebSocket duplex streaming at 24 kHz, handling concurrent phone and browser calls via async Python (FastAPI and asyncio). It uses a RAG pipeline with OpenAI embeddings and Azure AI Search hybrid retrieval (BM25, vector, and semantic ranking), optimized to 300 to 500 ms per query. Deployed with Bicep infrastructure as code across multiple Azure environments with automated RBAC, and instrumented with OpenTelemetry and Application Insights.",
+      image:
+        "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      technologies: ["Python", "FastAPI", "Azure", "React"],
+      category: "Production AI",
+      githubUrl: null,
+      liveUrl: null,
+      featured: true,
+      highlights: [
+        "Real-time duplex audio streaming at 24 kHz over WebSockets",
+        "RAG pipeline answering in 300 to 500 ms per query",
+        "Azure AI Search hybrid retrieval (BM25, vector, semantic)",
+        "Bicep IaC, OpenTelemetry, Application Insights",
+      ],
+    },
+    {
       id: 1,
       title: "Atlas: LLM for Bibliographic Retrieval",
       description:

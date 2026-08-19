@@ -57,14 +57,13 @@ export const About = () => {
           </h2>
 
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            I am Akash, a Computer Science graduate student with proficiency
-            across the software development lifecycle — from full-stack web and
-            mobile development (React, Flutter & Node.js) and Distributed Big
-            Data systems to enterprise CRMs (Salesforce, Ellucian). I am working
-            on deepening my expertise in AI, focusing on LLM verification and
-            multi-agent systems as a Graduate Research Assistant, while
-            developing enterprise CRM solutions and automating workflows for
-            DoIT at CSULB.
+            I'm a Computer Science master's student who builds across the
+            stack. Production AI (LLMs, RAG, and a real-time voice agent),
+            full-stack web and mobile (React, Flutter, Node.js), and enterprise
+            integrations (Ellucian Advance CRM, Azure Logic Apps, Power BI). As
+            a Graduate Research Assistant I work on LLM verification and
+            multi-agent systems. At DoIT I build and ship internal tools and
+            automations for the university.
           </p>
 
           {/* Key Highlights */}

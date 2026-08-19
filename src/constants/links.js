@@ -1,2 +1,1 @@
-export const RESUME_URL =
-  "https://drive.google.com/file/d/1k_iC_EKkXDKO9tw3IjzsR1i4XxquIZE1/view?usp=sharing";
+export const RESUME_URL = "https://akash-chowdary-kodali.onrender.com/resume";
