@@ -14,20 +14,21 @@ export const About = () => {
         </h1>
         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
           Master's student in Computer Science at California State University,
-          Long Beach, specializing in AI research and full-stack development
+          Long Beach (CSULB), graduating in December 2026. I build AI, backend
+          and Azure cloud systems.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm border border-blue-200 dark:border-blue-700">
             Graduate Research Assistant
           </span>
           <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm border border-blue-200 dark:border-blue-700">
-            AI Researcher
+            Software Engineer (Student Assistant)
           </span>
           <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm border border-blue-200 dark:border-blue-700">
-            Full Stack Developer
+            AI and Cloud Engineering
           </span>
           <span className="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm border border-blue-200 dark:border-blue-700">
-            LLM Verification
+            LLM Evaluation
           </span>
         </div>
       </div>
@@ -58,12 +59,16 @@ export const About = () => {
 
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             I'm a Computer Science master's student who builds across the
-            stack. Production AI (LLMs, RAG, and a real-time voice agent),
-            full-stack web and mobile (React, Flutter, Node.js), and enterprise
-            integrations (Ellucian Advance CRM, Azure Logic Apps, Power BI). As
-            a Graduate Research Assistant I work on LLM verification and
-            multi-agent systems. At DoIT I build and ship internal tools and
-            automations for the university.
+            stack. On CSULB's Innovation Team (ITS) I led the design of the
+            Student Financial Services voice agent and extended a Microsoft
+            sample into production, where it is in staged business testing. I
+            also designed and built a commencement assistant for the 2027
+            commencement, am the sole engineer on an alumni event platform in
+            final testing ahead of launch, and build CRM data pipelines and
+            integrations (Ellucian, Databricks, Azure Logic Apps). As a
+            Graduate Research Assistant I study how well LLMs find the right
+            citations, and I have a first-author paper in the ACL Anthology
+            (WASP workshop, IJCNLP-AACL 2025).
           </p>
 
           {/* Key Highlights */}
@@ -87,8 +92,8 @@ export const About = () => {
                   🔬 Current Role:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
-                  Graduate Research Assistant & DoIT Student Assistant at
-                  CSULB
+                  Software Engineer (Student Assistant), Innovation Team (ITS),
+                  and Graduate Research Assistant at CSULB
                 </span>
               </div>
             </div>
@@ -100,7 +105,8 @@ export const About = () => {
                   🎯 Research Focus:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
-                  LLM Verification & Multi-agent Systems
+                  LLM bibliographic retrieval and evaluation (M.S. thesis), and
+                  multi-agent coordination
                 </span>
               </div>
             </div>
@@ -114,7 +120,7 @@ export const About = () => {
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
                   B.Tech CSE from Gandhi Institute of Technology and Management
                   (2020-2024). Served as a Research & Instructional Student
-                  Assistant in Big Data.
+                  Assistant for the Introduction to Big Data lab.
                 </span>
               </div>
             </div>
@@ -145,7 +151,7 @@ export const About = () => {
                 Master of Science (MS)
               </h4>
               <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs rounded-full border border-blue-200 dark:border-blue-700">
-                Aug. 2024 – Dec. 2026
+                Aug 2024 - Dec 2026
               </span>
             </div>
             <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">
@@ -186,7 +192,7 @@ export const About = () => {
                 Bachelor of Technology (B.Tech)
               </h4>
               <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs rounded-full border border-blue-200 dark:border-blue-700">
-                Aug. 2020 – May 2024
+                Aug 2020 - May 2024
               </span>
             </div>
             <p className="text-blue-600 dark:text-blue-400 font-semibold mb-1">

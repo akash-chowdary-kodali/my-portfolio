@@ -16,14 +16,16 @@ export const Home = () => {
             Akash Chowdary Kodali
           </h1>
           <p className="mt-6 text-xl md:text-2xl font-light text-gray-200">
-            Master's Student in Computer Science, Graduate Research Assistant
-            & DoIT Student Assistant at California State University, Long
-            Beach
+            M.S. Computer Science student, Graduate Research Assistant and
+            Software Engineer (Student Assistant) on the Innovation Team (ITS)
+            at California State University, Long Beach
           </p>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl">
-            Specializing in AI research, multi-agent systems, and full-stack
-            development. Currently working on risk analysis frameworks for AI
-            agents and fine-tuning Large Language Models.
+            I build AI, backend and Azure cloud systems for CSULB's IT
+            Services: a voice agent deployed to production and in staged
+            business testing, a commencement assistant, an alumni event
+            platform and CRM data pipelines. My M.S. thesis measures how well
+            LLMs find the right citations.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Link
@@ -58,9 +60,9 @@ export const Home = () => {
               </h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Master's student at CSULB with a passion for AI research and
-              software development. Currently working as a Graduate Research
-              Assistant and DoIT Student Assistant.
+              M.S. CS student at CSULB, graduating in December 2026. I work as
+              a Graduate Research Assistant and as a Software Engineer (Student
+              Assistant) on the Innovation Team (ITS).
             </p>
             <div className="mt-4 text-blue-600 dark:text-blue-400 text-sm font-semibold">
               Learn more →
@@ -80,9 +82,11 @@ export const Home = () => {
               </h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Active research in multi-agent systems, risk analysis frameworks,
-              and Large Language Model fine-tuning. Former Research &
-              Instructional Student Assistant for Big Data at GITAM.
+              First-author paper in the ACL Anthology (WASP workshop,
+              IJCNLP-AACL 2025) and an M.S. thesis on LLM bibliographic
+              retrieval. I also built the experiment platform for a multi-agent
+              coordination study. Former Research & Instructional Student
+              Assistant for Big Data at GITAM.
             </p>
             <div className="mt-4 text-blue-600 dark:text-blue-400 text-sm font-semibold">
               View research →
@@ -102,9 +106,9 @@ export const Home = () => {
               </h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Expertise in Python, PyTorch, reinforcement learning, full-stack
-              development with React and Node.js, and modern development tools
-              including Docker and cloud platforms.
+              Python, FastAPI, TypeScript and React; Azure Container Apps,
+              Functions, Service Bus, Logic Apps and Bicep; RAG, voice agents
+              and LLM evaluation.
             </p>
             <div className="mt-4 text-blue-600 dark:text-blue-400 text-sm font-semibold">
               View skills →
@@ -124,9 +128,9 @@ export const Home = () => {
               </h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              From AI research projects and rental marketplace apps to blood
-              bank management systems. Full-stack applications built with modern
-              technologies and best practices.
+              Work and course projects: the CSULB voice agent, LLM research,
+              an LLM inference benchmark, a health insurance Q&A agent, and
+              earlier full-stack and mobile apps.
             </p>
             <div className="mt-4 text-blue-600 dark:text-blue-400 text-sm font-semibold">
               View portfolio →
@@ -140,9 +144,9 @@ export const Home = () => {
             Currently Available for Opportunities
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
-            I'm actively seeking Software Engineer, AI Research, or Data Science
-            positions. Open to full-time opportunities, internships, and
-            research collaborations.
+            I'm looking for full-time software, backend, cloud and AI
+            engineering roles starting January 2027. F-1 OPT, STEM OPT
+            eligible, and open to relocation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -178,10 +182,10 @@ export const Home = () => {
               AI
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-300">
-              Research Focus
+              Engineering Focus
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-              Multi-agent Systems
+              LLM systems and evaluation
             </div>
           </div>
           <div className="text-center p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
@@ -203,7 +207,7 @@ export const Home = () => {
               to Opportunities
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-              SWE & Research
+              From Jan 2027
             </div>
           </div>
         </div>

@@ -5,27 +5,37 @@ export const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "DoIT Innovation Team - Student Assistant",
-      company: "California State University, Long Beach",
+      title: "Software Engineer (Student Assistant)",
+      company: "Innovation Team (ITS), California State University, Long Beach",
       location: "Long Beach, CA",
       period: "Dec 2025 - Present",
       type: "Part-time",
       description:
-        "Built and deployed a production AI voice agent for Student Financial Services, plus integrations and automations across campus enterprise systems.",
+        "I build AI systems, APIs, CRM data pipelines and Azure infrastructure for CSULB's IT Services: a voice agent, a commencement assistant, an alumni event platform, and integrations with Ellucian CRM, DocuSign and SharePoint.",
       achievements: [
-        "Built and deployed a production AI voice agent for Student Financial Services, covering real-time audio streaming, RAG-powered knowledge retrieval, and a React portal that staff use day to day.",
-        "Designed and integrated secure REST APIs and backend services to exchange data across Ellucian Advance CRM, Oracle SQL, and third-party platforms (DocuSign, Qualtrics, Gravity).",
-        "Built integrations and automations with Azure Logic Apps and Power Automate, and surfaced operational data in Power BI dashboards, retiring manual cross-functional workflows.",
+        "Designed and built an AI commencement assistant for the 2027 commencement: 4 services on Azure Container Apps joined by Service Bus session queues, answering from a 19-topic knowledge base on gpt-4o-mini across 6 channels built, 4 enabled (SMS, web, Teams, Copilot).",
+        "Fixed an outage where the commencement assistant stopped replying on every channel: long LLM turns outlived the 30-second Service Bus lock; added lock auto-renewal, safe redelivery through duplicate checks, and session re-acquisition.",
+        "Sole engineer on the Alumni Event Planner, in final testing on Azure ahead of launch for CSULB alumni events: React 19 and TypeScript front end, FastAPI on Azure Functions, Entra ID roles, offline-tolerant QR check-in, and 12 Logic Apps that sync RSVPs to Ellucian CRM through the Ethos API. About 1,250 backend pytest and 120 frontend tests.",
+        "Led the design of the Student Financial Services voice agent and extended a Microsoft sample into production (117 commits): bilingual (English and Spanish) calls via OpenAI Whisper and Azure Voice Live (gpt-realtime), now in staged business testing before students use it.",
+        "Traced 34 failed call transfers in 30 days to a missing caller ID on the outbound phone leg using App Insights logs, and shipped a fix that passes an owned caller ID with a retry-then-graceful-hangup path.",
+        "Defined the voice agent's Azure infrastructure in Bicep and shipped it through an approval-gated CI/CD pipeline in Azure DevOps that runs 59 pytest tests before deploy; built a daily secret-rotation workflow in Azure Logic Apps after an expired secret took the admin portal down.",
+        "Scheduled 6 Ellucian Data Connect pipelines that have migrated 4,000+ alumni records from Advance Web to Advance CRM, and built Databricks jobs that write Constant Contact bounces into the new CRM (bounce sync scheduled weekly).",
+        "Fixed the production DocuSign Connect router on Azure Functions (4 filename variants it was silently dropping) and hardened a shared O365/SharePoint API that 10+ services call daily (Microsoft Graph retry with backoff, thread-safe token cache).",
       ],
       technologies: [
-        "Azure",
-        "Azure Logic Apps",
-        "Power Automate",
-        "Power BI",
-        "Ellucian Advance CRM",
-        "Oracle SQL",
-        "REST APIs",
+        "Python",
+        "FastAPI",
+        "TypeScript",
         "React",
+        "Azure Container Apps",
+        "Azure Functions",
+        "Service Bus",
+        "Azure Logic Apps",
+        "Azure AI Search",
+        "Bicep",
+        "Databricks",
+        "Ellucian CRM",
+        "pytest",
       ],
       link: null,
     },
@@ -34,21 +44,22 @@ export const Experience = () => {
       title: "Graduate Research Assistant",
       company: "California State University, Long Beach",
       location: "Long Beach, CA",
-      period: "Jan 2025 - Present",
+      period: "Jan 2025 - Dec 2026",
       type: "Research",
       description:
-        "Co-developed Atlas, an LLM verification pipeline accepted at the AACL-IJCNLP 2025 Workshop (WASP), and built a multi-agent coordination-risk framework on the Overcooked-AI benchmark.",
+        "M.S. thesis, Atlas: Prompting, Web Search and Verification in Large Language Model Bibliographic Retrieval. First-author paper in the ACL Anthology (WASP workshop, IJCNLP-AACL 2025).",
       achievements: [
-        "Co-developed Atlas, an LLM verification pipeline that checks model output for hallucination, accepted at the AACL-IJCNLP 2025 Workshop (WASP) with Dr. Xin Qin, Dr. Hailu Xu, and Dr. Wenlu Xu. It reached 83.3% accuracy versus 46.2% for GPT-4 on our benchmark.",
-        "Built a risk-analysis framework on the Overcooked-AI benchmark using Value-at-Risk to quantify multi-agent coordination risk at the 95th percentile of spatial divergence.",
-        "Showed that human-aware agents kept better reward efficiency and coordination through partner transitions.",
+        "Measured how prompting, web search (OpenAI and Gemini APIs with tool calling) and verification change the DOI accuracy of GPT and Gemini against Crossref's production matcher on its 2,000-reference benchmark. Gemini with web search matched the accuracy of Crossref's purpose-built matcher (2.6 F1 gap, not statistically significant).",
+        "Designed the evaluation: paired bootstrap (5,000 resamples) with adjusted p-values, McNemar tests, blind dual human annotation with hidden controls plus an LLM judge (agreement by Cohen's kappa), and a rule-based verifier. Wrote 90 of 109 commits in the lab's Python repo.",
+        "Built the experiment platform for a multi-agent study of coordination loss when a teammate is swapped mid-task (Overcooked-AI, 450 episodes, Value-at-Risk scoring), including an LLM agent layer for OpenAI, Gemini and Ollama.",
       ],
       technologies: [
         "Python",
-        "PyTorch",
-        "LLMs",
-        "Multi-Agent Systems",
-        "Value-at-Risk",
+        "OpenAI API",
+        "Gemini API",
+        "Paired bootstrap",
+        "McNemar",
+        "Cohen's kappa",
         "Overcooked-AI",
       ],
       link: null,
@@ -61,13 +72,13 @@ export const Experience = () => {
       period: "Jan 2024 - May 2024",
       type: "Part-time",
       description:
-        "Guided peers in the Introduction to Big Data course, providing technical guidance on the Hadoop ecosystem, including MapReduce, Hive, and PySpark within a Linux environment.",
+        "Taught the Introduction to Big Data lab under Dr. Srikanth Thota and co-built a distributed collaborative-filtering recommender.",
       achievements: [
-        "Guided peers in the Introduction to Big Data course, providing technical guidance on the Hadoop ecosystem",
-        "Collaborated with a peer under the guidance of Dr. Srikanth Thota to design and prototype a distributed collaborative filtering system",
-        "Benchmarked Pearson Correlation and Cosine Similarity via MSE/RMSE metrics",
+        "Helped students in the Introduction to Big Data lab with the course tools in a Linux environment",
+        "Co-built a distributed collaborative-filtering movie recommender with a peer under the guidance of Dr. Srikanth Thota",
+        "On MovieLens 100K, Pearson similarity beat cosine similarity (RMSE 1.059 vs 1.069)",
       ],
-      technologies: ["Hadoop", "MapReduce", "Hive", "PySpark", "Linux"],
+      technologies: ["Python", "Linux"],
       link: null,
     },
     {
@@ -78,10 +89,10 @@ export const Experience = () => {
       period: "Apr 2023 - May 2023",
       type: "Internship",
       description:
-        "Developed and optimized Apex code to enhance Salesforce functionality and automate business processes. Learned workflow automation and delivered high-quality Salesforce solutions.",
+        "Wrote Apex code and set up workflow automation in Salesforce during a short internship.",
       achievements: [
-        "Automated complex business processes using Apex, Process Builder, and Flow, enhancing functionality and improving operational efficiency by 30%.",
-        "Delivered high-quality, customized Salesforce solutions by gathering business requirements, increasing productivity, and conducting thorough testing and debugging.",
+        "Automated business processes using Apex, Process Builder, and Flow.",
+        "Gathered requirements for custom Salesforce solutions and tested and debugged them.",
       ],
       technologies: [
         "Salesforce Lightning",
@@ -235,8 +246,8 @@ export const Experience = () => {
             Ready to collaborate?
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            I'm always open to discussing new opportunities and innovative
-            projects.
+            I'm open to talking about full-time roles starting January 2027
+            and interesting projects.
           </p>
           <Link
             to="/contact"

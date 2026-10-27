@@ -7,26 +7,25 @@ export const Skills = () => {
       title: "AI & Machine Learning",
       icon: "🤖",
       description:
-        "Research and development in artificial intelligence, multi-agent systems, and large language models",
+        "LLM systems, retrieval, voice agents and evaluation, from production work and research",
       skills: [
         { name: "Python", level: 95, category: "Language" },
         { name: "PyTorch", level: 90, category: "Framework" },
-        { name: "Reinforcement Learning", level: 85, category: "AI Technique" },
-        { name: "LLM Fine-tuning", level: 80, category: "AI Technique" },
-        { name: "Multi-agent Systems", level: 85, category: "Research Area" },
         { name: "Large Language Models (LLM)", level: 88, category: "AI Technique" },
         { name: "Retrieval-Augmented Generation (RAG)", level: 88, category: "AI Technique" },
+        { name: "Azure AI Search (hybrid retrieval)", level: 85, category: "Retrieval" },
+        { name: "Tool calling (OpenAI, Gemini APIs)", level: 85, category: "AI Technique" },
+        { name: "OpenAI Whisper, Azure Voice Live", level: 80, category: "Voice" },
+        { name: "LoRA fine-tuning", level: 75, category: "AI Technique" },
+        { name: "llama.cpp", level: 75, category: "Inference" },
+        { name: "Prompt-injection defense", level: 80, category: "AI Safety" },
+        { name: "LLM evaluation (paired bootstrap, McNemar, Cohen's kappa)", level: 85, category: "Evaluation" },
+        { name: "Reinforcement Learning", level: 85, category: "AI Technique" },
         { name: "Natural Language Processing (NLP)", level: 85, category: "AI Technique" },
-        {
-          name: "LLM Verification (GPT-4)",
-          level: 85,
-          category: "AI Technique",
-        },
-        { name: "RLHF", level: 80, category: "AI Technique" },
+        { name: "Multi-agent Systems", level: 85, category: "Research Area" },
         { name: "Pandas", level: 90, category: "Data Analysis" },
         { name: "NumPy", level: 90, category: "Scientific Computing" },
         { name: "Matplotlib", level: 85, category: "Visualization" },
-        { name: "PySpark", level: 75, category: "Big Data Processing" },
       ],
     },
     {
@@ -34,9 +33,10 @@ export const Skills = () => {
       title: "Frontend Development",
       icon: "💻",
       description:
-        "Creating responsive and interactive user interfaces with modern frameworks and libraries",
+        "Responsive interfaces and admin portals built with React and TypeScript",
       skills: [
         { name: "React.js", level: 90, category: "Framework" },
+        { name: "TypeScript", level: 85, category: "Language" },
         { name: "JavaScript (ES6+)", level: 85, category: "Language" },
         { name: "HTML5 & CSS3", level: 90, category: "Markup & Styling" },
         { name: "Tailwind CSS", level: 80, category: "CSS Framework" },
@@ -47,9 +47,10 @@ export const Skills = () => {
       id: 3,
       title: "Backend Development",
       icon: "⚙️",
-      description: "Building robust server-side applications and RESTful APIs",
+      description: "Server-side applications, REST APIs and message-driven services",
       skills: [
         { name: "Python (FastAPI)", level: 88, category: "Framework" },
+        { name: "pytest", level: 85, category: "Testing" },
         { name: "Node.js", level: 85, category: "Runtime" },
         { name: "Express.js", level: 85, category: "Framework" },
         { name: "MongoDB", level: 80, category: "Database" },
@@ -59,7 +60,7 @@ export const Skills = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Mobile Development",
       icon: "📱",
       description: "Cross-platform mobile application development with Flutter",
@@ -68,16 +69,17 @@ export const Skills = () => {
         { name: "Dart", level: 80, category: "Language" },
         { name: "Android Studio", level: 75, category: "IDE" },
         { name: "Mobile UI/UX", level: 80, category: "Design" },
-        { name: "State Management", level: 75, category: "Architecture" },
+        { name: "Bloc state management", level: 75, category: "Architecture" },
       ],
     },
     {
       id: 5,
       title: "Programming Languages",
       icon: "🔤",
-      description: "Proficient in multiple programming languages and paradigms",
+      description: "Languages I use across work, research and course projects",
       skills: [
-        { name: "Python", level: 95, category: "AI/Research" },
+        { name: "Python", level: 95, category: "AI/Backend" },
+        { name: "TypeScript", level: 85, category: "Web" },
         { name: "JavaScript", level: 90, category: "Web" },
         { name: "Java", level: 80, category: "Object-Oriented" },
         { name: "Dart", level: 80, category: "Mobile" },
@@ -89,40 +91,44 @@ export const Skills = () => {
     },
     {
       id: 6,
-      title: "Tools & Technologies",
+      title: "Cloud & Tools",
       icon: "🛠️",
       description:
-        "Development tools, version control, and deployment platforms",
+        "Azure services, infrastructure as code, CI/CD and integration tools",
       skills: [
+        { name: "Azure Container Apps", level: 85, category: "Cloud Platform" },
+        { name: "Azure Functions", level: 85, category: "Cloud Platform" },
+        { name: "Azure Service Bus", level: 80, category: "Messaging" },
+        { name: "Azure Logic Apps", level: 78, category: "Integration" },
+        { name: "Bicep", level: 80, category: "Infrastructure as Code" },
+        { name: "Azure DevOps (approval-gated CI/CD)", level: 80, category: "CI/CD" },
+        { name: "App Insights / KQL", level: 80, category: "Observability" },
+        { name: "Key Vault, Entra ID, managed identity", level: 80, category: "Security" },
         { name: "Git & GitHub", level: 90, category: "Version Control" },
         { name: "Docker", level: 80, category: "Containerization" },
         { name: "VS Code", level: 95, category: "IDE" },
         { name: "WSL", level: 85, category: "Development Environment" },
         { name: "Postman", level: 80, category: "API Testing" },
-        { name: "Ellucian Advance CRM", level: 70, category: "Enterprise Systems" },
-        { name: "Salesforce (Apex, Process Builder)", level: 75, category: "Enterprise Systems" },
         { name: "Power Automate", level: 78, category: "Workflow Automation" },
-        { name: "Azure Logic Apps", level: 78, category: "Integration" },
-        { name: "Microsoft Power BI", level: 75, category: "BI & Analytics" },
-        { name: "Oracle SQL / PL-SQL", level: 75, category: "Database" },
-        { name: "Azure (PaaS)", level: 78, category: "Cloud Platform" },
+        { name: "Salesforce (Apex, Process Builder)", level: 75, category: "Enterprise Systems" },
       ],
     },
     {
       id: 7,
-      title: "Database & Analytics",
+      title: "Data & Integration",
       icon: "📊",
-      description: "Database management, data analysis, and big data tools",
+      description: "CRM data pipelines, databases and enterprise integrations",
       skills: [
+        { name: "Ellucian CRM (Ethos, Data Connect)", level: 80, category: "Enterprise Systems" },
+        { name: "Databricks", level: 80, category: "Data Pipelines" },
+        { name: "Dataverse Web API", level: 75, category: "Enterprise Systems" },
+        { name: "Oracle SQL", level: 75, category: "Database" },
+        { name: "SharePoint / Microsoft Graph", level: 80, category: "Integration" },
+        { name: "DocuSign Connect", level: 75, category: "Integration" },
+        { name: "Qualtrics", level: 70, category: "Integration" },
+        { name: "FAISS", level: 75, category: "Vector Search" },
         { name: "MongoDB", level: 80, category: "NoSQL" },
         { name: "Firebase", level: 75, category: "Cloud Database" },
-        { name: "Hadoop Tools", level: 70, category: "Big Data" },
-        { name: "pandas", level: 85, category: "Data Analysis" },
-        { name: "NumPy", level: 85, category: "Scientific Computing" },
-        { name: "Matplotlib", level: 80, category: "Visualization" },
-        { name: "PySpark", level: 70, category: "Big Data Processing" },
-        { name: "MapReduce", level: 75, category: "Big Data" },
-        { name: "Data Processing Pipelines", level: 80, category: "Big Data" },
       ],
     },
   ];
@@ -186,8 +192,8 @@ export const Skills = () => {
           <span className="text-blue-600 dark:text-blue-400">Expertise</span>
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          A comprehensive overview of my technical skills, tools, and
-          technologies that I use to build innovative solutions.
+          The languages, frameworks, cloud services and tools I use in my
+          work at CSULB, my research and my projects.
         </p>
       </div>
 
@@ -203,13 +209,13 @@ export const Skills = () => {
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div>
             <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-              3+
+              3
             </div>
             <div className="text-gray-900 dark:text-white font-semibold mb-1">
-              Years Learning
+              Azure Systems
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-300">
-              Continuous development
+              Built and run at CSULB
             </div>
           </div>
           <div>
@@ -244,10 +250,9 @@ export const Skills = () => {
           <span className="text-blue-600 dark:text-blue-400">Learning</span>
         </h3>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Technology evolves rapidly, and I stay current by continuously
-          learning new frameworks, best practices, and industry standards. My
-          goal is to write clean, efficient code that solves real-world problems
-          while maintaining scalability and user experience.
+          I keep learning new frameworks and tools as my work needs them. My
+          goal is to write clear, tested code that solves real problems for the
+          people who use it.
         </p>
       </div>
     </div>

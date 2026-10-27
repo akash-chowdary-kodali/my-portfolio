@@ -1,1 +1,1 @@
-export const RESUME_URL = "https://akash-chowdary-kodali.onrender.com/resume";
+export const RESUME_URL = `${process.env.PUBLIC_URL}/Akash_Kodali_Resume.pdf`;
