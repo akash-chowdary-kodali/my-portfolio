@@ -9,23 +9,22 @@ export const Skills = () => {
       description:
         "LLM systems, retrieval, voice agents and evaluation, from production work and research",
       skills: [
-        { name: "Python", level: 95, category: "Language" },
-        { name: "PyTorch", level: 90, category: "Framework" },
-        { name: "Large Language Models (LLM)", level: 88, category: "AI Technique" },
-        { name: "Retrieval-Augmented Generation (RAG)", level: 88, category: "AI Technique" },
-        { name: "Azure AI Search (hybrid retrieval)", level: 85, category: "Retrieval" },
-        { name: "Tool calling (OpenAI, Gemini APIs)", level: 85, category: "AI Technique" },
-        { name: "OpenAI Whisper, Azure Voice Live", level: 80, category: "Voice" },
-        { name: "LoRA fine-tuning", level: 75, category: "AI Technique" },
-        { name: "llama.cpp", level: 75, category: "Inference" },
-        { name: "Prompt-injection defense", level: 80, category: "AI Safety" },
-        { name: "LLM evaluation (paired bootstrap, McNemar, Cohen's kappa)", level: 85, category: "Evaluation" },
-        { name: "Reinforcement Learning", level: 85, category: "AI Technique" },
-        { name: "Natural Language Processing (NLP)", level: 85, category: "AI Technique" },
-        { name: "Multi-agent Systems", level: 85, category: "Research Area" },
-        { name: "Pandas", level: 90, category: "Data Analysis" },
-        { name: "NumPy", level: 90, category: "Scientific Computing" },
-        { name: "Matplotlib", level: 85, category: "Visualization" },
+        { name: "Python", category: "Language" },
+        { name: "PyTorch", category: "Framework" },
+        { name: "Large Language Models (LLM)", category: "AI Technique" },
+        { name: "Retrieval-Augmented Generation (RAG)", category: "AI Technique" },
+        { name: "Azure AI Search (hybrid retrieval)", category: "Retrieval" },
+        { name: "Tool calling (OpenAI, Gemini APIs)", category: "AI Technique" },
+        { name: "OpenAI Whisper, Azure Voice Live", category: "Voice" },
+        { name: "LoRA fine-tuning", category: "AI Technique" },
+        { name: "llama.cpp", category: "Inference" },
+        { name: "Prompt-injection defense", category: "AI Safety" },
+        { name: "LLM evaluation (paired bootstrap, McNemar, Cohen's kappa)", category: "Evaluation" },
+        { name: "Natural Language Processing (NLP)", category: "AI Technique" },
+        { name: "Multi-agent Systems", category: "Research Area" },
+        { name: "Pandas", category: "Data Analysis" },
+        { name: "NumPy", category: "Scientific Computing" },
+        { name: "Matplotlib", category: "Visualization" },
       ],
     },
     {
@@ -35,12 +34,12 @@ export const Skills = () => {
       description:
         "Responsive interfaces and admin portals built with React and TypeScript",
       skills: [
-        { name: "React.js", level: 90, category: "Framework" },
-        { name: "TypeScript", level: 85, category: "Language" },
-        { name: "JavaScript (ES6+)", level: 85, category: "Language" },
-        { name: "HTML5 & CSS3", level: 90, category: "Markup & Styling" },
-        { name: "Tailwind CSS", level: 80, category: "CSS Framework" },
-        { name: "Bootstrap", level: 75, category: "CSS Framework" },
+        { name: "React.js", category: "Framework" },
+        { name: "TypeScript", category: "Language" },
+        { name: "JavaScript (ES6+)", category: "Language" },
+        { name: "HTML5 & CSS3", category: "Markup & Styling" },
+        { name: "Tailwind CSS", category: "CSS Framework" },
+        { name: "Bootstrap", category: "CSS Framework" },
       ],
     },
     {
@@ -49,14 +48,14 @@ export const Skills = () => {
       icon: "⚙️",
       description: "Server-side applications, REST APIs and message-driven services",
       skills: [
-        { name: "Python (FastAPI)", level: 88, category: "Framework" },
-        { name: "pytest", level: 85, category: "Testing" },
-        { name: "Node.js", level: 85, category: "Runtime" },
-        { name: "Express.js", level: 85, category: "Framework" },
-        { name: "MongoDB", level: 80, category: "Database" },
-        { name: "Firebase", level: 75, category: "BaaS" },
-        { name: "RESTful APIs", level: 85, category: "Architecture" },
-        { name: "WebSockets / async", level: 80, category: "Architecture" },
+        { name: "Python (FastAPI)", category: "Framework" },
+        { name: "pytest", category: "Testing" },
+        { name: "Node.js", category: "Runtime" },
+        { name: "Express.js", category: "Framework" },
+        { name: "MongoDB", category: "Database" },
+        { name: "Firebase", category: "BaaS" },
+        { name: "RESTful APIs", category: "Architecture" },
+        { name: "WebSockets / async", category: "Architecture" },
       ],
     },
     {
@@ -65,11 +64,11 @@ export const Skills = () => {
       icon: "📱",
       description: "Cross-platform mobile application development with Flutter",
       skills: [
-        { name: "Flutter", level: 85, category: "Framework" },
-        { name: "Dart", level: 80, category: "Language" },
-        { name: "Android Studio", level: 75, category: "IDE" },
-        { name: "Mobile UI/UX", level: 80, category: "Design" },
-        { name: "Bloc state management", level: 75, category: "Architecture" },
+        { name: "Flutter", category: "Framework" },
+        { name: "Dart", category: "Language" },
+        { name: "Android Studio", category: "IDE" },
+        { name: "Mobile UI/UX", category: "Design" },
+        { name: "Bloc state management", category: "Architecture" },
       ],
     },
     {
@@ -78,15 +77,14 @@ export const Skills = () => {
       icon: "🔤",
       description: "Languages I use across work, research and course projects",
       skills: [
-        { name: "Python", level: 95, category: "AI/Backend" },
-        { name: "TypeScript", level: 85, category: "Web" },
-        { name: "JavaScript", level: 90, category: "Web" },
-        { name: "Java", level: 80, category: "Object-Oriented" },
-        { name: "Dart", level: 80, category: "Mobile" },
-        { name: "SQL", level: 75, category: "Database" },
-        { name: "Go", level: 65, category: "Systems" },
-        { name: "C", level: 70, category: "Systems" },
-        { name: "HTML/CSS", level: 90, category: "Web" },
+        { name: "Python", category: "AI/Backend" },
+        { name: "TypeScript", category: "Web" },
+        { name: "JavaScript", category: "Web" },
+        { name: "Java", category: "Object-Oriented" },
+        { name: "Dart", category: "Mobile" },
+        { name: "SQL", category: "Database" },
+        { name: "C", category: "Systems" },
+        { name: "HTML/CSS", category: "Web" },
       ],
     },
     {
@@ -96,21 +94,21 @@ export const Skills = () => {
       description:
         "Azure services, infrastructure as code, CI/CD and integration tools",
       skills: [
-        { name: "Azure Container Apps", level: 85, category: "Cloud Platform" },
-        { name: "Azure Functions", level: 85, category: "Cloud Platform" },
-        { name: "Azure Service Bus", level: 80, category: "Messaging" },
-        { name: "Azure Logic Apps", level: 78, category: "Integration" },
-        { name: "Bicep", level: 80, category: "Infrastructure as Code" },
-        { name: "Azure DevOps (approval-gated CI/CD)", level: 80, category: "CI/CD" },
-        { name: "App Insights / KQL", level: 80, category: "Observability" },
-        { name: "Key Vault, Entra ID, managed identity", level: 80, category: "Security" },
-        { name: "Git & GitHub", level: 90, category: "Version Control" },
-        { name: "Docker", level: 80, category: "Containerization" },
-        { name: "VS Code", level: 95, category: "IDE" },
-        { name: "WSL", level: 85, category: "Development Environment" },
-        { name: "Postman", level: 80, category: "API Testing" },
-        { name: "Power Automate", level: 78, category: "Workflow Automation" },
-        { name: "Salesforce (Apex, Process Builder)", level: 75, category: "Enterprise Systems" },
+        { name: "Azure Container Apps", category: "Cloud Platform" },
+        { name: "Azure Functions", category: "Cloud Platform" },
+        { name: "Azure Service Bus", category: "Messaging" },
+        { name: "Azure Logic Apps", category: "Integration" },
+        { name: "Bicep", category: "Infrastructure as Code" },
+        { name: "Azure DevOps (approval-gated CI/CD)", category: "CI/CD" },
+        { name: "App Insights / KQL", category: "Observability" },
+        { name: "Key Vault, Entra ID, managed identity", category: "Security" },
+        { name: "Git & GitHub", category: "Version Control" },
+        { name: "Docker", category: "Containerization" },
+        { name: "VS Code", category: "IDE" },
+        { name: "WSL", category: "Development Environment" },
+        { name: "Postman", category: "API Testing" },
+        { name: "Power Automate", category: "Workflow Automation" },
+        { name: "Salesforce (Apex, Process Builder)", category: "Enterprise Systems" },
       ],
     },
     {
@@ -119,26 +117,19 @@ export const Skills = () => {
       icon: "📊",
       description: "CRM data pipelines, databases and enterprise integrations",
       skills: [
-        { name: "Ellucian CRM (Ethos, Data Connect)", level: 80, category: "Enterprise Systems" },
-        { name: "Databricks", level: 80, category: "Data Pipelines" },
-        { name: "Dataverse Web API", level: 75, category: "Enterprise Systems" },
-        { name: "Oracle SQL", level: 75, category: "Database" },
-        { name: "SharePoint / Microsoft Graph", level: 80, category: "Integration" },
-        { name: "DocuSign Connect", level: 75, category: "Integration" },
-        { name: "Qualtrics", level: 70, category: "Integration" },
-        { name: "FAISS", level: 75, category: "Vector Search" },
-        { name: "MongoDB", level: 80, category: "NoSQL" },
-        { name: "Firebase", level: 75, category: "Cloud Database" },
+        { name: "Ellucian CRM (Ethos, Data Connect)", category: "Enterprise Systems" },
+        { name: "Databricks", category: "Data Pipelines" },
+        { name: "Dataverse Web API", category: "Enterprise Systems" },
+        { name: "Oracle SQL", category: "Database" },
+        { name: "SharePoint / Microsoft Graph", category: "Integration" },
+        { name: "DocuSign Connect", category: "Integration" },
+        { name: "Qualtrics", category: "Integration" },
+        { name: "FAISS", category: "Vector Search" },
+        { name: "MongoDB", category: "NoSQL" },
+        { name: "Firebase", category: "Cloud Database" },
       ],
     },
   ];
-
-  const getSkillColor = (level) => {
-    if (level >= 85) return "bg-green-500 dark:bg-green-400";
-    if (level >= 75) return "bg-blue-600 dark:bg-blue-400";
-    if (level >= 65) return "bg-yellow-500 dark:bg-yellow-400";
-    return "bg-orange-500 dark:bg-orange-400";
-  };
 
   const SkillCard = ({ category }) => (
     <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300 group">
@@ -153,10 +144,10 @@ export const Skills = () => {
         {category.description}
       </p>
 
-      <div className="space-y-4">
+      <div className="space-y-3">
         {category.skills.map((skill, index) => (
           <div key={index}>
-            <div className="flex justify-between items-center mb-2">
+            <div className="flex justify-between items-center">
               <span className="text-gray-900 dark:text-white font-medium">
                 {skill.name}
               </span>
@@ -164,18 +155,7 @@ export const Skills = () => {
                 <span className="text-xs text-gray-600 dark:text-gray-300 px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">
                   {skill.category}
                 </span>
-                <span className="text-sm text-blue-600 dark:text-blue-400 font-semibold">
-                  {skill.level}%
-                </span>
               </div>
-            </div>
-            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-              <div
-                className={`h-2 rounded-full transition-all duration-500 ease-out ${getSkillColor(
-                  skill.level
-                )}`}
-                style={{ width: `${skill.level}%` }}
-              ></div>
             </div>
           </div>
         ))}

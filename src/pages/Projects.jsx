@@ -140,7 +140,7 @@ export const Projects = () => {
       id: 5,
       title: "GIMSR Blood Bank",
       description:
-        "Built a blood bank web app for GIMSR: React donor and blood-request forms, a Firebase real-time database, an admin dashboard to approve donations and requests, and automatic email notifications.",
+        "Built a blood bank web app for GIMSR: donor and blood-request forms in React and Bootstrap, a Firebase real-time database, an admin dashboard to approve donations and requests, and automatic email notifications.",
       image: G_Bloodbank,
       technologies: ["React", "Firebase", "Bootstrap"],
       category: "Web Application",
@@ -148,7 +148,7 @@ export const Projects = () => {
       liveUrl: null,
       featured: true,
       highlights: [
-        "React donor and blood-request forms",
+        "React and Bootstrap donor and blood-request forms",
         "Firebase real-time database for donation status",
         "Admin dashboard to approve donations and requests",
         "Automatic email notifications",

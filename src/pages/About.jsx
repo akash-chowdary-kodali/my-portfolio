@@ -160,29 +160,9 @@ export const About = () => {
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-1">
               Computer Science
             </p>
-            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
+            <p className="text-gray-500 dark:text-gray-400 text-sm">
               Long Beach, CA
             </p>
-            <h5 className="text-gray-900 dark:text-white font-semibold text-sm mb-2">
-              Key Courses:
-            </h5>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "Advanced Machine Learning",
-                "Multi-Agent Systems",
-                "Natural Language Processing",
-                "Reinforcement Learning",
-                "Advanced Algorithms",
-                "Research Methods in CS",
-              ].map((course, i) => (
-                <span
-                  key={i}
-                  className="px-2 py-1 bg-gray-100 dark:bg-gray-700/50 text-blue-600 dark:text-blue-400 text-xs rounded border border-gray-300 dark:border-gray-600"
-                >
-                  {course}
-                </span>
-              ))}
-            </div>
           </div>
 
           {/* Bachelor's */}
@@ -201,29 +181,9 @@ export const About = () => {
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-1">
               Computer Science and Engineering
             </p>
-            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
+            <p className="text-gray-500 dark:text-gray-400 text-sm">
               Visakhapatnam, India
             </p>
-            <h5 className="text-gray-900 dark:text-white font-semibold text-sm mb-2">
-              Key Courses:
-            </h5>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "Data Structures and Algorithms",
-                "Database Management Systems",
-                "Web Technologies",
-                "Software Engineering",
-                "Mobile Application Development",
-                "Computer Networks",
-              ].map((course, i) => (
-                <span
-                  key={i}
-                  className="px-2 py-1 bg-gray-100 dark:bg-gray-700/50 text-blue-600 dark:text-blue-400 text-xs rounded border border-gray-300 dark:border-gray-600"
-                >
-                  {course}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
       </div>
