@@ -13,7 +13,10 @@ export const Projects = () => {
     {
       id: 0,
       title: "AI Voice Agent, CSULB Student Financial Services",
-      image: aiImage,
+      image: null,
+      diagram: `${process.env.PUBLIC_URL}/diagrams/voice-agent.svg`,
+      diagramAlt:
+        "Architecture: a caller reaches Azure Communication Services, Event Grid sends the incoming call to the FastAPI voice agent on Container Apps, which streams audio to Azure Voice Live (gpt-realtime and Whisper) with 4 tools, queries Azure AI Search, stores transcripts in Blob storage, and is deployed by Azure DevOps CI/CD.",
       technologies: ["Python", "FastAPI", "Azure", "React", "Docker", "Bicep"],
       category: "CSULB Work",
       caseStudy: {
@@ -29,6 +32,9 @@ export const Projects = () => {
       id: 1,
       title: "Commencement Assistant",
       image: null,
+      diagram: `${process.env.PUBLIC_URL}/diagrams/commencement-assistant.svg`,
+      diagramAlt:
+        "Architecture: SMS, WhatsApp and Telegram webhooks reach an ingress gateway that queues messages on Service Bus; a core engine on Container Apps processes one conversation at a time with gpt-4o-mini on Azure AI Foundry and Table Storage; web, Teams and Copilot users reach the core directly or through Azure Bot Service and a bridge; staff use an admin console.",
       technologies: [
         "Python",
         "Azure Container Apps",
@@ -51,6 +57,9 @@ export const Projects = () => {
       id: 2,
       title: "Alumni Event Planner",
       image: null,
+      diagram: `${process.env.PUBLIC_URL}/diagrams/alumni-event-planner.svg`,
+      diagramAlt:
+        "Architecture: planners sign in to a React app on Static Web Apps that calls a FastAPI API on Azure Functions; the API records check-ins in Table storage first, writes SharePoint lists and triggers 12 Logic Apps that sync guests and attendance with Ellucian CRM, manage Qualtrics surveys and send QR emails through Microsoft Graph; a 5-minute timer retries.",
       technologies: [
         "React 19",
         "TypeScript",
@@ -235,6 +244,23 @@ export const Projects = () => {
             </span>
           )}
         </div>
+      )}
+
+      {project.diagram && (
+        <a
+          href={project.diagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block px-6 pt-6"
+          aria-label={`Open the ${project.title} architecture diagram`}
+        >
+          <img
+            src={project.diagram}
+            alt={project.diagramAlt}
+            loading="lazy"
+            className="w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700"
+          />
+        </a>
       )}
 
       <div className="p-6">
