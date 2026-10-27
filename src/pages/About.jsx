@@ -77,7 +77,7 @@ export const About = () => {
               <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-3"></div>
               <div>
                 <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                  🎓 Current Education:
+                  Current Education:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
                   MS Computer Science, CSULB (2024-2026)
@@ -89,7 +89,7 @@ export const About = () => {
               <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-3"></div>
               <div>
                 <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                  🔬 Current Role:
+                  Current Role:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
                   Software Engineer (Student Assistant), Innovation Team (ITS),
@@ -102,7 +102,7 @@ export const About = () => {
               <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-3"></div>
               <div>
                 <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                  🎯 Research Focus:
+                  Research Focus:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
                   LLM bibliographic retrieval and evaluation (M.S. thesis), and
@@ -115,7 +115,7 @@ export const About = () => {
               <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-3"></div>
               <div>
                 <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                  📚 Background:
+                  Background:
                 </span>
                 <span className="text-gray-600 dark:text-gray-300 ml-2">
                   B.Tech CSE from Gandhi Institute of Technology and Management

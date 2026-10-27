@@ -40,6 +40,15 @@ function NavBar() {
       {/* Skip link for accessibility */}
       <a
         href="#main-content"
+        onClick={(e) => {
+          // HashRouter owns the URL hash, so focus the target directly.
+          e.preventDefault();
+          const main = document.getElementById("main-content");
+          if (main) {
+            main.focus();
+            main.scrollIntoView();
+          }
+        }}
         className="fixed -top-full left-4 z-50 bg-text-light dark:bg-text-dark text-background-light dark:text-background-dark px-4 py-2 rounded focus:top-4 transition-all duration-200"
       >
         Skip to main content
@@ -221,7 +230,6 @@ function NavBar() {
         <div
           id="mobile-menu"
           className={toggle ? "md:hidden block" : "md:hidden hidden"}
-          role="menu"
           aria-hidden={!toggle}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">

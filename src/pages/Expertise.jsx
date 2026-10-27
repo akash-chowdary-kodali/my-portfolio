@@ -5,7 +5,6 @@ export const Skills = () => {
     {
       id: 1,
       title: "AI & Machine Learning",
-      icon: "🤖",
       description:
         "LLM systems, retrieval, voice agents and evaluation, from production work and research",
       skills: [
@@ -30,7 +29,6 @@ export const Skills = () => {
     {
       id: 2,
       title: "Frontend Development",
-      icon: "💻",
       description:
         "Responsive interfaces and admin portals built with React and TypeScript",
       skills: [
@@ -45,7 +43,6 @@ export const Skills = () => {
     {
       id: 3,
       title: "Backend Development",
-      icon: "⚙️",
       description: "Server-side applications, REST APIs and message-driven services",
       skills: [
         { name: "Python (FastAPI)", category: "Framework" },
@@ -61,7 +58,6 @@ export const Skills = () => {
     {
       id: 4,
       title: "Mobile Development",
-      icon: "📱",
       description: "Cross-platform mobile application development with Flutter",
       skills: [
         { name: "Flutter", category: "Framework" },
@@ -74,7 +70,6 @@ export const Skills = () => {
     {
       id: 5,
       title: "Programming Languages",
-      icon: "🔤",
       description: "Languages I use across work, research and course projects",
       skills: [
         { name: "Python", category: "AI/Backend" },
@@ -90,7 +85,6 @@ export const Skills = () => {
     {
       id: 6,
       title: "Cloud & Tools",
-      icon: "🛠️",
       description:
         "Azure services, infrastructure as code, CI/CD and integration tools",
       skills: [
@@ -114,7 +108,6 @@ export const Skills = () => {
     {
       id: 7,
       title: "Data & Integration",
-      icon: "📊",
       description: "CRM data pipelines, databases and enterprise integrations",
       skills: [
         { name: "Ellucian CRM (Ethos, Data Connect)", category: "Enterprise Systems" },
@@ -125,7 +118,6 @@ export const Skills = () => {
         { name: "DocuSign Connect", category: "Integration" },
         { name: "Qualtrics", category: "Integration" },
         { name: "FAISS", category: "Vector Search" },
-        { name: "MongoDB", category: "NoSQL" },
         { name: "Firebase", category: "Cloud Database" },
       ],
     },
@@ -134,7 +126,6 @@ export const Skills = () => {
   const SkillCard = ({ category }) => (
     <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300 group">
       <div className="flex items-center mb-4">
-        <span className="text-2xl mr-3">{category.icon}</span>
         <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {category.title}
         </h3>
@@ -184,56 +175,28 @@ export const Skills = () => {
         ))}
       </div>
 
-      {/* Summary Section */}
+      {/* Numbers from the work */}
       <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-8 border border-blue-200 dark:border-blue-700">
-        <div className="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-              3
+        <div className="grid md:grid-cols-4 gap-8 text-center">
+          {[
+            ["6 / 4", "Channels built / enabled", "Commencement assistant"],
+            ["4,000+", "Alumni records migrated", "Ellucian Advance CRM"],
+            ["12", "Azure Logic Apps", "Event RSVPs to the CRM"],
+            ["~1,250", "Backend tests", "Alumni Event Planner"],
+          ].map(([value, title, detail]) => (
+            <div key={title}>
+              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                {value}
+              </div>
+              <div className="text-gray-900 dark:text-white font-semibold mb-1">
+                {title}
+              </div>
+              <div className="text-sm text-gray-600 dark:text-gray-300">
+                {detail}
+              </div>
             </div>
-            <div className="text-gray-900 dark:text-white font-semibold mb-1">
-              Azure Systems
-            </div>
-            <div className="text-sm text-gray-600 dark:text-gray-300">
-              Built and run at CSULB
-            </div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-              15+
-            </div>
-            <div className="text-gray-900 dark:text-white font-semibold mb-1">
-              Technologies
-            </div>
-            <div className="text-sm text-gray-600 dark:text-gray-300">
-              Languages & frameworks
-            </div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-              10+
-            </div>
-            <div className="text-gray-900 dark:text-white font-semibold mb-1">
-              Projects
-            </div>
-            <div className="text-sm text-gray-600 dark:text-gray-300">
-              Real-world applications
-            </div>
-          </div>
+          ))}
         </div>
-      </div>
-
-      {/* Learning Philosophy */}
-      <div className="mt-16 text-center">
-        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          Continuous{" "}
-          <span className="text-blue-600 dark:text-blue-400">Learning</span>
-        </h3>
-        <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          I keep learning new frameworks and tools as my work needs them. My
-          goal is to write clear, tested code that solves real problems for the
-          people who use it.
-        </p>
       </div>
     </div>
   );
