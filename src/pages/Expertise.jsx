@@ -1,124 +1,95 @@
 import React from "react";
 
 export const Skills = () => {
+  // Every skill here appears on at least one of the three resumes, with the work that proves it.
   const skillCategories = [
     {
       id: 1,
-      title: "AI & Machine Learning",
-      description:
-        "LLM systems, retrieval, voice agents and evaluation, from production work and research",
+      title: "AI & LLM",
+      description: "Voice agents, retrieval and LLM systems",
       skills: [
-        { name: "Python", category: "Language" },
-        { name: "PyTorch", category: "Framework" },
-        { name: "Large Language Models (LLM)", category: "AI Technique" },
-        { name: "Retrieval-Augmented Generation (RAG)", category: "AI Technique" },
-        { name: "Azure AI Search (hybrid retrieval)", category: "Retrieval" },
-        { name: "Tool calling (OpenAI, Gemini APIs)", category: "AI Technique" },
-        { name: "OpenAI Whisper, Azure Voice Live", category: "Voice" },
-        { name: "LoRA fine-tuning", category: "AI Technique" },
-        { name: "llama.cpp", category: "Inference" },
-        { name: "Prompt-injection defense", category: "AI Safety" },
-        { name: "LLM evaluation (paired bootstrap, McNemar, Cohen's kappa)", category: "Evaluation" },
-        { name: "Natural Language Processing (NLP)", category: "AI Technique" },
-        { name: "Multi-agent Systems", category: "Research Area" },
-        { name: "Pandas", category: "Data Analysis" },
-        { name: "NumPy", category: "Scientific Computing" },
-        { name: "Matplotlib", category: "Visualization" },
+        { name: "OpenAI Whisper", proof: "Voice agent call transcription" },
+        { name: "Azure Voice Live (gpt-realtime)", proof: "Voice agent" },
+        { name: "Tool calling", proof: "Voice agent, 4 tools" },
+        { name: "RAG", proof: "Voice agent, Health Q&A agent" },
+        { name: "Azure AI Search", proof: "Voice agent, hybrid + semantic" },
+        { name: "OpenAI and Gemini APIs", proof: "Atlas thesis" },
+        { name: "Prompt-injection defense", proof: "Commencement assistant" },
+        { name: "LoRA fine-tuning", proof: "Health Q&A agent (Gemma-2-2B)" },
+        { name: "FAISS", proof: "Health Q&A agent, 6,021 documents" },
+        { name: "llama.cpp", proof: "LLM inference benchmark" },
+        { name: "PyTorch", proof: "LLM inference benchmark" },
       ],
     },
     {
       id: 2,
-      title: "Frontend Development",
-      description:
-        "Responsive interfaces and admin portals built with React and TypeScript",
+      title: "Evaluation",
+      description: "Measuring whether a model or system actually works",
       skills: [
-        { name: "React.js", category: "Framework" },
-        { name: "TypeScript", category: "Language" },
-        { name: "JavaScript (ES6+)", category: "Language" },
-        { name: "HTML5 & CSS3", category: "Markup & Styling" },
-        { name: "Tailwind CSS", category: "CSS Framework" },
-        { name: "Bootstrap", category: "CSS Framework" },
+        { name: "Paired bootstrap", proof: "Atlas thesis" },
+        { name: "McNemar tests", proof: "Atlas thesis" },
+        { name: "Cohen's kappa", proof: "Atlas thesis, annotator agreement" },
+        { name: "LLM judge", proof: "Atlas thesis" },
+        { name: "Roofline model", proof: "LLM inference benchmark" },
       ],
     },
     {
       id: 3,
-      title: "Backend Development",
-      description: "Server-side applications, REST APIs and message-driven services",
+      title: "Backend & frontend",
+      description: "APIs, services and the apps on top of them",
       skills: [
-        { name: "Python (FastAPI)", category: "Framework" },
-        { name: "pytest", category: "Testing" },
-        { name: "Node.js", category: "Runtime" },
-        { name: "Express.js", category: "Framework" },
-        { name: "MongoDB", category: "Database" },
-        { name: "Firebase", category: "BaaS" },
-        { name: "RESTful APIs", category: "Architecture" },
-        { name: "WebSockets / async", category: "Architecture" },
+        { name: "Python", proof: "CSULB work and research" },
+        { name: "FastAPI", proof: "Voice agent, Event Planner, commencement assistant" },
+        { name: "REST APIs", proof: "Event Planner API" },
+        { name: "Azure Functions", proof: "Event Planner, DocuSign router" },
+        { name: "Azure Service Bus", proof: "Commencement assistant session queues" },
+        { name: "SQL", proof: "Production FastAPI service" },
+        { name: "Oracle", proof: "Bind-variable fix in production" },
+        { name: "pytest", proof: "Voice agent CI, Event Planner" },
+        { name: "React", proof: "Event Planner, admin consoles" },
+        { name: "TypeScript", proof: "Event Planner" },
       ],
     },
     {
       id: 4,
-      title: "Mobile Development",
-      description: "Cross-platform mobile application development with Flutter",
+      title: "Data & integration",
+      description: "Moving records between university systems",
       skills: [
-        { name: "Flutter", category: "Framework" },
-        { name: "Dart", category: "Language" },
-        { name: "Android Studio", category: "IDE" },
-        { name: "Mobile UI/UX", category: "Design" },
-        { name: "Bloc state management", category: "Architecture" },
+        { name: "Ellucian CRM", proof: "4,000+ alumni records migrated" },
+        { name: "Ellucian Ethos API", proof: "Event Planner guest matching" },
+        { name: "Dataverse Web API", proof: "Bounce sync into Advance CRM" },
+        { name: "Databricks", proof: "Bounce sync jobs" },
+        { name: "Qualtrics", proof: "Event Planner RSVP surveys" },
+        { name: "SharePoint", proof: "O365/SharePoint API, 10+ services daily" },
+        { name: "Azure Logic Apps", proof: "Event Planner, 12 Logic Apps" },
       ],
     },
     {
       id: 5,
-      title: "Programming Languages",
-      description: "Languages I use across work, research and course projects",
+      title: "Azure cloud",
+      description: "Where the CSULB systems run",
       skills: [
-        { name: "Python", category: "AI/Backend" },
-        { name: "TypeScript", category: "Web" },
-        { name: "JavaScript", category: "Web" },
-        { name: "Java", category: "Object-Oriented" },
-        { name: "Dart", category: "Mobile" },
-        { name: "SQL", category: "Database" },
-        { name: "C", category: "Systems" },
-        { name: "HTML/CSS", category: "Web" },
+        { name: "Azure Container Apps", proof: "Commencement assistant, voice agent" },
+        { name: "Docker", proof: "Container Apps images" },
+        { name: "Static Web Apps", proof: "Event Planner" },
+        { name: "Blob storage", proof: "Event Planner QR codes" },
+        { name: "Key Vault", proof: "Voice agent, Databricks secrets" },
+        { name: "Managed identity", proof: "Voice agent" },
+        { name: "Entra ID", proof: "Event Planner sign-in and roles" },
+        { name: "Azure Communication Services", proof: "Voice agent calls and SMS" },
       ],
     },
     {
       id: 6,
-      title: "Cloud & Tools",
-      description:
-        "Azure services, infrastructure as code, CI/CD and integration tools",
+      title: "Delivery & observability",
+      description: "Shipping changes safely and seeing what breaks",
       skills: [
-        { name: "Azure Container Apps", category: "Cloud Platform" },
-        { name: "Azure Functions", category: "Cloud Platform" },
-        { name: "Azure Service Bus", category: "Messaging" },
-        { name: "Azure Logic Apps", category: "Integration" },
-        { name: "Bicep", category: "Infrastructure as Code" },
-        { name: "Azure DevOps (approval-gated CI/CD)", category: "CI/CD" },
-        { name: "App Insights / KQL", category: "Observability" },
-        { name: "Key Vault, Entra ID, managed identity", category: "Security" },
-        { name: "Git & GitHub", category: "Version Control" },
-        { name: "Docker", category: "Containerization" },
-        { name: "VS Code", category: "IDE" },
-        { name: "WSL", category: "Development Environment" },
-        { name: "Postman", category: "API Testing" },
-        { name: "Power Automate", category: "Workflow Automation" },
-        { name: "Salesforce (Apex, Process Builder)", category: "Enterprise Systems" },
-      ],
-    },
-    {
-      id: 7,
-      title: "Data & Integration",
-      description: "CRM data pipelines, databases and enterprise integrations",
-      skills: [
-        { name: "Ellucian CRM (Ethos, Data Connect)", category: "Enterprise Systems" },
-        { name: "Databricks", category: "Data Pipelines" },
-        { name: "Dataverse Web API", category: "Enterprise Systems" },
-        { name: "Oracle SQL", category: "Database" },
-        { name: "SharePoint / Microsoft Graph", category: "Integration" },
-        { name: "DocuSign Connect", category: "Integration" },
-        { name: "Qualtrics", category: "Integration" },
-        { name: "FAISS", category: "Vector Search" },
-        { name: "Firebase", category: "Cloud Database" },
+        { name: "Bicep", proof: "Voice agent infrastructure" },
+        { name: "Azure DevOps", proof: "Voice agent pipeline" },
+        { name: "Approval-gated CI/CD", proof: "59 tests before each deploy" },
+        { name: "App Insights", proof: "Voice agent telemetry" },
+        { name: "KQL", proof: "P95/P99 latency queries" },
+        { name: "Metric alerts", proof: "4 alerts on the voice agent" },
       ],
     },
   ];
@@ -138,15 +109,11 @@ export const Skills = () => {
       <div className="space-y-3">
         {category.skills.map((skill, index) => (
           <div key={index}>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-900 dark:text-white font-medium">
-                {skill.name}
-              </span>
-              <div className="flex items-center space-x-2">
-                <span className="text-xs text-gray-600 dark:text-gray-300 px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">
-                  {skill.category}
-                </span>
-              </div>
+            <div className="text-gray-900 dark:text-white font-medium">
+              {skill.name}
+            </div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              {skill.proof}
             </div>
           </div>
         ))}
