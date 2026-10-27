@@ -179,7 +179,7 @@ export const Skills = () => {
       <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-8 border border-blue-200 dark:border-blue-700">
         <div className="grid md:grid-cols-4 gap-8 text-center">
           {[
-            ["6 / 4", "Channels built / enabled", "Commencement assistant"],
+            ["6 / 5", "Channels built / enabled", "Commencement assistant"],
             ["4,000+", "Alumni records migrated", "Ellucian Advance CRM"],
             ["12", "Azure Logic Apps", "Event RSVPs to the CRM"],
             ["~1,250", "Backend tests", "Alumni Event Planner"],

@@ -12,7 +12,7 @@ export const Experience = () => {
       description:
         "AI systems, APIs, CRM data pipelines and Azure infrastructure for CSULB's IT Services.",
       achievements: [
-        "Built the 2027 commencement assistant: 4 services on Azure Container Apps, 6 channels built and 4 enabled, and an SMS opt-out gate so STOP never reaches the LLM.",
+        "Built the 2027 commencement assistant: 4 services on Azure Container Apps, 6 channels built and 5 enabled, and an SMS opt-out gate so STOP never reaches the LLM.",
         "Voice agent for Student Financial Services: led the design and extended a Microsoft sample into production (117 commits), now in staged business testing before students use it.",
         "Traced 34 failed call transfers in 30 days (87% with one error code) to a missing caller ID using App Insights logs, then shipped a fix with a retry and graceful hangup.",
         "Built a daily self-healing secret-rotation workflow in Azure Logic Apps after an expired Entra ID secret took the admin portal down for about 3 weeks.",

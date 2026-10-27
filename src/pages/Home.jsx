@@ -39,7 +39,7 @@ const selectedWork = [
   },
   {
     title: "Commencement assistant",
-    text: "Designed and built for the 2027 commencement: 4 services on Azure Container Apps, 6 channels built and 4 enabled. Not yet used by real users.",
+    text: "Designed and built for the 2027 commencement: 4 services on Azure Container Apps, 6 channels built and 5 enabled. Not yet used by real users.",
   },
   {
     title: "Alumni Event Planner",

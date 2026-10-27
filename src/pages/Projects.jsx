@@ -46,9 +46,9 @@ export const Projects = () => {
       category: "CSULB Work",
       caseStudy: {
         problem:
-          "Answer questions about the 2027 commencement over SMS, web, Teams and Copilot.",
+          "Answer questions about the 2027 commencement over SMS, web, Teams, Copilot and Telegram.",
         built:
-          "Designed and built 4 services on Azure Container Apps (Docker images) joined by Service Bus session queues, answering from a 19-topic knowledge base on gpt-4o-mini. 6 channels built, 4 enabled. SMS opt-outs are handled by a deterministic gate so STOP never reaches the LLM, with prompt-injection defense (9 checks), a 14-URL link allow-list and per-conversation rate limits, covered by 107 tests. A 10-page React admin console sits on top.",
+          "Designed and built 4 services on Azure Container Apps (Docker images) joined by Service Bus session queues, answering from a 19-topic knowledge base on gpt-4o-mini. 6 channels built, 5 enabled. SMS opt-outs are handled by a deterministic gate so STOP never reaches the LLM, with prompt-injection defense (9 checks), a 14-URL link allow-list and per-conversation rate limits, covered by 107 tests. A 10-page React admin console sits on top.",
         result:
           "Not yet used by real users. Fixed an outage where it stopped replying on every channel (long LLM turns outlived the 30-second Service Bus lock) with lock auto-renewal, safe redelivery and session re-acquisition. Replaced vector search, Cosmos DB and AI Search with whole-knowledge-base grounding, removing three services.",
       },
